@@ -9,3 +9,18 @@ script on the command line.
 
 htmlproof ./_site --only-4xx  --check-html --empty-alt-ignore
 
+TODO:
+
+  * social media icons
+  * edit via github
+  * robots.txt
+  * sitemap.xml
+  * tags
+  * responsive design / bootstrap
+  * docker
+  * pandoc 
+  * compress html
+  * grunt
+  * support for lhs, fsx, and IPython
+
+  
