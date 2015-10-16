@@ -1,0 +1,13 @@
+---
+layout: post
+title: Nyt job
+date: '2014-11-06 20:09:08'
+---
+
+Der har været stille på bloggen i et stykke tid, hvilket skyldes at jeg har været i en proces med at finde nye udfordringer. Nu er det på plads og jeg har fået nyt job. Efter 6 virkelig gode år hos [Edlund](http://www.edlund.dk) var det på tide at prøve kræfter med nye opgaver. Fra den 1. november 2014 er jeg ansat i [Danmarks Nationalbank](http://www.nationalbanken.dk/da/Sider/default.aspx) som løsningsarkitekt. Mit første projekt bliver det nye nationale [kreditregister](http://finanswatch.dk/Finansnyt/Pengeinstitutter/article7007775.ece).
+
+<!--more-->
+
+Tak til Edlund og mine tidligere kollegaer for nogle spændende og fagligt udfordrende år. Især vil jeg huske PFA projektet og opgaven med PFA's nye platform [PFA Plus](https://pfa.dk/erhverv/produkter/pfa-plus/). Det var et fantastisk samarbejde med PFA's forretningsarkitekter, testere og drift. Og ikke mindst har det været meget tilfredsstillende at se hvor succesfuld en løsning det er endt med at være.
+
+Som altid er meninger og holdninger på denne blog mine egne og kan på ingen måde tages til indtægt for min arbejdsgiver.

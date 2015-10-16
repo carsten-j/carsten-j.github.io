@@ -1,0 +1,40 @@
+---
+layout: post
+title: WCDC 2014 - dag 1
+date: '2014-01-15 20:26:03'
+categories: [wcdc2014, csharp, fsharp,azure,javascript,cloud]
+---
+### Keynote og Why Azure is more that the “.NET Cloud” - Scott Hanselman
+
+Masser af underholdning, GIF animationer og sjove link. Derudover fik vi set at Azure er meget mere end en .NET cloud løsning. Man kan køre alle mulige forskellige virtuelle OS på Azure og mange forskellige ikke .NET baserede platforme er også til rådighed. Fx PHP, Node.js og MongoDB. JavaScript er på vej frem. Og ikke om 2, 3 eller 5 år. Det er NU, at det sker. Fra at være en klientbaseret browser programmeringssprog er JavaScript nu et fullstack programmeringssprog. Og glem alt om at performance er dårlig. Det var den måske engang. 
+
+<!--more-->
+
+### Understanding the World With F# - Tomas Petricek
+
+Har vi brug for endnu et værktøj til data science? Måske. Men da data science er et af tidens absolut mest hotte emner, så vil mange have en bid af kagen. Styrken ved F# i denne kontekst er måske ikke selve data analysen men mere muligheden for via Type Providers at samle en række værktøjer. Der er fx Type Providers til at hente/importere data fra en række så forskellige kilder som REST API's, CSV filer og Verdensbanken ligesom der er type providers til populære statistik og matematik værktøjer som R og Matlab. 
+
+Jeg ville gerne have haft mere fokus på bibliotekerne Deedle og Vega til henholdsvis tidsrækkeanalyse og grafik.
+
+### Functional Reactive Programming in C#, F# and Javascript - Simon Boisen
+
+Min første tanke var, at det her foredrag sikkert var en fin opfølgning til Coursera kurset [Principles of Reactive Programming]({% post_url 2014-01-06-principles-of-reactive-programming %}), men der var en fejl i programmet og foredraget var aflyst til fordel for et om D3.js. Jeg har flere gange tænkt på at kigge nærmere på D3.js, så jeg blev siddende i salen selvom ca 80% andre forlod den. 
+
+*Lesson One*. Hvis du vil vise kode, så vis live kode og ikke kode på slides. Det fungerer ofte alt for dårligt, og er nærmest umuligt at få overblik over. Så foredraget druknede i en masse tekniske detaljer. Det er bedre at vælge simple eksempler, hvis det så betyder at man kan demonstrere koden mens man skriver den. 
+
+Det gennemgående eksempel var om visualisering af medaljer og lande fra en række Olympiader. Jeg ved ikke om det konkrete eksempel kommer fra The Guardians data blog, men avisen kørte under 2012 Olympiaden en [serie](http://www.theguardian.com/sport/series/london-2012-olympics-data) om visualisering i forbindelse med legene. Og Simon Rogers også fra The Guardian har i bogen [Facts are Sacred](https://itunes.apple.com/gb/book/facts-are-sacred-enhanced/id635656702?mt=11) ligeledes skrevet om Olympiaden og data journalistik.
+
+### Ted Codd Was Not A Developer: A Categorical Basis for Big Data
+
+Super inspirerende. Men jeg er nød til at tænke mere over alle de ideer, der blev præsenteret, før jeg kan skrive om det.
+
+### Polyglot Data - Greg Young
+
+I følge Greg Young bør vi ikke bare bruge relationelle databaser fordi vi altid har brugt relationelle databaser. I stedet bør vi tænke over, 1) hvad er det for data som vi vil gemme og 2) hvordan er brugsmønstret for disse data. Herefter bør vi så vælge teknologi og database. Måske bør vi ligefrem bruge flere forskellige databaser samtidig for at dække de forskellige behov. Før og efter midten af 90'erne var der nærmest kun relationelle database og i en kort periode henover midten af 90'erne var der så OO databaser. Nu er der en hav af noSQL databaser af vælge imellem. Pointen er god, men den er nærmest så simpel at det virker unødvendigt med et foredrag om det. Jeg har selv tidligere skrevet lidt om de samme ting i dette [indlæg]({% post_url 2013-10-02-moderne-web-udvikling-del-1 %}).
+
+## Konklusion
+Cloud og JavaScript var dagens nøgleord. De fleste indlæg kom på en eller anden måde ind på disse to områder.
+
+Forslag til arrangørerne. Adgang til WIFI. Mere styr på teknikken (projektor og lyd). Flere toiletter. Først øl efter alle foredragene.
+
+Betydningen af farvekoderne findes [her]({% post_url 2014-01-14-prae-warm-crocodile-developer-conference-2014 %}).

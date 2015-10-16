@@ -1,0 +1,16 @@
+title: carstenj
+subtitle: software, matematik og data
+baseurl: ""
+
+date_format: "%Y-%m-%d"
+
+google_analytics: UA-46905545-1
+
+encoding:     "utf-8"
+
+# Other
+permalink: /:title
+timezone: Europe/Copenhagen
+
+# Build settings
+markdown:     kramdown

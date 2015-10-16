@@ -1,0 +1,30 @@
+---
+layout: post
+title: WCDC 2014 - dag 2
+date: '2014-01-16 20:08:26'
+categories: [wcdc2014, csharp, fsharp]
+---
+### How C# Saved my Marriage - Scott Hanselman
+
+Fangende titel. Men måske for catchy. Der var intet i foredraget om Hanselmans ægteskab og relationen til C#! Lidt for smart. Hvis der var en pointe med foredraget var det nok mere noget i stil med: lær et programmeringssprog (måske 2) og bliv virkelig god til det. For Hanselman er det C# og JavaScript (og helt sikkert ikke Lisp)
+
+<!--more-->
+
+![center](http://imgs.xkcd.com/comics/lisp_cycles.png)
+
+Da C# i sin tid kom frem, blev der talt meget om performance i C# versus C/C++, og om man kunne skrive low-level kode i C# på samme måde som i C. Det kan man. Eller man kan i hvert fald komme meget tæt på. Hanselman viste os et eksempel på, hvordan man kan kontrollere og bevæge et kamera med C#.
+
+I dag kan C# takket være Portable Class Libraries - PCL bruges på andre OS og platforme end Windows. Xamarin laver f.eks. cross platform værktøjer som man kan udvikle Android og iOS app med C#.
+
+Til trods for den misvisende titel var det faktisk et ganske godt foredrag. Det var interessant at se så mange forskellige anvendelser af C#.
+
+### A Functional architecture with F# - Mark Seemann
+
+Hvis du har kigget lidt på F# og måske skrevet et par funktioner men samtidig undret dig over, hvordan du får det her til at blive en faktisk applikation, så var det foredrag lige noget for dig!
+
+På et tidspunkt under foredraget var jeg bange for, at det var ved at blive lidt for teoretisk. Ikke at der i sig selv er noget galt med teori, men det var ikke teoretisk arkitektur for F#, som jeg var interesseret i. Men der var en pointe i at nævne Betrand Meyers Command–query separation (CQS), Pipes & Filters integrations design mønster og map/reduce. Udstyret med disse værktøjer kastede Seemann sig ud i et F# eksempel (med en AngularJS frontend), hvor vi i praksis fik mange detaljer på en mulig arkitektur for en data-entry applikation skrevet i F#. Principperne bør kunne generaliseres til andre funktionsssprog. 
+
+Jeg ser frem til en udvidet form at dette foredrag på Pluralsight, hvor der så forhåbenligt også bliver mulighed for at kigge nærmere på den bagvedliggende F# kode. 
+
+## Samlet konklusion
+Min konklusion må blive, at jeg nok er mere til kurser end konferencer. Det var alt for mange foredrag som jeg ikke fandt konkrete nok, og som slet ikke kom i detaljen med emnet. Selvfølgelig var der også undtagelser. Jeg vil her helt klart pege på foredraget 'A Functional architecture with F#' med Mark Seemann. Her var der en meget fin balance mellem det konkrete og det abstrakte. Og så fik jeg et muligt svar på, hvordan man man tænke funktionelt og sammensætte en funktionel arkitektur. Erik Meijer have et par interessant foredrag, som jeg fortsat ikke er sikker på at have forstået alt fra, men så er der noget af tænke på fremover.

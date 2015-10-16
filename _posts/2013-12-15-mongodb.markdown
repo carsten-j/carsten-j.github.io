@@ -1,0 +1,68 @@
+---
+layout: post
+title: MongoDB
+date: '2013-12-15 13:20:51'
+categories: [mooc,nosql,mongodb]
+---
+Hvis du skal i gang med et nyt projekt og har frit valg på alle hylder mht. valg af database, så kan antallet af valgmuligheder nærmest virke uoverskueligt. På ganske få år er vi gået fra kun at have nogle få større udbydere af databaseløsninger til at have ikke bare en myriade af små og mellemstore udbydere men også dybt specialiserede databaseløsninger.
+
+<!--more-->
+
+Under et betegnes mange af disse nye databaseløsninger for NoSQL. Hvis du vil vide mere generelt om dette emne, vil jeg anbefale at du starter [her](http://martinfowler.com/nosql.html) hos Martin Fowler, hvor du også finder en henvisning til hans udmærkede bog NoSQL Distilled.
+
+MongoDB er den eneste ikke relationelle RBMS som er på [top 10 listen](http://db-engines.com/en/ranking) over de mest anvendte databaser. Bag databasen MongoDB står firmaet MongoDB (de har for nylig skiftet navn fra 10gen). Firmaet står også bag [MongoDB University](https://education.mongodb.com/) som tilbyder en række online kurser om MongoDB. Det er [edX](https://www.edx.org/) platformen som benyttet til kurserne, så hvis du tidligere har taget et MOOC kursus hos edX føler du dig hurtig hjemme på deres website. Kurserne starter løbende forfra så det er på ingen måde for sent at melde sig til næste runde.
+
+Jeg har lige afsluttet kurset MongoDB for Node.js Developers, og dette er et forsøg på at sætte ord på mit indtryk at MongoDB.
+
+Det er supernemt at komme i gang med MongoDB. Hvis du bruger Mac kan du installere via `Homebrew`. Og så er du i gang :-)
+
+Hvis man meget kort skal sige, hvad MongoDB er, så kunne det være et bud at sige, at MongoDB er
+
+* en ikke-relationel datastore, hvor 
+* data gemmes som JSON dokumenter, og hvor
+* det er er muligt at have hierarkiske JSON dokumenter samt endeligt at
+* to dokumenterne i samme samling ikke nødvendigvis har samme skema
+
+Hele NoSQL bevægelsen kan sagtens ses som en reaktion på at lave distribuerede databaseløsninger som modsat traditionelle løsninger er svære at få til at skaleret ud på en række servere. Historisk har det været sådan, at hvis en SQL Server skulle performe bedre, så købte man hurtigere en hurtigere server til den. Men i dag er vi nået til et punkt, hvor man kan have så store mængder data at der bliver svært at have på en server samtidig med at hardware udviklingen ikke gør den enkelte server hurtigere og hurtigere. Prisen på "almindelig" server er til gengæld faldet, så hvis man kan skalere ud på mange servere som et alternativt, så kan man få meget bedre performance og muligheden for at skalere i takt med udviklingen af ens forretning. Fokus for NoSQL har derfor blandt andet været udviklingen af distribuerede løsninger. 
+
+En af årsagerne til den succes som MongoDB har fået skal måske findes i at de har været gode til at lave en database som både skalerer ud og samtidig er forholdsvis rig på funktionalitet. 
+
+![center](/images/mongoDB1.jpg)
+
+På kurset gennemgås bland andet følgende emner, introduktion/overblik, CRUD, skema design, performance, aggregation framework samt replikering og sharding. Syntaksen for CRUD er forskellig fra SQL men selve tankegangen virker på mange måder identisk. Undervisningen vedrørende performance gik udelukkende på brugen af index, og også her kommer man langt med viden fra SQL verdenen.
+
+Har man en SQL baggrund er der en par områder som kræver lidt tilvænning:
+
+1. Ingen joins. Kan man virkelig undvære joins? Svaret hænger tæt sammen med punkt 2 og 3 nedenfor. Hvis man tager det klassiske eksempel fra ERP verdenen med en ordre og de tilhørende ordrelinjer, så vil man i et traditionelt RDBMS system have ordren i en tabel og ordrelinjerne i en anden tabel. Når man så har brug for både ordren og dens ordrelinjer vil man hente dem med et join. I MongoDB vil man nok nærmere modellere ordre og ordrelinjer i et og samme dokument, hvorfor man ikke her har brug for join. Pointen er at ofte vil man ikke savne join, da man strukturer dokumenterne anderledes end tabeller. Men man kan naturligvis ende i situationer, hvor en form for join er nødvendig og her vil det så være løsningen at udføre join i kode.
+* Ingen transaktioner. Vi er så vant til at tænke i transaktioner, at det virker umuligt at leve uden. MongoDB har et transaktionsbegreb for enkelt dokumenter, og hvis vi holder fast i eksemplet med en ordre og ordrelinjer modelleret som et samlet dokument, så er dette nok til at sikre, at ordren samt dens ordrelinjer altid er konsistent. Der er ikke noget indbygget transaktionsbegreb for flere samtidig dokumenter, så ligesom med joins er det nødvendigt at håndtere det i kode, hvis der er behov for det.
+* Skema (dokument) design. Vi tænker i 3. normal form, og det er måske den største udfordring. Der har for nyligt kørt en heftig debat, hvor man blev [advaret](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/) mod at bruge MongoDB. Men som jeg forstår det skyldes problemerne mere et dårligt design, så man kan læse mere om i denne [artikel](http://ayende.com/blog/164483/re-why-you-should-never-use-mongodb) af Ayende Rahien. Rahien står bag RavenDB som også er en dokument orienteret NoSQL database med .NET som primær platform.
+
+Hvis du har en Unix baggrund vil du helt sikkert genkende Unix pipeline filosofien i MongoDB's aggregation framework. Hvis man har en samling af dokumenter, så kan data fra disse aggregeres via en række særlige operatorer som fx `match` og `group`. Konceptuelt sker dette via en pipeline:
+
+	collection | match | project | group | limit -> result
+
+Det virker meget intuitivt og let at bruge. [Her](http://redotheweb.com/2012/10/12/mongodb-new-aggregation-framework-and-sql-side-by-side.html) er en samling af de mest almindelige SQL aggregeringer og deres ækvivalente i MongoDB.
+
+Ovenfor omtalte jeg mulighederne for at skalere ud over flere servere som et af kendetegnene ved NoSQL. Man kan næsten ikke undgå at nævne CAP sætningen i den forbindelse. I 2000 fremsatte Eric Brewer CAP formodning og i 2002 blev formodningen bevidst af Seth Gilbert og Nancy Lunch. Kort fortalt omhandler sætningen tre betingelser: 
+
+* konsistens (**C**onsistency)
+* tilgængelighed (**A**vailability) og 
+* tolerance ved opdeling (**P**artition tolerance).
+
+og udsiger, at man i et distribueret system kun kan garantere at to ud af disse tre betingelser på et vilkårligt tidspunkt er overholdt. MongoDB er per design CP. Men det er muligt at konfigurere MongoDB til at være AP hvis man i stedet for konsistens kan leve med eventuel konsistens. Det indebærer at man tillader læseadgang til sekundære noder. Mange vil nok tænke at det lyder farligt ikke at have et konsistent system men tænkt fx på Facebook. Er det meget vigtigt at alle brugere samtidigt kan se din seneste statusopdatering eller er det muligt at leve med at de på et lidt senere tidspunkt ser den samme statusopdatering. Eventuelt konsistens er klart svagere end stærk konsistens men man kan sagtens forestille sig scenarier, hvor det er muligt at leve med denne form for konsistens af data. 
+
+![center](/images/mongoDB2.jpg)
+
+På MongoDB bloggen findes en [serie](http://blog.mongodb.org/post/523516007/on-distributed-consistency-part-6-consistency-chart) af 6 artikler om distribuerede konsistens.
+
+#### Konklusion
+Hvis du ikke kender MongoDB på forhånd er kurserne udbudt af MongoDB University et fint sted at starte. På 7-8 uger fås en overordnet introduktion til de vigtigste features og via de tilhørende øvelser får du prøvet tingene af i praksis. 
+
+Hvis du vil vide mere findes der en række udemærkede bøger om MongoDB
+
+* [MongoDB: The Definitive Guide](http://www.amzn.com/1449344682)
+* [MongoDB Applied Design Patterns](http://www.amzn.com/1449340040)
+* [MongoDB in Action](http://www.amzn.com/1935182870)
+* [Scaling MongoDB](http://www.amzn.com/1449303218)
+
+og i København findes en MongoDB brugergrupper som annonceres deres mødes via [meetup](http://www.meetup.com/Copenhagen-MongoDB-User-Group/).
