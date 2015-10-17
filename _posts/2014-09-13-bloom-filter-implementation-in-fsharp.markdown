@@ -61,54 +61,38 @@ In the table below we see the results from simulating the join of two tables in 
 
 Run times are shown in milliseconds for the two cases: brute force and Bloom Filter. We observe a significant performance improvement when using the Bloom Filter approach for larger tables.
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;border-color:#ccc;margin:0px auto;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#fff;border-top-width:1px;border-bottom-width:1px;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:0px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;border-top-width:1px;border-bottom-width:1px;}
-.tg .tg-8lo3{background-color:#f9f9f9;font-size:15px;font-family:Verdana, Geneva, sans-serif !important;;text-align:right}
-.tg .tg-foj8{font-size:15px;font-family:Verdana, Geneva, sans-serif !important;;text-align:right}
-.tg .tg-7xxd{font-family:Verdana, Geneva, sans-serif !important;;text-align:right}
-.tg .tg-9vto{font-family:Verdana, Geneva, sans-serif !important;}
-.tg .tg-mj1a{background-color:#f9f9f9;font-family:Verdana, Geneva, sans-serif !important;;text-align:right}
-</style>
-<table class="tg" style="undefined;table-layout: fixed; width: 452px">
-<colgroup>
-<col style="width: 160px">
-<col style="width: 90px">
-<col style="width: 90px">
-<col style="width: 110px">
-</colgroup>
-  <tr>
+<table >
+  <tr style="text-align:right">
     <th class="tg-9vto">Number of elements</th>
     <th class="tg-9vto">Without BF</th>
     <th class="tg-9vto">With BF</th>
     <th class="tg-7xxd">Improvement</th>
   </tr>
-  <tr>
+  <tr style="text-align:right">
     <td class="tg-8lo3">10000</td>
     <td class="tg-8lo3">54</td>
     <td class="tg-8lo3">21</td>
     <td class="tg-mj1a">61,1%</td>
   </tr>
-  <tr>
+  <tr style="text-align:right">
     <td class="tg-8lo3">25000</td>
     <td class="tg-8lo3">297</td>
     <td class="tg-8lo3">44</td>
     <td class="tg-mj1a">85,2%</td>
   </tr>
-  <tr>
+  <tr style="text-align:right">
     <td class="tg-foj8">50000</td>
     <td class="tg-foj8">1192</td>
     <td class="tg-foj8">94</td>
     <td class="tg-7xxd">92,1%</td>
   </tr>
-  <tr>
+  <tr style="text-align:right">
     <td class="tg-8lo3">100000</td>
     <td class="tg-8lo3">4778</td>
     <td class="tg-8lo3">213</td>
     <td class="tg-mj1a">95,5%</td>
   </tr>
-  <tr>
+  <tr style="text-align:right">
     <td class="tg-foj8">1000000</td>
     <td class="tg-foj8">484404</td>
     <td class="tg-foj8">8446</td>
