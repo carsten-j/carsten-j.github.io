@@ -49,9 +49,7 @@ Hvis du er bekendt med Codds normalformer for databaser så vil du genkende tidy
 Det kan være svært at parse datoer, når man indlæser dato. Et givent datoformat afhænger af mange faktorere som fx geografi, kultur og anvendelse. Hvis man ikke har en Unix baggrund kan R's dato type godt synes lidt underligt. R's dato type kommer fra Unix Posix time som angiver tidspunkter (og dermed datoer) i antallet af sekunder efter kl. 00:00:00 den 1. januar 1970. Heldigvis er håndtering af datotyper rimelig nemt at gå til med udvidelsepakken [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html)
 
 ## dplyr grammatik og magrittr
-Hvis du kender Unix pipes og/eller Haskell F# er kombinationen af udvidelsespakkerne [magrittr og [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) det helt rigtige valg for dig til data manipulation. dplyr er designet efter en filosofi, hvor de fem verber
-
-funktionssammensætning (.) fra Haskell og forward operatoren |> i F#
+Hvis du kender Unix pipes og/eller funktionssammensætning (.) fra Haskell og forward operatoren |> i F# er kombinationen af udvidelsespakkerne [magrittr og [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) det helt rigtige valg for dig til data manipulation. dplyr er designet efter en filosofi, hvor de fem verber
 
 Data kilde    | handling
 ------------- | --------------------- 
@@ -61,66 +59,21 @@ mutate        | tilføj nye kolonner eller overskriv eksisterende
 arrange       | sortering af data
 summarize     | aggregeringer som fx gennemsnit eller sum
 
-i sammensætning er tilstrækkelige til at foretage så godt som alle data manipulationer. I sammensætning skal her opfattes i stil med Unix pipe operator. Hvis man fx har et datasæt
+i sammensætning er tilstrækkelige til at foretage så godt som alle data manipulationer. I sammensætning skal her opfattes i stil med Unix pipe operator. Med det klassiske [iris datasæt](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html) kan man fx på en linie
 
- sql husk og dplyr
- https://cran.rstudio.com/web/packages/dplyr/vignettes/databases.html
 
+iris %>% 
+
+
+
+
+En anden styrke ved dplyr er mulighed for at hente data direkte fra en database. Læs mere [her](https://cran.rstudio.com/web/packages/dplyr/vignettes/databases.html).
 
 ## diverse
-R Cookbook
-
- 
-[1] Tidy data artikel 
+For nybegyndere i R programmeringsproget vil jeg anbefale bogen R Cookbook[3]. Den gennemgår en række eksempler på hvordan man udfører forskellige opgaver med R. Der er fx også et afsnit om data manipulation.
 
 
-@article{JSSv059i10,
-   author = {Hadley  Wickham},
-   title = {Tidy Data},
-   journal = {Journal of Statistical Software},
-   volume = {59},
-   number = {1},
-   year = {2014},
-   keywords = {},
-   abstract = {A huge amount of effort is spent cleaning data to get it ready for analysis, but there has been little research on how to make data cleaning as easy and effective as possible. This paper tackles a small, but important, component of data cleaning: data tidying. Tidy datasets are easy to manipulate, model and visualize, and have a specific structure: each variable is a column, each observation is a row, and each type of observational unit is a table. This framework makes it easy to tidy messy datasets because only a small set of tools are needed to deal with a wide range of un-tidy datasets. This structure also makes it easier to develop tidy tools for data analysis, tools that both input and output tidy datasets. The advantages of a consistent data structure and matching tools are demonstrated with a case study free from mundane data manipulation chores.},
- issn = {1548-7660},   pages = {1--23}   doi = {10.18637/jss.v059.i10},
-   url = {http://www.jstatsoft.org/index.php/jss/article/view/v059i10}
-}
 
-@book{Janssens:2014:DSC:2755090,
- author = {Janssens, Jeroen},
- title = {Data Science at the Command Line: Facing the Future with Time-Tested Tools},
- year = {2014},
- isbn = {1491947853, 9781491947852},
- edition = {1st},
- publisher = {O'Reilly Media, Inc.},
-} 
-
-@book{Teetor:2011:RC:2011867,
- author = {Teetor, Paul},
- title = {R Cookbook},
- year = {2011},
- isbn = {0596809158, 9780596809157},
- edition = {1st},
- publisher = {O'Reilly Media, Inc.},
-} 
-
-@book{Grus15,
-  abstract = {Data science libraries, frameworks, modules, and toolkits are great for doing data science, but they're also a good way to dive into the discipline without actually understanding data science. In this book, you'll learn how many of the most fundamental data science tools and algorithms work by implementing them from scratch. If you have an aptitude for mathematics and some programming skills, author Joel Grus will help you get comfortable with the math and statistics at the core of data science, and with hacking skills you need to get started as a data scientist.},
-  added-at = {2015-08-24T15:11:50.000+0200},
-  address = {Beijing},
-  author = {Grus, Joel},
-  biburl = {http://www.bibsonomy.org/bibtex/2586c25e1ad4630584da8af63b895871e/flint63},
-  file = {O'Reilly eBook:2015/Grus15.pdf:PDF;O'Reilly Product page:http\://shop.oreilly.com/product/0636920033400.do:URL;Amazon Search inside:http\://www.amazon.de/gp/reader/149190142X/:URL},
-  groups = {public},
-  interhash = {021ad3a8e8d33b5b649751392f935ebc},
-  intrahash = {586c25e1ad4630584da8af63b895871e},
-  isbn = {978-1-4919-0142-7},
-  keywords = {v1500 book ai software development data pattern recognition analysis python},
-  publisher = {O'Reilly},
-  timestamp = {2015-08-24T15:11:50.000+0200},
-  title = {Data Science from Scratch: First Principles with Python},
-  url = {http://my.safaribooksonline.com/97814919-01427},
-  username = {flint63},
-  year = 2015
-}
+[1] Tidy data, Hadley  Wickham, Journal of Statistical Software, Vol 59, 2014 
+[2] Data Science at the Command Line, Jeroen Janssens, O'Reilly Media, 2014
+[3] R Cookbook, Paul Teetor, O'Reilly Media, 2011
