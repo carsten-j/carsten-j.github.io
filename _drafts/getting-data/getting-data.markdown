@@ -49,7 +49,7 @@ Hvis du er bekendt med Codds normalformer for databaser så vil du genkende tidy
 Det kan være svært at parse datoer, når man indlæser dato. Et givent datoformat afhænger af mange faktorere som fx geografi, kultur og anvendelse. Hvis man ikke har en Unix baggrund kan R's dato type godt synes lidt underligt. R's dato type kommer fra Unix Posix time som angiver tidspunkter (og dermed datoer) i antallet af sekunder efter kl. 00:00:00 den 1. januar 1970. Heldigvis er håndtering af datotyper rimelig nemt at gå til med udvidelsepakken [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html)
 
 ## dplyr grammatik og magrittr
-Hvis du kender Unix pipes og/eller funktionssammensætning (.) fra Haskell og forward operatoren |> i F# er kombinationen af udvidelsespakkerne [magrittr og [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) det helt rigtige valg for dig til data manipulation. dplyr er designet efter en filosofi, hvor de fem verber
+Hvis du kender Unix pipes og/eller funktionssammensætning (.) fra Haskell og forward operatoren |> i F# er kombinationen af udvidelsespakkerne [magrittr og [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) det helt rigtige valg for dig til data manipulation. Grammatikken for dplyr er bygget op omkring verber, hvoraf nogle af de meste brugte er i nedenstående tabel
 
 Data kilde    | handling
 ------------- | --------------------- 
@@ -57,23 +57,23 @@ select        | udvælg kolonner
 filter        | udvælg rækker
 mutate        | tilføj nye kolonner eller overskriv eksisterende
 arrange       | sortering af data
-summarize     | aggregeringer som fx gennemsnit eller sum
+summarise     | aggregeringer som fx gennemsnit eller sum
+group_by      | gruppering af data
 
 i sammensætning er tilstrækkelige til at foretage så godt som alle data manipulationer. I sammensætning skal her opfattes i stil med Unix pipe operator. Med det klassiske [iris datasæt](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html) kan man fx på en linie
 
+{% highlight r %}
+iris  %>% filter(Sepal.Length > ) %>% group_by(Species) %>% summarise(mean = mean(Sepal.Length)) %>% arrange(desc(mean))
+{% endhighlight %}
 
-iris %>% 
-
-
-
+udregne gennemsnittet af `Sepal.Length` for de rækker hvor `Sepal.Length` er større end xxx  opdelt på art og sorteret efter gennemsnittet.
 
 En anden styrke ved dplyr er mulighed for at hente data direkte fra en database. Læs mere [her](https://cran.rstudio.com/web/packages/dplyr/vignettes/databases.html).
 
-## diverse
+## Diverse
 For nybegyndere i R programmeringsproget vil jeg anbefale bogen R Cookbook[3]. Den gennemgår en række eksempler på hvordan man udfører forskellige opgaver med R. Der er fx også et afsnit om data manipulation.
 
-
-
+# Referencer
 [1] Tidy data, Hadley  Wickham, Journal of Statistical Software, Vol 59, 2014 
 [2] Data Science at the Command Line, Jeroen Janssens, O'Reilly Media, 2014
 [3] R Cookbook, Paul Teetor, O'Reilly Media, 2011
