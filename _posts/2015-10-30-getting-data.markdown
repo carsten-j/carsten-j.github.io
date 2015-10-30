@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Getting Data"
-published: false
-categories: 
+title: "Indlæsning, vask og manipulation af data"
+date: 2015-10-30 17:13:51 +0200
 ---
 Det tredje kursus i programmet Data Science udbudt af John Hopkins Universitet under Coursera hedder "Getting and Cleaning Data". Dette er en kort sammenfatning af min oplevelse med kurset og en opsummering/huskeliste over nyttige udvidelsesbiblioteker til brug for indlæsning, vask og manipulation af datasæt.
 
@@ -28,8 +27,17 @@ Data i Excel ark kan være ret ustrukturet af natur, og der findes mange andre m
 
 Web scraping er nærmest en kunst i sig selv. Et rigtig godt værktøj i den forbindelse er Chrome browser udvidelsen [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb). For en hurtig gennemgang af mulighederne med SelectorGadget henvises til disse [slides](https://cpsievert.github.io/slides/web-scraping/#1).
  
-Husk python bog og god skik ved web scraping 
+### Om web scraping
+Husk at checke robots.txt filen for websites for du går i gang med web scraping. Du bør overholde spillereglerne angivet i denne fil. Hvis man fx kigger på [O’Reillys webshop](http://shop.oreilly.com/) finder vi følgende indhold i deres [`http://shop.oreilly.com/robots.txt`](http://shop.oreilly.com/robots.txt) fil
+
+{% highlight javascript %}
+Crawl-delay: 30 
+Request-rate: 1/30 
+{% endhighlight %}
+
+som betyder at man kun må foretage et request hver 30. sekund og at man yderligere kun må hente en side per 30. sekund. Der er andre linjer som angiver hvilke URL'er man må eller ikke må webscrape.
  
+## Der er alternativer til R 
 Funktionalitet i mange af de ovennævnte udvidelsespakker er ikke unik for R. Et godt alternativ for personer med hang til kommandolinje værktøjer findes i den fine lille bog Data Science at the Command Line[1]. Der er intet til hinder for at bruge R til selve dataanalysen og andre værktøjer til indsamling mv. af data.
 
 # Data manipulation
@@ -63,21 +71,27 @@ group_by   | gruppering af data
 i sammensætning er tilstrækkelige til at foretage så godt som alle data manipulationer. I sammensætning skal her opfattes i stil med Unix pipe operator. Med det klassiske [iris datasæt](https://stat.ethz.ch/R-manual/R-devel/library/datasets/html/iris.html) kan man fx på en linie
 
 {% highlight r %}
-library(iris)
-iris  %>% filter(Sepal.Length > ) %>% group_by(Species) %>% summarise(mean = mean(Sepal.Length)) %>% arrange(desc(mean))
+library(dplyr)
+iris %>% 
+  filter(Sepal.Length > 5.0) %>% 
+  group_by(Species) %>% 
+  summarise(mean = mean(Sepal.Length)) %>% 
+  arrange(desc(mean))
 {% endhighlight %}
 
-udregne gennemsnittet af `Sepal.Length` for de rækker hvor `Sepal.Length` er større end xxx  opdelt på art og sorteret efter gennemsnittet.
+udregne gennemsnittet af `Sepal.Length` for de rækker hvor `Sepal.Length` er større end 5.0 opdelt på art og sorteret efter faldende gennemsnittet.
 
 En anden styrke ved dplyr er mulighed for at hente data direkte fra en database. Læs mere [her](https://cran.rstudio.com/web/packages/dplyr/vignettes/databases.html).
 
 ## Dato formater
-Det kan være svært at parse datoer, når man indlæser dato. Et givent datoformat afhænger af mange faktorere som fx geografi, kultur og anvendelse. Hvis man ikke har en Unix baggrund kan R's dato type godt synes lidt underligt. R's dato type kommer fra Unix Posix time som angiver tidspunkter (og dermed datoer) i antallet af sekunder efter kl. 00:00:00 den 1. januar 1970. Heldigvis er håndtering af datotyper rimelig nemt at gå til med udvidelsepakken [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html)
+Det kan være svært at parse datoer, når man indlæser dato. Et givent datoformat afhænger af mange faktorere som fx geografi, kultur og anvendelse. Hvis man ikke har en Unix baggrund kan R's dato type godt synes lidt underligt. R's dato type kommer fra Unix Posix time som angiver tidspunkter (og dermed datoer) i antallet af sekunder efter kl. 00:00:00 den 1. januar 1970. Heldigvis er håndtering af datotyper rimelig nemt at gå til med udvidelsepakken [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html).
 
 ## Diverse
 For nybegyndere i R programmeringsproget vil jeg anbefale bogen R Cookbook[3]. Den gennemgår en række eksempler på hvordan man udfører forskellige opgaver med R. Der er fx også et afsnit om data manipulation.
 
 # Referencer
 [1] Tidy data, Hadley  Wickham, Journal of Statistical Software, Vol 59, 2014 
+
 [2] Data Science at the Command Line, Jeroen Janssens, O'Reilly Media, 2014
+
 [3] R Cookbook, Paul Teetor, O'Reilly Media, 2011
