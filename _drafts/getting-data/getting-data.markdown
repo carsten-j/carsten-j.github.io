@@ -51,8 +51,8 @@ Det kan være svært at parse datoer, når man indlæser dato. Et givent datofor
 ## dplyr grammatik og magrittr
 Hvis du kender Unix pipes og/eller funktionssammensætning (.) fra Haskell og forward operatoren |> i F# er kombinationen af udvidelsespakkerne [magrittr og [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) det helt rigtige valg for dig til data manipulation. Grammatikken for dplyr er bygget op omkring verber, hvoraf nogle af de meste brugte er i nedenstående tabel
 
-Data kilde    | Handling
-------------- | -------- 
+Data kilde    | R udvidelsesbibliotek
+------------- | --------------------- 
 select        | udvælg kolonner
 filter        | udvælg rækker
 mutate        | tilføj nye kolonner eller overskriv eksisterende
