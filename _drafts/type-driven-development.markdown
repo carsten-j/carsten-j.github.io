@@ -1,3 +1,6 @@
+actulus money time dependent
+
+
 TDD 
 
 recently watches wadler propostions as types strange loop video and article (footnote)
