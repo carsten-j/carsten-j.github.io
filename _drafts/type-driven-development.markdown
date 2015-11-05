@@ -1,6 +1,7 @@
 explicit is better than implicit
 
 money time dependent
+F# measure of unit
 
 
 TDD 
@@ -57,9 +58,14 @@ http://www.tikalk.com/incubator/type-driven-design/
 http://tomasp.net/blog/type-first-development.aspx/
 
 http://blog.ploeh.dk/2015/08/10/type-driven-development/
+nok ikke denne her. seeman giver ikke klart udtryk for at dette ikke er hans egne originale ideer
 
-F# measure of unit
 
+
+Idris, a general-purpose dependently typed programming
+language: Design and implementation
+EDWIN BRADY
+Journal of Functional Programming / Volume 23 / Issue 05 / 2013, pp 552 - 593
 
 
 http://www.cse.chalmers.se/research/group/logic/TypesSS05/program.html
