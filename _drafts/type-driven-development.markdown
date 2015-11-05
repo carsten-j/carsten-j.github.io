@@ -1,8 +1,14 @@
-non type theorist
-software developer who cares about craftmanship
-practical approach
-one can dependent types help me with
+I recently watch a talk by Philip Wadler from the Strangeloop 2015 conference. The title of the talk is ["Propositions as types"](https://www.youtube.com/watch?v=IOiZatlZtGU) and it is both recommendable and very inspirering. There is also a [paper](http://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf) with the same title with even more details.
 
+Around 24:30 minutes into the talk Wadler mentions dependent types which was a new comcept for me and to be honest I am not sure I quite got his point.
+
+A few days after watching the talk I received an email from Mannning Publications with a request for reviewing a book called Type-driven Development with Idris. It turns out that Idris is a programming language with Dependent Types. What a perfect opportunity to learn more about Dependent Types. 
+
+Much of the material found online about dependent types deals just as much with type theory as with dependent types. I am a non type theorist software developer who cares about craftmanship and practical approaches to software development so why should I care about dependent types.
+
+The title of the book got me to think about types and programming languages in general and development of types in particular. I have been developing software for 20 years and remember the first versions of the .NET platform and the `List` class that stored data of the type `System.Object`. It was easy to add new items to the list but extracting data meant a lot of casting leading to poor performance. It did not add to readabily that `List`s could contain items of different types. I was happy when generics were introduced in the .NET framework version 2.0. Great type improvement and the expressiveness of generics was just cool.
+
+better type systems -> more expressiveness -> better programs
 
 
 actulus money time dependent
