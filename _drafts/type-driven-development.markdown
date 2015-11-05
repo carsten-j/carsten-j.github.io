@@ -1,4 +1,6 @@
-actulus money time dependent
+explicit is better than implicit
+
+money time dependent
 
 
 TDD 
