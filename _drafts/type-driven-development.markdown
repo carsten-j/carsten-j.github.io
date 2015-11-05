@@ -3,6 +3,10 @@ explicit is better than implicit
 money time dependent
 F# measure of unit
 
+generics in C#. type improvement - Version 2.0 was released on 22 January 2006. 
+10 years ago FP was not widely used and most people associcated FP with poor performance.
+
+
 
 TDD 
 
