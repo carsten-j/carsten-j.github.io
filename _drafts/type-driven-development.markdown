@@ -6,6 +6,16 @@ one can dependent types help me with
 
 
 actulus money time dependent
+=======
+explicit is better than implicit
+
+money time dependent
+F# measure of unit
+
+generics in C#. type improvement - Version 2.0 was released on 22 January 2006. 
+10 years ago FP was not widely used and most people associcated FP with poor performance.
+
+
 
 
 TDD 
@@ -62,9 +72,14 @@ http://www.tikalk.com/incubator/type-driven-design/
 http://tomasp.net/blog/type-first-development.aspx/
 
 http://blog.ploeh.dk/2015/08/10/type-driven-development/
+nok ikke denne her. seeman giver ikke klart udtryk for at dette ikke er hans egne originale ideer
 
-F# measure of unit
 
+
+Idris, a general-purpose dependently typed programming
+language: Design and implementation
+EDWIN BRADY
+Journal of Functional Programming / Volume 23 / Issue 05 / 2013, pp 552 - 593
 
 
 http://www.cse.chalmers.se/research/group/logic/TypesSS05/program.html
