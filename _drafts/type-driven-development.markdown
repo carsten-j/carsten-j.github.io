@@ -1,3 +1,10 @@
+non type theorist
+software developer who cares about craftmanship
+practical approach
+one can dependent types help me with
+
+
+
 actulus money time dependent
 
 
