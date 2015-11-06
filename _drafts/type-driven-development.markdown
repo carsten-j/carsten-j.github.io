@@ -39,7 +39,14 @@ Does this make generics like `List<string>` a dependent type. No - a dependent t
 
 Most functional programming langugages have a zip function that takes two input lists and 'zips' them together into a single list of pairs. So if we have lists `[1; 2; 3]` and `[4; 5; 6]` zipping the together yields `[(1, 4); (2, 5); (3, 6)]`. Consider the case where the input lists don't have the same length, e.g. `[1; 2; 3]` and `[4; 5]`. What will/should zip do?
 
-In F# one will get an runtime error when executing `List.zip  [ 1; 2; 3 ] [ 4 ; 5;6 ]`. In Haskell the behaviour is different. Here will `zip [1, 2, 3] [4, 5]` produce the result `[(1, 4), (2, 5)]`. Is one result/behaviour better than the other?
+In F# one will get an runtime error when executing `List.zip  [1; 2; 3] [4 ; 5; 6]`. In Haskell the behaviour is different. Here will `zip [1, 2, 3] [4, 5]` produce the result `[(1, 4), (2, 5)]`. Is one result/behaviour better than the other? Not really - it it more just a convention. It would be better if we a compile time could detect that we are trying to zip lists of different lengths. Let us look at a possible definition of zip in Idris:
+
+{% highlight idris %}
+zip : Vect n a -> Vect n b -> Vect n (a, b)
+{% endhighlight %}
+Here we have a vector `a` of length `n` and a vector `b` of the SAME length `n`. The resulting vector will also have length `n`. The `Vect` type is here a dependent type since it depends on the value of `n`. With such a type system we can a the time of the type checking catch errors like trying to zip together lists of different length. 
+
+
 
 
 money time dependent, time value of money. one doller today vs one doller tomorrow.
