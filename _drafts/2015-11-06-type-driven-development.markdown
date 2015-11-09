@@ -193,6 +193,8 @@ there exist
 logic
 predicate logic  - dependent types
 propositional logic  It’s basically boolean algebra - haskell
+idris focus on general programming, agda and coq more toward proof system
+
 
 proof another story anoter blog post.
 
@@ -212,6 +214,8 @@ Please remember that the Type-Driven Development in Idris is a MEAP book meaning
 [4] [Seven More Languages in Seven Weeks]({% post_url 2015-09-18-lessons-learned-from-advanced-distributed-systems-design-course %}), Bruce Tate, Ian Dees, Fred Daoud, and Jack Moffitt. The Pragmatic Bookshelf, 2014.
 
 [5] Test Driven Development: By Example, Kent Beck, Addison-Wesley Longman, 2002
+
+[6] Dependent Types at Work. Ana Bove and Peter Dybjer. Chalmers University of Technology
 
 # Footnotes
 
