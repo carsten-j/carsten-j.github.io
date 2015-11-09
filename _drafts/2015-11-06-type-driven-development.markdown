@@ -3,7 +3,6 @@ layout: post
 title: Why you should care about Dependent Types
 date: 2015-11-06 17:13:51 +0200
 ---
-
 I recently watched a talk by Philip Wadler recorded at the Strangeloop 2015 conference. The title of the talk is ["Propositions as types"](https://www.youtube.com/watch?v=IOiZatlZtGU) and it is both recommendable and very inspiring. There is also a [paper](http://homepages.inf.ed.ac.uk/wadler/papers/propositions-as-types/propositions-as-types.pdf) with the same title containing even more details.
 
 Around 24:30 minutes into the talk Wadler mentions dependent types which was a new concept for me and to be honest I am not sure I quite got his point.
@@ -102,7 +101,7 @@ it just another argument for adding step 0. to TDD.
 
 # Pros and cons of dependent types
 
-When you read Type-driven Development with Idris there is no mentioning about the downside of dependent types. But there must be downsides. Otherwise dependent types would be present in more widely used programming languages. I asked the Idris community about [drawbacks](https://groups.google.com/forum/#!topic/idris-lang/7GmLjNKRuQ4) and here are some of the [comments](https://groups.google.com/forum/#!topic/idris-lang/qgio0b1Aums): 
+When you read Type-driven Development with Idris there is no mentioning about the downside of dependent types. But there must be downsides. Otherwise dependent types would be present in more widely used programming languages. I asked the Idris community about [drawbacks](https://groups.google.com/forum/#!topic/idris-lang/7GmLjNKRuQ4) and here are some of the [comments](https://groups.google.com/forum/#!topic/idris-lang/qgio0b1Aums) made: 
 
   * Type inference algorithm are usually not as strong in DT languages
   * Error message can be pretty hard to decipher 
@@ -185,27 +184,22 @@ var a [4]int
 Since the array length is part of the type we have that `[4]int` and `[7]int` are distinct incompatible types.
 
 ### Haskell
-haskell already have some kind of dependent types
-same with scala
+Haskell not do have dependent types but a lot of work is going on in this field. The GHC website has an [overview](https://ghc.haskell.org/trac/ghc/wiki/DependentHaskell) of thoughts about adding dependent types. It is however possible with existing language features like e.g. `DataKinds` and `TypeFamilies` to implement fixed-length vector types. See [here](https://www.fpcomplete.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell?show=tutorials) and [here](http://blog.jle.im/entry/fixed-length-vector-types-in-haskell-2015) for some examples.
 
-
-
-
-og 
-https://www.fpcomplete.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell?show=tutorials
-
-
-# Wadler and Curry Howard
+# Propositions as types
+Wadler and Curry Howard
 for all 
 there exist 
 logic
 predicate logic  - dependent types
 propositional logic  It’s basically boolean algebra - haskell
 
+proof another story anoter blog post.
+
 # Conclusion
 Type-Driven Development in Idris opened a completly new world for me with dependent types and the practice of actively using the type system in the design phase. If you are looking for ways to take your knowledge about functional programming to the next level then Type-Driven Development in Idris is definitely recommendable.
 
-Please remember that the Type-Driven Development in Idris is a MEAP book meaning that it is not the final publication. Currently chapter 1 - 4 is available.
+Please remember that the Type-Driven Development in Idris is a MEAP book meaning that it is not the final publication. Currently chapter 1 - 4 is available. I am really looking forward to the next chapters.
 
 # References
 
@@ -218,9 +212,6 @@ Please remember that the Type-Driven Development in Idris is a MEAP book meaning
 [4] [Seven More Languages in Seven Weeks]({% post_url 2015-09-18-lessons-learned-from-advanced-distributed-systems-design-course %}), Bruce Tate, Ian Dees, Fred Daoud, and Jack Moffitt. The Pragmatic Bookshelf, 2014.
 
 [5] Test Driven Development: By Example, Kent Beck, Addison-Wesley Longman, 2002
-
-
-http://www.cse.chalmers.se/research/group/logic/TypesSS05/program.html
 
 # Footnotes
 
