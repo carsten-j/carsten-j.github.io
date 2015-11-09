@@ -229,4 +229,5 @@ Holes: Main.add
 </code></pre>
 
 [^3]: Hopefully a book like Type-Driven Development with Idris can help developers to better understand dependent types and their potential use.
-[^2]: Thanks to Conor McBride for answering questions regarding the add funciton.
+
+[^4]: Thanks to Conor McBride for answering questions regarding the add funciton.
