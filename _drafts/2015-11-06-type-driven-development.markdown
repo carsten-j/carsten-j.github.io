@@ -186,7 +186,7 @@ Since the array length is part of the type we have that `[4]int` and `[7]int` ar
 Haskell not do have dependent types but a lot of work is going on in this field. The GHC website has an [overview](https://ghc.haskell.org/trac/ghc/wiki/DependentHaskell) of thoughts about adding dependent types. It is however possible with existing language features like e.g. `DataKinds` and `TypeFamilies` to implement fixed-length vector types. See [here](https://www.fpcomplete.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell?show=tutorials) and [here](http://blog.jle.im/entry/fixed-length-vector-types-in-haskell-2015) for some examples.
 
 # Conclusion
-proof assistants and Idris
+As I understand it Idris is designed to be a dependently typed programming language more than a proof assistant. 
 
 proof another story anoter blog post.
 
