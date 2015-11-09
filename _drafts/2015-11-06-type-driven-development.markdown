@@ -213,6 +213,7 @@ Please remember that the Type-Driven Development in Idris is a MEAP book meaning
 [^1]: Any readers with interest in tennis will recognize the values 0, 15, 30, and 40 as points in tennis games.
 
 [^2]: I have limited practical experience with Idris but I had a really hard time figuring out this error message:
+<pre><code>
 When checking left hand side of add:
 Type mismatch between
         Money t (Type of add _ _)
@@ -225,6 +226,7 @@ Specifically:
         and
                 \uv => argTy -> uv
 Holes: Main.add
+</code></pre>
 
 [^3]: Hopefully a book like Type-Driven Development with Idris can help developers to better understand dependent types and their potential use.
 [^2]: Thanks to Conor McBride for answering questions regarding the add funciton.
