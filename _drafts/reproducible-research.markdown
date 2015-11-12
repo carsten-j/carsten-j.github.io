@@ -88,6 +88,8 @@ https://github.com/swarm-lab/editR
 https://github.com/christophergandrud/Rep-Res-Book
 
 
+http://blog.revolutionanalytics.com/2015/11/using-the-wakefield-package-to-easily-generate-reproducible-sample-data.html
+
 other areas with repro research
 http://thegamma.net/
 https://agate.readthedocs.org/en/1.0.0/index.html
