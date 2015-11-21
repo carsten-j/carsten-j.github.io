@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Nyt job
+title: Nyt job. Den 1. november starter jeg i Nationalbanken
 date: '2014-11-06 20:09:08'
 ---
 
