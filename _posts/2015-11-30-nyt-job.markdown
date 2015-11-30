@@ -1,0 +1,9 @@
+---
+layout: post
+title: Nyt job som senior softwareudvikler i Danske Bank
+date: 2015-11-30 20:13:51 +0200
+---
+
+Den 1. januar 2015 starter jeg som senior softwareudvikler i Danske Bank. Da jeg kom til Nationalbanken havde jeg været softwareudvikler i 19 år og dertil samtidig arkitekt de sidste par år hos Edlund i PFA projektet. Jeg tænkte rigtig meget på, om det var tid til at prøve noget andet end at være softwareudvikler. Men jeg kunne ikke tænke mig til et svar, og da jeg fik et rigtig godt tilbud fra Nationalbanken, slog jeg til. Efter lidt over et år som løsningsarkitekt må jeg dog konstatere, at det fortsat er softwareudvikling som jeg brænder for. Derfor skifter jeg nu tilbage til et job som softwareudvikler.
+
+Som altid er meninger og holdninger på denne blog mine egne og kan på ingen måde tages til indtægt for min arbejdsgiver.
