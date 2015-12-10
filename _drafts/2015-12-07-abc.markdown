@@ -1,0 +1,69 @@
+---
+layout: post
+title: A + B = C
+date: 2015-12-07 21:13:51 +0200
+---
+<!-- MathJax configuration -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://arnabocean.com/javascripts/MathJaxLocal.js">
+</script>
+<!-- End MathJax Configuration -->
+
+\[ \DeclareMathOperator{\rad}{rad}\]
+
+Normalt tænker vi på matematisk udsagn som værende enten sande eller falske [^1]. Matematiske sætninger som endnu ikke er hverken bevist eller modbevist kalder vi formodninger.
+
+I disse dage gør matematik samfundet endnu et [forsøg](http://www.claymath.org/events/iut-theory-shinichi-mochizuki) på at forstå (dele) af beviset for ABC formodningen. Jeg omtaler ABC formodningen som en formodning selvom japaneren har publiceret et bevis for den. Men det er et bevis som ingen andre for alvor endnu rigtig har forstået. 
+
+Så selvom vi tænker på matematisk udsagn som værende enten sande eller falske, så er matematik altså også en form for en social konstruktion.
+
+Når man siger ABC tænker mange danskere på Halfdan Rasmussen og Ib Spang Olsens Halfdans ABC fra 1967. ABC formodningen er nok ikke hel så simpel som Halfdans ABC, men jeg skal gøre mit for at forklare den så simpelt som muligt.
+
+ABC formodningen tager udgangspunkts i ligningen
+
+$$
+a + b = c
+$$
+
+med nogle få begrænsninger på $a, b$ og $c$. Det er en fundamental egenskab ved alle positive heltal, at de kan udtrykkes som et entydigt produkt af primtal. Fx kan 10 skrives som 2 x 5, 12 som 2 x 2 x 3 og 594 som 2 x 3 x 9 x 11. Hvis vi starter med et primtal som fx 17 skriver vi bare (1 x ) 17. 
+
+I ABC formodningen kan vi ikke vælges $a, b$ og $c$ helt frit. Begrænsningen består i, at hvis vi skriver $a$ hhv $b$ som en produkt af primtal, så må de to primtalsfaktoriseringen ikke have nogle fælles primtal. Igen er det måske lettere at forstå med et eksempel. Hvis $a$ er 12, som kan skrives som 2 x 2 x 3, så må primtallene 2 og 3 ikke indgå i faktoriseringen af $b$. Så $b$ kan fx ikke være 10 (= 2 x 5) eller 15 (= 3 x 5), men derimod godt 25 (= 5 x 5). 
+
+Dette krav er ikke særligt restriktiv, og uanset hvordan vi vælger $a$ kan man finde masser af $b$'er som ikke er i modstrid med reglen. Hvis $a$ og $b$ ikke har fælles primtalsfaktorer siges $a$ og $b$ at være coprime.
+
+Lad os se på nogle eksempler af talpar $a$ og $b$ som er coprime:
+
+$$
+16 + 495 = 2^4 + 5 · 9 · 11 = 7 · 73 = 511
+$$
+
+$$
+2 + = 6436341 = 2 + 3^10 · 109 = 6436343 = 23^5 
+$$
+
+$$
+3 + 125 = 3 + 5^3 = 128 = 2^7
+$$
+
+Er der forskel på ovenstående eksempler? Hvis man ser efter vil man bemærke at de to første eksempler er kendetegnet ved at have flere primtalsfaktorer i faktoriseringe af $a + b$ end der er primtal i faktoriseringen af $c$.
+
+For det sidste eksempel er det omvendt. Her er flere faktorer for $c$ end for $a + b$.
+
+Ovenfor omtalte jeg den entydige primtalsfaktorisering af ethvert positivt heltal. Lidt mere formelt udtryk har vi, at ethvert positivt heltal $n$ kan skrives som
+
+$$
+n = p_1^{\alpha_1} p_2^{\alpha_2} \dots p_k^{\alpha_k} = \prod_{i=1}^{k}   p_i^{\alpha_i}
+$$
+
+Per definition sætter vi radikalet af $n$ til at være
+
+$$
+\rad(n) = p_1 p_2 \dots  p_k
+$$
+
+Og som før er det måske lettere at forstå ved hjælp af nogle eksempler. Vi kan skrive 36 som 2 x 2 x 3 x 3 og derfor er $\rad(36) = 2 x 3$. 30 kan skrives som 2 x 3 x 5 og derfor er $\rad(30) = 2 x 3 x 5$. Tallet 31 er et primtal og derfor er $\rad(31) = 31$.
+
+
+ 
+
+## Fodnoter
+[^1] Gödel
