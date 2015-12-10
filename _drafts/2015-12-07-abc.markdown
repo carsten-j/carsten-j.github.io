@@ -24,9 +24,9 @@ $$
 a + b = c
 $$
 
-med nogle få begrænsninger på $a, b$ og $c$. Det er en fundamental egenskab ved alle positive heltal, at de kan udtrykkes som et entydigt produkt af primtal. Fx kan 10 skrives som 2 x 5, 12 som 2 x 2 x 3 og 594 som 2 x 3 x 9 x 11. Hvis vi starter med et primtal som fx 17 skriver vi bare (1 x ) 17. 
+med nogle få begrænsninger på $a, b$ og $c$. Det er en fundamental egenskab ved alle positive heltal, at de kan udtrykkes som et entydigt produkt af primtal. Fx kan 10 skrives som 2 · 5, 12 som 2 · 2 · 3 og 594 som 2 · 3 · 9 · 11. Hvis vi starter med et primtal som fx 17 skriver vi bare (1 · ) 17. 
 
-I ABC formodningen kan vi ikke vælges $a, b$ og $c$ helt frit. Begrænsningen består i, at hvis vi skriver $a$ hhv $b$ som en produkt af primtal, så må de to primtalsfaktoriseringen ikke have nogle fælles primtal. Igen er det måske lettere at forstå med et eksempel. Hvis $a$ er 12, som kan skrives som 2 x 2 x 3, så må primtallene 2 og 3 ikke indgå i faktoriseringen af $b$. Så $b$ kan fx ikke være 10 (= 2 x 5) eller 15 (= 3 x 5), men derimod godt 25 (= 5 x 5). 
+I ABC formodningen kan vi ikke vælges $a, b$ og $c$ helt frit. Begrænsningen består i, at hvis vi skriver $a$ hhv $b$ som en produkt af primtal, så må de to primtalsfaktoriseringen ikke have nogle fælles primtal. Igen er det måske lettere at forstå med et eksempel. Hvis $a$ er 12, som kan skrives som 2 · 2 · 3, så må primtallene 2 og 3 ikke indgå i faktoriseringen af $b$. Så $b$ kan fx ikke være 10 (= 2 · 5) eller 15 (= 3 · 5), men derimod godt 25 (= 5 · 5). 
 
 Dette krav er ikke særligt restriktiv, og uanset hvordan vi vælger $a$ kan man finde masser af $b$'er som ikke er i modstrid med reglen. Hvis $a$ og $b$ ikke har fælles primtalsfaktorer siges $a$ og $b$ at være coprime.
 
@@ -60,7 +60,7 @@ $$
 \rad(n) = p_1 p_2 \dots  p_k
 $$
 
-Og som før er det måske lettere at forstå ved hjælp af nogle eksempler. Vi kan skrive 36 som 2 x 2 x 3 x 3 og derfor er $\rad(36) = 2 x 3$. 30 kan skrives som 2 x 3 x 5 og derfor er $\rad(30) = 2 x 3 x 5$. Tallet 31 er et primtal og derfor er $\rad(31) = 31$.
+Og som før er det måske lettere at forstå ved hjælp af nogle eksempler. Vi kan skrive 36 som 2 · 2 · 3 · 3 og derfor er $\rad(36) = 2 · 3$. 30 kan skrives som 2 ·  3 · 5 og derfor er $\rad(30) = 2 · 3 · 5$. Tallet 31 er et primtal og derfor er $\rad(31) = 31$.
 
 Lad os genbesøge eksempler ovenfor. Først eksemplet med $a = 16$, $b = 495$ og $c = 511$. Her er $\rad(abc) = 2 · 5 · 9 · 11 · 7 · 73 = 505890$, hvor $\rad(abc) > c$
 
