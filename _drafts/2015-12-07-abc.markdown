@@ -8,7 +8,7 @@ date: 2015-12-07 21:13:51 +0200
 </script>
 <!-- End MathJax Configuration -->
 
-\[ \DeclareMathOperator{\rad}{rad}\]
+\DeclareMathOperator{\rad}{rad}
 
 Normalt tænker vi på matematisk udsagn som værende enten sande eller falske [^1]. Matematiske sætninger som endnu ikke er hverken bevist eller modbevist kalder vi formodninger.
 
@@ -37,7 +37,7 @@ $$
 $$
 
 $$
-2 + = 6436341 = 2 + 3^10 · 109 = 6436343 = 23^5 
+9 +  49 = 3^2 + 7^2  = 2 · 29 = 58  
 $$
 
 $$
@@ -62,8 +62,40 @@ $$
 
 Og som før er det måske lettere at forstå ved hjælp af nogle eksempler. Vi kan skrive 36 som 2 x 2 x 3 x 3 og derfor er $\rad(36) = 2 x 3$. 30 kan skrives som 2 x 3 x 5 og derfor er $\rad(30) = 2 x 3 x 5$. Tallet 31 er et primtal og derfor er $\rad(31) = 31$.
 
+Lad os genbesøge eksempler ovenfor. Først eksemplet med $a = 16$, $b = 495$ og $c = 511$. Her er $\rad(abc) = 2 · 5 · 9 · 11 · 7 · 73 = 505890$, hvor $\rad(abc) > c$
 
+Det næste eksempel er $a = 9$, $b = 49$ og $c = 58$, hvor  $\rad(abc) = 3 · 7 · 2 · 29 = 1218$, så igen er $\rad(abc) > c$
  
+I det sidste har vi $a = 3$, $b = 125$ og $c = 128$, hvor  $\rad(abc) = 3 · 5 · 2 = 30, så modsat de to foregående eksempler er $\rad(abc) < c$.
+
+Hvis $\rad(abc) < c$ kalder man triplet ${a, b, c}$ for et $abc$-hit.
+
+Sagt forenklet siger ABC formodningen, at vi næsten altid har $\rad(abc) > c$ eller med andre ord, at $abc$-hits er sjældne. 
+
+Udtryk som 'næsten altid' eller 'er sjældne' er dog langt fra præcise nok til at kunne indgå i matematiske sætninger. Her benyttes så et standard 'trick', hvor vi erstatter 'er sjældne' med et $\epsilon$ / omegns argument [^2]. Hvis man i stedet for udtrykket 'er sjældne' kan få omformleret til noget, hvor der kun højest er endeligt mange ${a, b, c}$ hvor det i en vilkårligt lille 'omegn' gælder at  $\rad(abc) < c$
+
+Jeg er fuldstændigt klar over, at dette ikke er specielt matematisk præcist formuleret, men det er heller ikke målsætningen med dette indlæg. Tanken er mere at give en (forhåbenligt) intuitiv forståelse for $ABC$ formodningen.
+
+Formelt lyder $ABC$ formodningen:
+
+For ethvert reelt tal $\epsilon > 0$ er der højest endeligt mange tripler ${a, b, c}$ hvor  $\rad(abc)^{1 + \epsilon} < c$
+
+
+
+
+# Hvorfor er $ABC$ formodningen interessant
+
+Hvis $ABC$ formodningen er sand, så kan man fx på ganske få linjer bevise at Fermats sætnings er sand, dvs at ligningen
+
+$$
+a^n + b^n = c^n 
+$$
+
+ikke har heltalsløsningen for $a$, $b$ og $c$, hvis $n$ er større end 2. Der gik mere end 350 år fra formodningen blev fremsat til den blev bevist og selve beviset fylder flere hundrede sider.
+
+En lang række af andre matematiske beviser vil også let følge af $ABC$ formodningen.
 
 ## Fodnoter
 [^1] Gödel
+
+[^2] På engelsk neighbourhood. Omegn er et grundliggende koncept i topologiske rum. Intuitivt er omegnen af et punkt en mængde som indeholder punktet selv og hvor man kan 'flytte' punktet en smule rundt i omegnen uden af det forlader omegnen.
