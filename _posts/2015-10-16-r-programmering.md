@@ -48,13 +48,13 @@ cosx <- cos(x)
 plot(x, cosx, type = "l")
 {% endhighlight %}
 
-![center](/../images/2015-10-16-r-programmering/unnamed-chunk-3-1.png) 
+![center](/../images/2015-10-16-r-programmering/unnamed-chunk-3-1.png)
 
 Hvad er der "galt" med denne graf? Et godt tip er at se nærmere på akserne. Hvordan blev argumenter x og cosx til funktionen plot lavet om til labels på akserne. I hovedparten af programmeringsprog kan man inde i funktionen plot kun tilgå selve værdien af argumenterne x og cosx. Men i R kan man også tilgå den kode som bruge til at udregne værdien af variblene x og cosx. Det er dette 'trick' som kaldes NSE.
 
 For mere information om NSE kan man enten læse om brugen af NSE i [dplyr](https://cran.r-project.org/web/packages/dplyr/vignettes/nse.html) eller mere generelt om NSE [her](http://adv-r.had.co.nz/Computing-on-the-language.html#capturing-expressions).
 
-Funktioner i dplyr kaldes som default i NSE mode, hvilket gør det vanskeligt at bruge dem i en mere dynamisk ramme, hvor nogle af argumenter fx er givet ved en streng. Heldigvis har næsten alle dplyr funktion en udgave som er prefixet med underscore, fx summarize_. Forskellen er at udgaverne der er prefixet med _ kaldes med Standard Evaluation. 
+Funktioner i dplyr kaldes som default i NSE mode, hvilket gør det vanskeligt at bruge dem i en mere dynamisk ramme, hvor nogle af argumenter fx er givet ved en streng. Heldigvis har næsten alle dplyr funktion en udgave som er prefixet med underscore, fx summarize_. Forskellen er at udgaverne der er prefixet med _ kaldes med Standard Evaluation.
 
 {% highlight r %}
 summarise_(mtcars, "mean(mpg)")
@@ -70,7 +70,7 @@ Det er her at [Yeoman](http://yeoman.io/) kommer ind i billedet. Selvom Yeoman b
 Det engelske ord "scaffolding" har vist endnu ingen dansk oversættelse, når ordet bruges i kontekt med at danne en folder skabelon, som man bygger en applikation udfra. En skabelon skal her forstås som en bestemt måde at organisere filer på i en række foldere. Til dette formål er værktøjet Yeoman suverænt. Jeg har taget udgangspunkt i denne [generator](https://github.com/kirillseva/generator-newpackage) til at skabe R udvidelsespakker og dernæst tilpasset den til mine [ønsker](https://github.com/carsten-j/generator-newpackage).
 
 # Resourcer
-Indtil videre er min absolutte favorit bog om R denne her: [Advanced R Programming](http://www.amzn.com/1466586966) af Hadley Wickham. Der findes også en [online](http://adv-r.had.co.nz/) udgave. 
+Indtil videre er min absolutte favorit bog om R denne her: [Advanced R Programming](http://www.amzn.com/1466586966) af Hadley Wickham. Der findes også en [online](http://adv-r.had.co.nz/) udgave.
 
 For hurtigt at komme i gang med konkrete opgaver kan jeg også anbefale [R Cookbook](http://www.amzn.com/0596809158) af Paul Teetor. Denne findes også [online](http://www.cookbook-r.com/).
 
@@ -82,19 +82,19 @@ Det indbyggede dokumentationssystem i R er nu også ganske godt. Hvis man har br
 {% endhighlight %}
 
 # Integration til andre programmeringssprog
-R beskyldes ofte for at være et programmeringsprog med dårlig performance. Mine egne erfaringer er endnu for begrænsede til at jeg kan udtale mig om dette. Selve R er et fortolket sprog, hvilket i sig selv ofte giver dårligere performance end kompilerede sprog. Men en masse kernefunktionalitet i R er skrevet i Fortran, C og C++. Det virker umiddelbart lige til at kalde fx C++ kode fra R. Læs mere i bogen [Seamless R and C++ Integration with Rcpp](http://www.amzn.com/1461468671) af Dirk Eddelbuettel eller i artiklen [Rcpp: Seamless R and C++ Integration](http://www.jstatsoft.org/index.php/jss/article/view/v040i08/v40i08.pdf) 
+R beskyldes ofte for at være et programmeringsprog med dårlig performance. Mine egne erfaringer er endnu for begrænsede til at jeg kan udtale mig om dette. Selve R er et fortolket sprog, hvilket i sig selv ofte giver dårligere performance end kompilerede sprog. Men en masse kernefunktionalitet i R er skrevet i Fortran, C og C++. Det virker umiddelbart lige til at kalde fx C++ kode fra R. Læs mere i bogen [Seamless R and C++ Integration with Rcpp](http://www.amzn.com/1461468671) af Dirk Eddelbuettel eller i artiklen [Rcpp: Seamless R and C++ Integration](http://www.jstatsoft.org/index.php/jss/article/view/v040i08/v40i08.pdf)
 af Dirk Eddelbuettel og Romain Francois.
 
-Der er også spændende integrationer til funktionsprogrammeringsprogene F# og Haskell. 
+Der er også spændende integrationer til funktionsprogrammeringsprogene F# og Haskell.
 
-F# har en R type provider som gør det muligt at kalde R funktionalitet fra F# på en typestærk måde. Hvis du kører med danske sprog indstillinger var det for mig nødvendigt at kalde 
+F# har en R type provider som gør det muligt at kalde R funktionalitet fra F# på en typestærk måde. Hvis du kører med danske sprog indstillinger var det for mig nødvendigt at kalde
 
-{% highlight fsharp %}
+{% highlight ocaml %}
 R.Sys_setlocale("LC_ALL", "us")   
 {% endhighlight %}
 
 fra ens F# kode. Eller får jeg underlige fejl og mystiske float afrundinger.
 
-Projektet [HaskellR](http://www.tweag.io/blog/programming-r-at-native-speed-using-haskell) ser ser også rigtig spændende ud. Bemærk at man også kan afvikle det hele i [Jupyter](https://jupyter.org/). 
+Projektet [HaskellR](http://www.tweag.io/blog/programming-r-at-native-speed-using-haskell) ser ser også rigtig spændende ud. Bemærk at man også kan afvikle det hele i [Jupyter](https://jupyter.org/).
 
 [1] http://vita.had.co.nz/papers/tidy-data.pdf

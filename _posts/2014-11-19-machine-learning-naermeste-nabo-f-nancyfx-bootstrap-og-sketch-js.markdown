@@ -17,20 +17,20 @@ Det velkendte frimærke er blevet erstattet af en smartphone app! Det giver god 
 
 Udgangspunktet for min udforskning af digital genkendelse af tal er en konkurrence på Kaggle.com. Du kan læse mere om detaljerne i konkurrencen [her](https://www.kaggle.com/c/digit-recognizer). Kaggle er et website, der organiserer konkurrencer i diverse machine learning discipliner. Hvis man gerne vil i gang med at lære om machine learning kan man på Kaggle også finde en række tutorials som hjælper en i gang. Datasættet til tal genkendelse er et klassisk datasæt også kendt som MNIST ("Modified National Institute of Standards and Technology")datasættet. Du kan læse og lære mere om datasættet [her](http://yann.lecun.com/exdb/mnist/index.html).
 
-Selve datasættet består at over 40.000 observation, hvor der for hver observation er givet et tal og et "billede". Billedet er ikke en billede fil men repræsenteret ved de 28 x 28 pixels som udgør billedet. For hver pixel er der angivet en værdi mellem 0 og 255, hvor 0 indikere lys/hvid og 255 er mørk/sort. Billedet er altså givet ved 784 værdier: 
+Selve datasættet består at over 40.000 observation, hvor der for hver observation er givet et tal og et "billede". Billedet er ikke en billede fil men repræsenteret ved de 28 x 28 pixels som udgør billedet. For hver pixel er der angivet en værdi mellem 0 og 255, hvor 0 indikere lys/hvid og 255 er mørk/sort. Billedet er altså givet ved 784 værdier:
 
     000 001 002 003 ... 026 027
     028 029 030 031 ... 054 055
     056 057 058 059 ... 082 083
      |   |   |   |  ...  |   |
     728 729 730 731 ... 754 755
-    756 757 758 759 ... 782 783 
+    756 757 758 759 ... 782 783
 
-og kan fx se således ud for et konkret eksempel 
+og kan fx se således ud for et konkret eksempel
 
 ![center](/images/kaggleDigitExample.png)
 
-Det er målet med dette blog indlæg selv at skrive det software som kan bruges til tal genkendelsen, mens omkringliggende software som fx indlæsning af data fra filer vil ske med open source standard løsninger. Udover selve løsningen til genkendelse af tal vil opgaven også omfatte at bygge en webbaseret front-end, hvor man skal kunne skrive/tegne et tal, og så se om genkendelses algoritmen kan afgøre hvilket tal man har skrevet. Kernen i løsningen vil blive skrevet i F# mens web applikationen vil være baseret på .NET web frameworket NancyFX og C# samt JavaScript og Bootstrap. 
+Det er målet med dette blog indlæg selv at skrive det software som kan bruges til tal genkendelsen, mens omkringliggende software som fx indlæsning af data fra filer vil ske med open source standard løsninger. Udover selve løsningen til genkendelse af tal vil opgaven også omfatte at bygge en webbaseret front-end, hvor man skal kunne skrive/tegne et tal, og så se om genkendelses algoritmen kan afgøre hvilket tal man har skrevet. Kernen i løsningen vil blive skrevet i F# mens web applikationen vil være baseret på .NET web frameworket NancyFX og C# samt JavaScript og Bootstrap.
 
 Wikipedia har følgende teksktuelle beskrivelse af algoritmen:
 
@@ -46,7 +46,7 @@ for alle observation (l, x) ∈ X
     beregn afstanden dist mellem y og x: dist(x, y)
 Sorter de beregnede afstande |X| i stigende orden
 Vælg de første k elementer
-Foretag en gruppering af de labels som er blandt de første k elementer 
+Foretag en gruppering af de labels som er blandt de første k elementer
 y sættes så til at have værdien for den gruppering som optræder hyppigst
 {% endhighlight %}
 
@@ -71,12 +71,12 @@ Der er flere muligheder for at optimere på performance så man undgår lineære
 ## F# backend
 Datafilerne fra Kaggle er CSV filer. Der er ingen grund til at opfinde den dybe tallerken og skrive endnu en CSV læser, når der allerede findes en i FSharp.Data [projektet](https://fsharp.github.io/FSharp.Data/library/CsvProvider.html). Hvis man ser bort fra kode til at indlæse data og den konkrete implementering af afstandsfunktioner til kan 1 nærmeste nabo algoritmen udtrykkes med en enkelt kodelinie i F#
 
-{% highlight fsharp %}
-let getClosestObservation (observation : Observation) (xd : seq<Digit>) (dist : DistanceObservation) = 
+{% highlight ocaml %}
+let getClosestObservation (observation : Observation) (xd : seq<Digit>) (dist : DistanceObservation) =
     (PSeq.minBy (fun a -> dist observation a) xd).Label
 {% endhighlight %}
 
-Input er en observation, træningsdata (hvor vi kender både data og den værdi som data repræsenterer) samt en afstandsfunktion. I følge algoritmen beskrevet ovenfor vælger vi nu simpelthen det punkt i træningsdata som ligger tættest på observationen. Bemærk at vi bruger [`PSeq`](https://github.com/fsprojects/FSharp.Collections.ParallelSeq) fremfor bare `Seq`. De enkelte afstandsberegninger er uafhængige af hinanden og derfor kan man med fordel beregne dem parallelt. 
+Input er en observation, træningsdata (hvor vi kender både data og den værdi som data repræsenterer) samt en afstandsfunktion. I følge algoritmen beskrevet ovenfor vælger vi nu simpelthen det punkt i træningsdata som ligger tættest på observationen. Bemærk at vi bruger [`PSeq`](https://github.com/fsprojects/FSharp.Collections.ParallelSeq) fremfor bare `Seq`. De enkelte afstandsberegninger er uafhængige af hinanden og derfor kan man med fordel beregne dem parallelt.
 
 ## Webapplikation
 
@@ -89,7 +89,7 @@ Som input kontrol til webapplikationer har jeg brugt [Sketch.js](http://intridea
 ## Hvad mangler eller kunne være bedre
 
 * I web applikationen er canvas'et ikke en responsive kontrol canvas, underlig resize problem
-* Web applikationen bruger ikke MNIST datasættet til klassificering men derimod et mindre datasæt 
+* Web applikationen bruger ikke MNIST datasættet til klassificering men derimod et mindre datasæt
 som jeg selv har konstrueret. Dette er primært for at undgå at skulle tage stilling til spørgsmål som:
 skalering af orginale billede, konvertering til gråtonet billede, performance (kNN er lineær i køretid)
 * Manglende test. Formålet med opgaven er at udforske et nyt område og ikke på at skrive produktionsklar kode.

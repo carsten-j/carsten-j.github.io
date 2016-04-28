@@ -7,39 +7,39 @@ I recently watched a talk by Philip Wadler recorded at the Strangeloop 2015 conf
 
 Around 24:30 minutes into the talk Wadler mentions dependent types which was a new concept for me, and to be honest I am not sure I quite got his point.
 
-A few days after watching the talk, I received an email from Manning Publications with a review request of a book with the title [Type-Driven Development with Idris](https://www.manning.com/books/type-driven-development-with-idris). It turns out that [Idris](http://www.idris-lang.org/) is a programming language with [Dependent Types](https://en.wikipedia.org/wiki/Dependent_type). What a perfect opportunity to learn more about Dependent Types. 
+A few days after watching the talk, I received an email from Manning Publications with a review request of a book with the title [Type-Driven Development with Idris](https://www.manning.com/books/type-driven-development-with-idris). It turns out that [Idris](http://www.idris-lang.org/) is a programming language with [Dependent Types](https://en.wikipedia.org/wiki/Dependent_type). What a perfect opportunity to learn more about Dependent Types.
 
 Much of the material about dependent types found on-line deals just as much with type theory and proof assistants as with dependent types. I am a non-type theorist software developer who cares about craftsmanship and practical approaches to software development so why should I care about dependent types?
 
 The the book got me thinking about types and programming languages in general and development of types (systems) in particular. I have been developing software for 20 years and remember the first versions of the .NET platform and the `List` class that stored data of the type `System.Object`. It was easy to add new items to lists but extracting data required a lot of casting, leading to poor performance. It did not add to readability that `List`s could contain items of different types. It was a big step forward when generics were introduced in the .NET framework version 2.0. Great type improvement and the expressiveness of generics was just cool. Another example comes from the functional programming language F#. For data types that includes some kind of unit, e.g. miles per hour, US dollars, weight etc. it can be quite cumbersome to ensure that you only do valid operations on the data type. For instance you want to avoid adding two amounts where one is quoted in US dollar and the other in Euro. F# has a language feature called unit of measure to help with such scenarios.
 
-{% highlight fsharp %}
+{% highlight ocaml %}
 [<Measure>] type USD
 [<Measure>] type EUR
 
 let tenBucks = 10.0<USD>    
 
-// Here type inference is used to figure out the type of twentyBucks 
+// Here type inference is used to figure out the type of twentyBucks
 let twentyBucks = tenBucks * 2.0
 
 // type inference for input and output
 let addFiftyCents cents = cents + 0.5<USD>    
 
-// Ups. Type error. One cannot add EUR and USD 
+// Ups. Type error. One cannot add EUR and USD
 // with explicit defining the operation
-// The error message is: 
-// "The unit of measure 'USD' does not match the unit 
+// The error message is:
+// "The unit of measure 'USD' does not match the unit
 // of measure 'EUR'"
-let totalAmount = 1.0<EUR> + 1.0<USD> 
+let totalAmount = 1.0<EUR> + 1.0<USD>
 {% endhighlight %}
 
-Loosely said I will argue that 
+Loosely said I will argue that
 
 >  better type systems -> more expressiveness programming languages  -> better programs
 
 and I will examine dependent types in this light.
 
-# Dependent types 
+# Dependent types
 According to Type-driven Development with Idris a dependent type is
 
 > A type which is computed from (or parameterised by) some other value is called a dependent type.
@@ -48,11 +48,11 @@ Does this make generics like `List<string>` a dependent type? No - a dependent t
 
 Most functional programming languages have a zip function that takes two input lists and 'zips' them together into a single list of pairs. So if we have lists `[1; 2; 3]` and `[4; 5; 6]` zipping the together yields `[(1, 4); (2, 5); (3, 6)]`. Consider the case where the input lists don't have the same length, e.g. `[1; 2; 3]` and `[4; 5]`. What will/should zip do?
 
-In F# one will get an runtime error when executing 
-{% highlight fsharp %}
+In F# one will get an runtime error when executing
+{% highlight ocaml %}
 List.zip  [1; 2; 3] [4 ; 5]
 {% endhighlight %}
-In Haskell the behavior is different. Here will 
+In Haskell the behavior is different. Here will
 {% highlight haskell %}
 zip [1, 2, 3] [4, 5]
 {% endhighlight %}
@@ -63,12 +63,12 @@ zip : Vect n a -> Vect n b -> Vect n (a, b)
 {% endhighlight %}
 This is valid Idris syntax but to be more explicit one could also write
 {% highlight idris %}
-zip : {a : Type} -> {b : Type} -> {n : Nat} -> 
+zip : {a : Type} -> {b : Type} -> {n : Nat} ->
       Vect n a -> Vect n b -> Vect n (a, b)
 {% endhighlight %}
-Here we have a vector containing elements of type `a` of length `n` and a another vector with elements of type `b` and of the SAME length `n`. The type `Nat` represent positive natural numbers. The resulting vector will also have length `n`. The `Vect` type is here a dependent type since it depends on the value of `n`. With such a type system we can at the time of the type checking catch errors like trying to zip together lists of different length. 
+Here we have a vector containing elements of type `a` of length `n` and a another vector with elements of type `b` and of the SAME length `n`. The type `Nat` represent positive natural numbers. The resulting vector will also have length `n`. The `Vect` type is here a dependent type since it depends on the value of `n`. With such a type system we can at the time of the type checking catch errors like trying to zip together lists of different length.
 
-In this example the type `Vect` is a dependent type since it depend upon `n`. By now you should have a first understanding of dependent types. 
+In this example the type `Vect` is a dependent type since it depend upon `n`. By now you should have a first understanding of dependent types.
 
 The title of the books was however _Type-Driven development with Idris_, no talk of dependent types here. So what is type-driven development?
 
@@ -89,7 +89,7 @@ I really like the quote: [Make illegal states unrepresentable](https://vimeo.com
 
 The book Type-driven Development with Idris contains numerous example on how to design functionality around types in such a way that illegal states are unrepresentable. Just like the `zip` example above.
 
-Please note that type-driven development is __NOT__ limited to languages with support for dependent types. Dependent types just ensure that some check can be done by the type checker. But the concept of Type-driven development can easily be applied to other programming languages as well. 
+Please note that type-driven development is __NOT__ limited to languages with support for dependent types. Dependent types just ensure that some check can be done by the type checker. But the concept of Type-driven development can easily be applied to other programming languages as well.
 
 Several people in the F# community seem to promote it. Tomas Petricek calls it [Type-First Development](http://tomasp.net/blog/type-first-development.aspx/) or TFD to avoid the acronym clashes with TDD. Another example comes from Scott Wlaschin who has an entire series about [designing with types](http://fsharpforfunandprofit.com/posts/designing-with-types-intro/) in F#.
 
@@ -101,7 +101,7 @@ It just another argument for adding the extra initial step 0. to TDD.
 
 # Pros and cons of dependent types
 
-When you read Type-driven Development with Idris there is no mentioning of the downside of dependent types. But there must be downsides. Otherwise dependent types would be present in more widely used programming languages. I asked the Idris community about [drawbacks](https://groups.google.com/forum/#!topic/idris-lang/7GmLjNKRuQ4) and here are some of the [comments](https://groups.google.com/forum/#!topic/idris-lang/qgio0b1Aums) made: 
+When you read Type-driven Development with Idris there is no mentioning of the downside of dependent types. But there must be downsides. Otherwise dependent types would be present in more widely used programming languages. I asked the Idris community about [drawbacks](https://groups.google.com/forum/#!topic/idris-lang/7GmLjNKRuQ4) and here are some of the [comments](https://groups.google.com/forum/#!topic/idris-lang/qgio0b1Aums) made:
 
   * Type inference algorithm are usually not as strong in dependent typed languages
   * Error messages can be pretty hard to decipher[^2]
@@ -117,7 +117,7 @@ The book Seven More Languages in Seven Days[4] has a chapter about Idris that st
   * There’s a downside to that extra information in dependent types: you have to take the time to express them. The learning curve is steep, even more so than for Haskell, and the code can be quite dense. Idris is not for everyone.
 
 The Idris community disagrees weather the following is an advantage or disadvantage:
-  * All functions must be type annotated. 
+  * All functions must be type annotated.
 
 This is unlike Haskell where it is optional to type annotate functions. Personally I believe that explicit is better than implicit argument applied here. Type annotations adds readability and makes the intended use more obvious.
 
