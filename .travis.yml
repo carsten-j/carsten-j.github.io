@@ -1,9 +1,8 @@
 language: ruby
 rvm:
-  - 2.2
-install: gem install jekyll html-proofer
+  - 2.2.2
+install: bundle install
 script:
-  - bundle install
   - bundle exec jekyll build
   - bundle exec htmlproof ./_site --only-4xx --check-favicon --check-html
 env:
