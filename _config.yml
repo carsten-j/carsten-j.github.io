@@ -13,4 +13,4 @@ permalink: /:title
 timezone: Europe/Copenhagen
 
 # Build settings
-markdown:     kramdown
+markdown: kramdown
