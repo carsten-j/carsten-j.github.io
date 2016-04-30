@@ -22,11 +22,11 @@ Say you want to join two tables A and B based on some field x and that the numbe
 
 {% highlight scala %}
 joinResult = {};
-for all records a in A 
+for all records a in A
 {
-  for all records b in B 
+  for all records b in B
   {
-    if (joinConditionSatisfied(a, b)) 
+    if (joinConditionSatisfied(a, b))
     { // join condition can be like a.x == b.x
       add (a;b) to the joinResult;
     }
@@ -34,7 +34,7 @@ for all records a in A
 }
 {% endhighlight %}
 
-A variant of this approach is to sort the tables A and B by x before joining them. Such a method is described [here](http://blog.liveramp.com/2013/04/03/bloomjoin-bloomfilter-cogroup/).
+A variant of this approach is to sort the tables A and B by x before joining them. Such a method is described [here](http://liveramp.com/engineering/bloomjoin-bloomfilter-cogroup/).
 
 Both approaches can be improved considerable by incorporating the use of a Bloom Filter. The idea is simple to build a Bloom Filter based on the smaller set B and then use the filter to rule out all records of A not present B.
 

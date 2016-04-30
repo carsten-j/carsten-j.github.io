@@ -5,7 +5,7 @@ date: 2015-09-26 09:19:58 +0200
 categories: Software Architecture OpenSpace kravspecifikation singularitet
 ---
 
-Jeg har lige deltaget i mit første Open Space møde. Konceptet er interessant og simpelt. 
+Jeg har lige deltaget i mit første Open Space møde. Konceptet er interessant og simpelt.
 
 <!-- more -->
 
@@ -19,7 +19,7 @@ Herefter vælges der emner efter først-til-mølle princippet, og så går man i
 
 Især kan jeg godt lide reglen om, at man kan forlade en diskussion til fordel for en anden. Det kan jo være svært på forhånd at vide i hvilken retning et givet emne udvikler sig i når nu regel 5b siger "Det, der bliver diskuteret, er det rigtig at diskutere."
 
-Jeg deltog i gode diskussioner om blandt andet emner som som sikkerhed, funktionel arkitektur (og funktionelle sprog), "hypermedia API'er stinker" samt ESB (to do or not to do). Udover tre Open Space sessioner indeholdt dagen også to foredrag med eksterne gæster. 
+Jeg deltog i gode diskussioner om blandt andet emner som som sikkerhed, funktionel arkitektur (og funktionelle sprog), "hypermedia API'er stinker" samt ESB (to do or not to do). Udover tre Open Space sessioner indeholdt dagen også to foredrag med eksterne gæster.
 
 Første taler var [Søren Lauesen](http://www.itu.dk/~slauesen/), som er professor ved IT-Universitetet i København. Søren fortalte om hvorfor store IT-projekter ofte går galt med udgangspunkt i en undersøgelse af det [Digitale Tinglysning-projektet](http://www.itu.dk/~slauesen/Papers/LandRegistration.pdf) som eksempel. En af Søren slides var denne liste
 
@@ -27,9 +27,9 @@ Første taler var [Søren Lauesen](http://www.itu.dk/~slauesen/), som er profess
 
 hvor min favorit er nummer seks.
 
-Søren har skrevet et lille hæfte med en [vejledning til kravspecifikation](http://www.itu.dk/~slauesen/Papers/VejledningSL-07v3%20Online.pdf) som jeg helt sikkert vil kigge mere på.
+Søren har skrevet et lille hæfte med en [vejledning til kravspecifikation](http://www.itu.dk/~slauesen/Papers/VejledningSL-07v4-online.pdf) som jeg helt sikkert vil kigge mere på.
 
-Årets keynote blev givet af [Klaus Æ. Mogensen](http://iff.dk/foredrag/foredragsholdere/klaus-%C3%A6-mogensen/) - senior futurist ved [Institut for Fremtidsforskning](http://iff.dk/). Klaus fortalte os om singularitets begrebet og mere generelt hvad det indebærer at leve i et konstant accelererende samfund. 
+Årets keynote blev givet af [Klaus Æ. Mogensen](http://iff.dk/foredrag/foredragsholdere/klaus-%C3%A6-mogensen/) - senior futurist ved [Institut for Fremtidsforskning](http://iff.dk/). Klaus fortalte os om singularitets begrebet og mere generelt hvad det indebærer at leve i et konstant accelererende samfund.
 
 Det teknologiske singularitet begreb er især blevet kendt gennem bogen [The Singularity is Near](http://www.amazon.com/The-Singularity-Is-Near-Transcend/dp/0143037889) skrevet af Ray Kurzweil.
 
