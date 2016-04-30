@@ -9,7 +9,7 @@ google_analytics: UA-46905545-1
 encoding:     "utf-8"
 
 # Other
-permalink: /:title.html
+permalink: /:year/:month/:day/:title.html
 timezone: Europe/Copenhagen
 
 # Build settings
