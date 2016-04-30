@@ -18,14 +18,14 @@ Det er supernemt at komme i gang med MongoDB. Hvis du bruger Mac kan du installe
 
 Hvis man meget kort skal sige, hvad MongoDB er, så kunne det være et bud at sige, at MongoDB er
 
-* en ikke-relationel datastore, hvor 
+* en ikke-relationel datastore, hvor
 * data gemmes som JSON dokumenter, og hvor
 * det er er muligt at have hierarkiske JSON dokumenter samt endeligt at
 * to dokumenterne i samme samling ikke nødvendigvis har samme skema
 
-Hele NoSQL bevægelsen kan sagtens ses som en reaktion på at lave distribuerede databaseløsninger som modsat traditionelle løsninger er svære at få til at skaleret ud på en række servere. Historisk har det været sådan, at hvis en SQL Server skulle performe bedre, så købte man hurtigere en hurtigere server til den. Men i dag er vi nået til et punkt, hvor man kan have så store mængder data at der bliver svært at have på en server samtidig med at hardware udviklingen ikke gør den enkelte server hurtigere og hurtigere. Prisen på "almindelig" server er til gengæld faldet, så hvis man kan skalere ud på mange servere som et alternativt, så kan man få meget bedre performance og muligheden for at skalere i takt med udviklingen af ens forretning. Fokus for NoSQL har derfor blandt andet været udviklingen af distribuerede løsninger. 
+Hele NoSQL bevægelsen kan sagtens ses som en reaktion på at lave distribuerede databaseløsninger som modsat traditionelle løsninger er svære at få til at skaleret ud på en række servere. Historisk har det været sådan, at hvis en SQL Server skulle performe bedre, så købte man hurtigere en hurtigere server til den. Men i dag er vi nået til et punkt, hvor man kan have så store mængder data at der bliver svært at have på en server samtidig med at hardware udviklingen ikke gør den enkelte server hurtigere og hurtigere. Prisen på "almindelig" server er til gengæld faldet, så hvis man kan skalere ud på mange servere som et alternativt, så kan man få meget bedre performance og muligheden for at skalere i takt med udviklingen af ens forretning. Fokus for NoSQL har derfor blandt andet været udviklingen af distribuerede løsninger.
 
-En af årsagerne til den succes som MongoDB har fået skal måske findes i at de har været gode til at lave en database som både skalerer ud og samtidig er forholdsvis rig på funktionalitet. 
+En af årsagerne til den succes som MongoDB har fået skal måske findes i at de har været gode til at lave en database som både skalerer ud og samtidig er forholdsvis rig på funktionalitet.
 
 ![center](/images/mongoDB1.jpg)
 
@@ -43,20 +43,22 @@ Hvis du har en Unix baggrund vil du helt sikkert genkende Unix pipeline filosofi
 
 Det virker meget intuitivt og let at bruge. [Her](http://redotheweb.com/2012/10/12/mongodb-new-aggregation-framework-and-sql-side-by-side.html) er en samling af de mest almindelige SQL aggregeringer og deres ækvivalente i MongoDB.
 
-Ovenfor omtalte jeg mulighederne for at skalere ud over flere servere som et af kendetegnene ved NoSQL. Man kan næsten ikke undgå at nævne CAP sætningen i den forbindelse. I 2000 fremsatte Eric Brewer CAP formodning og i 2002 blev formodningen bevidst af Seth Gilbert og Nancy Lunch. Kort fortalt omhandler sætningen tre betingelser: 
+Ovenfor omtalte jeg mulighederne for at skalere ud over flere servere som et af kendetegnene ved NoSQL. Man kan næsten ikke undgå at nævne CAP sætningen i den forbindelse. I 2000 fremsatte Eric Brewer CAP formodning og i 2002 blev formodningen bevidst af Seth Gilbert og Nancy Lunch. Kort fortalt omhandler sætningen tre betingelser:
 
 * konsistens (**C**onsistency)
-* tilgængelighed (**A**vailability) og 
+* tilgængelighed (**A**vailability) og
 * tolerance ved opdeling (**P**artition tolerance).
 
-og udsiger, at man i et distribueret system kun kan garantere at to ud af disse tre betingelser på et vilkårligt tidspunkt er overholdt. MongoDB er per design CP. Men det er muligt at konfigurere MongoDB til at være AP hvis man i stedet for konsistens kan leve med eventuel konsistens. Det indebærer at man tillader læseadgang til sekundære noder. Mange vil nok tænke at det lyder farligt ikke at have et konsistent system men tænkt fx på Facebook. Er det meget vigtigt at alle brugere samtidigt kan se din seneste statusopdatering eller er det muligt at leve med at de på et lidt senere tidspunkt ser den samme statusopdatering. Eventuelt konsistens er klart svagere end stærk konsistens men man kan sagtens forestille sig scenarier, hvor det er muligt at leve med denne form for konsistens af data. 
+og udsiger, at man i et distribueret system kun kan garantere at to ud af disse tre betingelser på et vilkårligt tidspunkt er overholdt. MongoDB er per design CP. Men det er muligt at konfigurere MongoDB til at være AP hvis man i stedet for konsistens kan leve med eventuel konsistens. Det indebærer at man tillader læseadgang til sekundære noder. Mange vil nok tænke at det lyder farligt ikke at have et konsistent system men tænkt fx på Facebook. Er det meget vigtigt at alle brugere samtidigt kan se din seneste statusopdatering eller er det muligt at leve med at de på et lidt senere tidspunkt ser den samme statusopdatering. Eventuelt konsistens er klart svagere end stærk konsistens men man kan sagtens forestille sig scenarier, hvor det er muligt at leve med denne form for konsistens af data.
 
 ![center](/images/mongoDB2.jpg)
 
-På MongoDB bloggen findes en [serie](http://blog.mongodb.org/post/523516007/on-distributed-consistency-part-6-consistency-chart) af 6 artikler om distribuerede konsistens.
+På MongoDB bloggen findes en [serie](http://blog.mongodb.org/) af 6 artikler om distribuerede konsistens.
+
+__Opdatering 30. april 2016. Ovenstående serie af blog posts findes ikke længere på MongoDB bloggen, og jeg har derfor fjernet linket.__
 
 #### Konklusion
-Hvis du ikke kender MongoDB på forhånd er kurserne udbudt af MongoDB University et fint sted at starte. På 7-8 uger fås en overordnet introduktion til de vigtigste features og via de tilhørende øvelser får du prøvet tingene af i praksis. 
+Hvis du ikke kender MongoDB på forhånd er kurserne udbudt af MongoDB University et fint sted at starte. På 7-8 uger fås en overordnet introduktion til de vigtigste features og via de tilhørende øvelser får du prøvet tingene af i praksis.
 
 Hvis du vil vide mere findes der en række udemærkede bøger om MongoDB
 
