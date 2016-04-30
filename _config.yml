@@ -14,3 +14,8 @@ timezone: Europe/Copenhagen
 
 # Build settings
 markdown: kramdown
+
+# Be sure to exclude vendor from your _config.yml
+# Travis bundles all gems in the vendor directory on its build servers,
+# which Jekyll will mistakenly read and explode on.
+exclude: [vendor]
