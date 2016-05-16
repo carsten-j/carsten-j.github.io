@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "adsd course Coupling is good"
-categories: 
+categories:
 ---
 tight - loose
 bad - good

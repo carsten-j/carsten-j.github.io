@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Udforskende dataanalyse
-date: 2016-03-10 08:13:51
 ---
 
 
