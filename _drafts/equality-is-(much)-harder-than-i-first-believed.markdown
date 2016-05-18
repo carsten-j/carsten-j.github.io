@@ -13,7 +13,7 @@ Dependent types can be used for (at least) two purposes:
 The first part of Type-Driven Development with Idris focuses on the first aspect and I discussed this is my first review of the book. Now additional material has been released for reviewing and here I want to focus on chapter 8 dealing with Equality.
 
 ### Side note
-Idris is not the only programming language with support for dependent types. I recently learned about [F\*](https://www.fstar-lang.org/) (pronounced F star) by Microsoft Research. The type system of F* supports dependent types. In my previous [post]({% post_url 2015-11-09-type-driven-development %}) I gave an example of a Money type dependent on time. Let me revise that example to use F*. This will serve both as reminder about dependent types and 
+Idris is not the only programming language with support for dependent types. I recently learned about [F\*](https://www.fstar-lang.org/) (pronounced F star) by Microsoft Research. The type system of F* supports dependent types. In my previous [post]({% post_url 2015-11-09-type-driven-development %}) I gave an example of a Money type dependent on time. Let me revise that example to use F*. This will serve both as reminder about dependent types and
 
 F\* does not have a native `Date` data type. For the sake of the example we will just model time as a `int` representing a timeline. One way of defining a `Money` type indexed over time (here represented by a `int`) could be
 
@@ -49,9 +49,12 @@ let m3 = Amount 7
 
 then `let res1 = add m1 m2` will type check but `let res2 = add m1 m3` will not.
 
-# equality
+# Equality
 C# inherit equatable override method
 
 distinct between aggregates and value objects
 
 but in the end does it matter if you made an programming error
+
+Effective C# by Bill Wagner
+Item 6: Understand the Relationships Among the Many Different Concepts of Equality
