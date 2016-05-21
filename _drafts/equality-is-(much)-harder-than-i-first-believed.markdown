@@ -50,11 +50,9 @@ let m3 = Amount 7
 then `let res1 = add m1 m2` will type check but `let res2 = add m1 m3` will not.
 
 # Equality
-C# inherit equatable override method
+I consider my native programming language to be C#. I have been programming C# since 2003 but the topic of equality in C# still pops up from time to time. You have to distinguish between reference and value types when comparing things. And when you want to implement `IEquatable<'T>` or `IComparable<'T>` there is quite a few thinks to remember. If you are into DDD the equality means something different for aggregates and value objects. Eventually you might get it right but there are lots of places where you can get it wrong. Even if you did read "Item 6: Understand the Relationships Among the Many Different Concepts of Equality" in the excellent book Effective C# by Bill Wagner.
 
-distinct between aggregates and value objects
+F# structural equality approach seems much easier to work with. e.g comparing maps, set, and tuples
+but still rather long topic insert link
 
 but in the end does it matter if you made an programming error
-
-Effective C# by Bill Wagner
-Item 6: Understand the Relationships Among the Many Different Concepts of Equality
