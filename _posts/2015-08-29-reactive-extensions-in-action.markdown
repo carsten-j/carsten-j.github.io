@@ -11,7 +11,7 @@ This is a short review of a forthcoming book Reactive Extensions in Action by Ta
 
 The book is a Manning Early Access Program (MEAP) publication. Hence the statements, comments and criticism made is this early review might not be valid for the final version of the book. This review is based on chapter 1 to 4.
 
-<img src="https://images.manning.com/255/340/resize/book/e/45356db-95ee-45ad-8dbe-b40953d0b8f2/Dresher-RE-MEAP-HI.png" alt="book cover">
+<img src="https://images.manning.com/255/340/resize/book/5/b79ac99-81ba-493f-9005-9f5dc4a08373/Dresher-RE-MEAP-HI.png" alt="book cover">
 
 I will however try to do my best and either update this review for later versions of the book or write a new blog post after the final publication of the book.
 
@@ -38,7 +38,7 @@ I would say that Reactive Extensions in Action is a book for developers just sta
 [1] Real-world Functional Programming in F# and C#. Manning Publication. T. Petricek and J. Skeet.
 
 # Disclosure
-Manning Publication have a [manuscript review program](http://www.manning.com/manuscript-reviews) and I want to be transparent about my reviews so you should know that will receive a complimentary copy of the eBook as well as the printed book once it is final. I did not pay for the early version of the book. 
+Manning Publication have a [manuscript review program](http://www.manning.com/manuscript-reviews) and I want to be transparent about my reviews so you should know that will receive a complimentary copy of the eBook as well as the printed book once it is final. I did not pay for the early version of the book.
 
 # Book details
 Title: Reactive Extensions in Action with examples in C#
