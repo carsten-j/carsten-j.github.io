@@ -1,0 +1,1 @@
+docker run --rm --label=jekyll --volume /Users/carsten/Projects/carsten-j.github.io:/srv/jekyll -it -p 4000:4000 jekyll/jekyll

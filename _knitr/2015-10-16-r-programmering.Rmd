@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "R programmering"
-date: 2015-10-16 17:15:51 +0200
+date: 2015-10-16 17:15:51
+output:
+  md_document:
+    variant: markdown_github
 ---
 ```{r eval = TRUE, echo = FALSE, include = FALSE }
 library(dplyr)

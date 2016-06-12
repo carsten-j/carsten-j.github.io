@@ -22,6 +22,19 @@ library(magrittr)
 file <- "/Users/carsten/Projects/blog/_knitr/liv1.csv"
 df <- read.csv(file, sep = ";") %>% mutate(karakter=as.factor(resultat)) 
 {% endhighlight %}
+
+
+
+{% highlight text %}
+## Warning in file(file, "rt"): cannot open file '/Users/carsten/Projects/
+## blog/_knitr/liv1.csv': No such file or directory
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in file(file, "rt"): cannot open the connection
+{% endhighlight %}
 Karakter gennemsnittet er:
 
 {% highlight r %}
@@ -31,8 +44,7 @@ summary(df$resultat)
 
 
 {% highlight text %}
-##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
-##  -3.000   0.000   4.000   4.519   7.000  12.000
+## Error in df$resultat: object of type 'closure' is not subsettable
 {% endhighlight %}
 Følgende eksempel viser nok ikke fuldt ud potentialet for den nye %>% operator, men det giver stadig et godt indtryk af den læsevenlighed man kan opnå. Vi ser, at 7 er den mest almindelige karakter og at næsten 27% er dumpet eksamen. Dog indeholder datasættet ikke information til at afgøre om karakteren -3 er givet for en dårlig besvarelse eller for udeblivelse fra eksamen.
 
@@ -44,6 +56,12 @@ oversigt <-
   mutate(andel=antal/sum(antal)*100) %>%
   arrange(desc(karakter))
 {% endhighlight %}
+
+
+
+{% highlight text %}
+## Error in UseMethod("group_by_"): no applicable method for 'group_by_' applied to an object of class "function"
+{% endhighlight %}
 Karakterne vist i et histogram
 
 {% highlight r %}
@@ -54,10 +72,8 @@ df %>% ggplot(aes(x=karakter)) +
 
 
 {% highlight text %}
-## Error: StatBin requires a continuous x variable the x variable is discrete. Perhaps you want stat="count"?
+## Error: ggplot2 doesn't know how to deal with data of class function
 {% endhighlight %}
-
-![center](/../images/2014-06-26-liv1-resultat-og-copenhagen-user-meetup/unnamed-chunk-4-1.png)
 
 Fordelingen af de beståede karakterer
 
@@ -67,4 +83,8 @@ df %>%
   ggplot(aes(x=resultat)) + geom_density()
 {% endhighlight %}
 
-![center](/../images/2014-06-26-liv1-resultat-og-copenhagen-user-meetup/unnamed-chunk-5-1.png)
+
+
+{% highlight text %}
+## Error in UseMethod("filter_"): no applicable method for 'filter_' applied to an object of class "function"
+{% endhighlight %}
