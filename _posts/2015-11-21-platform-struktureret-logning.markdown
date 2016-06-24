@@ -13,7 +13,7 @@ Serilog er et .NET bibliotek til struktureret logning. Hvis man for alvor skal s
 var position = new { Latitude = 25, Longitude = 134 };
 var elapsedMs = 34;
 
-log.Information("Processed {@Position} in {Elapsed:000} ms.", 
+log.Information("Processed {@Position} in {Elapsed:000} ms.",
                 position, elapsedMs);
 {% endhighlight %}
 som resulterer i dette JSON format:
@@ -29,7 +29,7 @@ Hvilke krav skal man stille til en log platform? Der er sikkert mange, og flere 
 1. finde standard løsninger
 2. have support for struktureret logging
 3. samle logs fra mange forskellige systemer og applikation
-4. kunne korrelerer logs fra forskellige kilder 
+4. kunne korrelerer logs fra forskellige kilder
 5. håndtere ustabilitet i netværket uden at miste information
 6. lave visualisering og/eller dashboards
 7. analyse af begivenheder i noget der er tæt på realtid
@@ -39,7 +39,7 @@ På internettet er der rigtig meget snak om [ELK stakken](https://www.elastic.co
 ### Elasticsearch
 [Elasticsearch](https://www.elastic.co/products/elasticsearch) er en server platform bygget på [Apache Lucene](https://lucene.apache.org/core/). Platformen tilbyder fuld-tekst søgninger og real-time analytics via et HTTP web interface. Data gemmes i et skemafrit JSON format. Jeg har tidligere skrevet et kort anmeldelse af bogen [Elasticsearch - The Definitive Guide]({% post_url 2014-06-28-elasticsearch-the-definitive-guide %}). Elasticsearch dækker krav 1, 4, og 7.
 
-### Logstash 
+### Logstash
 [Logstash](https://www.elastic.co/products/logstash) er en dataflow engine som kan processere logfiler og event data fra et utal af systemer. Arkitekturen i Logstash er bygget over 'pipes and filter' mønsteret, se fx [2].
 
 ![center](/images/logstash.png)
@@ -53,17 +53,17 @@ Se fx denne [artikel](http://blog.webkid.io/visualize-datasets-with-elk/) for et
 
 Vi mangler at opfylde krav 2 og 5. Det er her, at Serilog [^1] kommer ind i billedet med support for struktureret logning. Serilog kan faktisk sende data direkte til Elasticsearch, men vælger man den løsning mister den support som Logstash giver for en række andre datakilder, som ikke kan kommunikere direkte med Elasticsearch.
 
-Hvorfor har vi egentligt det 5. krav? Tidligere i år deltog jeg i kurset [Advanced Distributed Systems Design]({% post_url 2015-09-18-lessons-learned-from-advanced-distributed-systems-design-course %}), hvor vi brugte det meste af en formiddag på at gennemgå de [8 fejlslutninger (fallacies)](https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf) i distribuerede systemer. En af dem er 
+Hvorfor har vi egentligt det 5. krav? Tidligere i år deltog jeg i kurset [Advanced Distributed Systems Design]({% post_url 2015-09-18-lessons-learned-from-advanced-distributed-systems-design-course %}), hvor vi brugte det meste af en formiddag på at gennemgå de [8 fejlslutninger (fallacies)](https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf) i distribuerede systemer. En af dem er
 
->  The network is reliable. 
+>  The network is reliable.
 
-Hvis vi har et krav om at data ikke må gå tabt bliver vi nød til aktivt at understøtte det krav. Ellers vil vi før eller siden miste data pga ustabilitet i netværket. 
+Hvis vi har et krav om at data ikke må gå tabt bliver vi nød til aktivt at understøtte det krav. Ellers vil vi før eller siden miste data pga ustabilitet i netværket.
 
 Den udvidede dataflow for log informationer ender derfor med at være
 
 ![center](/images/dataflow.png)
 
-Hvor vi udover ELK stakken og Serilog har tilføjet et message queue til persistering af logfiler. 
+Hvor vi udover ELK stakken og Serilog har tilføjet et message queue til persistering af logfiler.
 
 Som message queue tænker jeg på at bruge [RabbitMQ](https://www.rabbitmq.com/) som dels har et input plugin til Logstash og RabbitMQ har fint support på .NET platformen. Her er en fin serie på [10 indlæg](http://dotnetcodr.com/2014/04/28/messaging-with-rabbitmq-and-net-c-part-1-foundations-and-setup/) om brugen af RabbitMQ i C#. Derudover kan RabbitMQ sikre persistens af logbeskeder, og der er understøttelse for publish / subscribe, så man kan sende logs asynkront til RabbitMQ fra ens C# applikation.
 
@@ -75,7 +75,7 @@ Den overordnede arkitektur ender med at være som her
 
 Den eneste komponent i løsningen som vi endnu ikke har talt om er 'shipper' [^2]. Et udtryk som man bruger hvis fx `App 1` af en eller anden grund ikke kan kommunikere direkte med RabbitMQ, og derfor har brug for en alternativ måde at kommunikere med RabbitMQ på.
 
-Det samlede dataflow minder på rigtig mange måder og Extract, Transform, Load (ETL) processen fra data warehouses. 
+Det samlede dataflow minder på rigtig mange måder og Extract, Transform, Load (ETL) processen fra data warehouses.
 
 Da så godt som alle elementer i arkitekturen er standard løsninger vil de formodentligt uden videre kunne indarbejde i et devops scenario med fx [Puppet](https://puppetlabs.com/).
 
@@ -90,6 +90,15 @@ Da så godt som alle elementer i arkitekturen er standard løsninger vil de form
 [4] Martin Kleppmann. [Using logs to build a solid data infrastructure](http://www.confluent.io/blog/using-logs-to-build-a-solid-data-infrastructure-or-why-dual-writes-are-a-bad-idea/).
 
 [5] Jay Krebs. [The Log: What every software engineer should know about real-time data's unifying abstraction](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying).
+
+## Links
+[Load Balancing Logstash With AMQP](http://blog.lusis.org/blog/2012/01/31/load-balancing-logstash-with-amqp/)
+
+[Using logstash, ElasticSearch and log4net for centralized logging in Windows](http://www.ben-morris.com/using-logstash-elasticsearch-and-log4net-for-centralized-logging-in-windows/)
+
+[Dr. Strangelog (or: How I learned to stop worrying and Love the Logs)](http://steffen.sunlyng.net/post/dr-strangelog-or-how-i-learned-to-stop-worrying-and-love-the-logs1)
+
+[ActiveMQ as a Message Broker for Logstash](http://blog.florian-hopf.de/2015/07/activemq-as-message-broker-for-logstash.html)
 
 ## Fodnoter
 
