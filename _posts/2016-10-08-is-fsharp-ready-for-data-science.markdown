@@ -10,7 +10,7 @@ One can find lots of books about machine learning using either Python or R. The 
 * [F# for Machine Learning](https://www.amazon.com/F-Machine-Learning-Sudipta-Mukherjee/dp/1783989343) by Sudipta Mukherjee
 * [Machine Learning Projects for .NET Developers](http://www.amzn.com/1430267674) by Mathias Brandewinder
 
-In addition, there is quite a lot of useful information at the website [FsLab](https://fslab.org/).
+In addition, there is quite a lot of useful information at the websites [FsLab](https://fslab.org/) and [Guide - Machine Learning with F#](http://fsharp.org/guides/machine-learning/). Most of the resources in the latter points to blog post about how to implement various Machine Learning algorithms in F#. My main interest is to use well proven and standard open source implementations.
 
 When it comes to data manipulation F# really excels. The combination of the F# REPL and the [F# Data](http://fsharp.github.io/FSharp.Data/index.html) project works really well together.
 
