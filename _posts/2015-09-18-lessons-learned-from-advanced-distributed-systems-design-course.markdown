@@ -23,7 +23,7 @@ As the title of the course suggest the main topic was distributed systems. In re
 
 > First law of distributed computing: DON'T
 
-Building distributed systems is hard. So don't do it unless you absolute have to do it. If you must go ahead and build a distributed system then do not forget [The Eight Fallacies of Distributed Computing](https://blogs.oracle.com/jag/resource/Fallacies.html).
+Building distributed systems is hard. So don't do it unless you absolute have to do it. If you must go ahead and build a distributed system then do not forget [The Eight Fallacies of Distributed Computing](https://web.archive.org/web/20160304135918/https://blogs.oracle.com/jag/resource/Fallacies.html).
 
 ## Main lessons learned
 
