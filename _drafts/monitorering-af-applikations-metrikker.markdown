@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Monitorering af applikations metrikker
-date: '2017-05-17 15:22:39'
 ---
 
 Jeg arbejder for tiden med opsamling af en række applikations metrikker, som det er nærliggende at gemme i en [tidsserie database (TSDB)](https://en.wikipedia.org/wiki/Time_series_database) som f.eks

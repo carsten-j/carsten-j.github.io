@@ -12,6 +12,8 @@ encoding:     "utf-8"
 permalink: /:year/:month/:day/:title.html
 timezone: Europe/Copenhagen
 
+show_drafts: false
+
 # Build settings
 markdown: kramdown
 

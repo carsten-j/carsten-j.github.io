@@ -11,7 +11,7 @@ This is a short review of a forthcoming book Reactive Extensions in Action by Ta
 
 The book is a Manning Early Access Program (MEAP) publication. Hence the statements, comments and criticism made is this early review might not be valid for the final version of the book. This review is based on chapter 1 to 4.
 
-<img src="https://images.manning.com/255/340/resize/book/1/a39d336-44a9-4094-877e-61ef30f82a2d/Dresher-Rx-MEAP-HI.png" alt="book cover">
+<img src="https://images.manning.com/720/960/resize/book/e/be2ee58-2384-467c-a3b1-5e1b04a62b00/Dresher-Rx-HI.png" alt="book cover" width="300">
 
 I will however try to do my best and either update this review for later versions of the book or write a new blog post after the final publication of the book.
 

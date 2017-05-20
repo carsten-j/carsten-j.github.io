@@ -7,7 +7,7 @@ Mødegruppe for F#unktionelle Københavnere holdt onsdag den 20. november 2013 s
 
 <!--more-->
 
-Dernæst holdt [Ramon Soto Mathiesen](http://www.linkedin.com/in/ramonsotomathiesen) et oplæg om hvordan [Delegate](http://www.delegate.dk/Pages/default.aspx) bruger F# i deres CRM løsninger. Og efterfølgende var der en kort introduktion til Scala af [Joakim Ahnfelt-Rønne](http://www.linkedin.com/in/ahnfelt/da) fra Zigzag.
+Dernæst holdt [Ramon Soto Mathiesen](http://www.linkedin.com/in/ramonsotomathiesen) et oplæg om hvordan [Delegate](http://www.delegate.dk) bruger F# i deres CRM løsninger. Og efterfølgende var der en kort introduktion til Scala af [Joakim Ahnfelt-Rønne](http://www.linkedin.com/in/ahnfelt/da) fra Zigzag.
 
 Afslutningsvis var der en snak om, hvordan man får udbredt kendskabet til og brugen af funktionsprogrammering i Københavnerområdet.
 
