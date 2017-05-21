@@ -4,6 +4,12 @@ title: Monitorering af applikations metrikker
 date: '2017-05-21 07:42:37'
 ---
 
+Dette er det første indlæg i en serie på i alt 3 indlæg om monitorering af applikations metrikker med InfluxDB, Grafana og C#.
+
+  1. [Monitorering af applikations metrikker]({% post_url 2017-05-21-monitorering-af-applikations-metrikker %})
+  2. [C# og InfluxDB]()
+  3. Dashboards i Grafana
+
 Jeg arbejder for tiden med opsamling af en række applikations metrikker, som det er nærliggende at gemme i en [tidsserie database (TSDB)](https://en.wikipedia.org/wiki/Time_series_database) som f.eks
 [Graphite](https://graphiteapp.org), [Prometheus](https://prometheus.io) eller [InfluxDB](https://www.influxdata.com).
 Ved brug af visualiseringsværktøjer som fx Graphite, [Grafana](https://grafana.com), og [Chronograf](https://www.influxdata.com/products/open-source/#chronograf) kan man nemt danne sig et overbliv over den historiske udvikling i ens metrikker. 
