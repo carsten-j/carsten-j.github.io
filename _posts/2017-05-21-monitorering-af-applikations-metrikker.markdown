@@ -7,7 +7,7 @@ date: '2017-05-21 07:42:37'
 Dette er det første indlæg i en serie på i alt 3 indlæg om monitorering af applikations metrikker med InfluxDB, Grafana og C#.
 
   1. [Monitorering af applikations metrikker]({% post_url 2017-05-21-monitorering-af-applikations-metrikker %})
-  2. [C# og InfluxDB]()
+  2. [C# og InfluxDB]({% post_url 2017-05-31-c-sharp-og-influxdb %})
   3. Dashboards i Grafana
 
 Jeg arbejder for tiden med opsamling af en række applikations metrikker, som det er nærliggende at gemme i en [tidsserie database (TSDB)](https://en.wikipedia.org/wiki/Time_series_database) som f.eks
