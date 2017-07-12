@@ -7,13 +7,13 @@ Dette er det andet indlæg i en serie på i alt 3 indlæg om monitorering af app
 
   1. [Monitorering af applikations metrikker]({% post_url 2017-05-21-monitorering-af-applikations-metrikker %})
   2. [C# og InfluxDB]({% post_url 2017-05-31-c-sharp-og-influxdb %})
-  3. Dashboards i Grafana
+  3. [Dashboards i Grafana]({% post_url 2017-07-12-dashboards-i-grafana %})
 
 I sidste blog indlæg så vi, hvordan man kan gemme data i InfluxDB fra enten et HTTP API eller kommandolinien. Men i virkeligheden ønsker vi at gemme data fra vores applikationer som fx web services, Windows service o.lign.
 
 Før vi ser nærmere på en løsning for C#, er der lige et par praktiske opgaver, som skal løses. I forrige indlæg blev InfluxDB databasen enten oprettet via et HTTP API eller på kommandolinien. Det vil jeg meget hellere automatisere, som oprettelsen af databasen sker som en af Docker Compose.
 
-Docker imaget for PostgreSQL databasen har en environment variabel `POSTGRES_DB` som man kan sætte til navnet på en databasen, som så bliver oprettet via Docker. InfluxDB har tilsyneladende ikke samme feature. 
+Docker imaget for PostgreSQL databasen har en environment variabel `POSTGRES_DB` som man kan sætte til navnet på en databasen, som så bliver oprettet via Docker. InfluxDB har tilsyneladende ikke samme feature.
 
 Men InfluxDB understøtter [best practices](https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#entrypoint) for containere ved at implementere et `ENTRYPOINT` i deres image.
 
@@ -57,7 +57,7 @@ exec influxd
 
 kan man få oprettet en databasen som en del af Docker. Databasen navnet m.v. kommer fra konfigureringsfilen `influxdb.env`. Jeg bruger filen `.db` til at afgøre om databasen allerede er oprettet. Hvis filen findes, så er databasen tidligere oprettet. Efter at InfluxDB er startet afvikles et `until` loop indtil InfluxDB svarer, når den ping'es.
 
-Hvis du kender en bedre måde at gøre noget tilsvarende på, så vil jeg meget gerne høre om det. 
+Hvis du kender en bedre måde at gøre noget tilsvarende på, så vil jeg meget gerne høre om det.
 
 Bemærk at scriptet ovenfor opretter en priviligeret bruger med mange rettigheder. I praksis vil man nok have en dedikeret InfluxDB applikations bruger som kun har skrive (og evt læse) rettigheder.
 
@@ -103,7 +103,7 @@ COPY --from=builder app/out .
 ENTRYPOINT ["dotnet", "aspnetcoreapp.dll"]
 ```
 
-Hvis man nu starter alle containerne med 
+Hvis man nu starter alle containerne med
 ``` bash
 docker-compose up -d
 ```

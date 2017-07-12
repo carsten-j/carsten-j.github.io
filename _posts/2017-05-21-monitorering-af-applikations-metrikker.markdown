@@ -8,13 +8,13 @@ Dette er det første indlæg i en serie på i alt 3 indlæg om monitorering af a
 
   1. [Monitorering af applikations metrikker]({% post_url 2017-05-21-monitorering-af-applikations-metrikker %})
   2. [C# og InfluxDB]({% post_url 2017-05-31-c-sharp-og-influxdb %})
-  3. Dashboards i Grafana
+  3. [Dashboards i Grafana]({% post_url 2017-07-12-dashboards-i-grafana %})
 
 Jeg arbejder for tiden med opsamling af en række applikations metrikker, som det er nærliggende at gemme i en [tidsserie database (TSDB)](https://en.wikipedia.org/wiki/Time_series_database) som f.eks
 [Graphite](https://graphiteapp.org), [Prometheus](https://prometheus.io) eller [InfluxDB](https://www.influxdata.com).
-Ved brug af visualiseringsværktøjer som fx Graphite, [Grafana](https://grafana.com), og [Chronograf](https://www.influxdata.com/products/open-source/#chronograf) kan man nemt danne sig et overbliv over den historiske udvikling i ens metrikker. 
+Ved brug af visualiseringsværktøjer som fx Graphite, [Grafana](https://grafana.com), og [Chronograf](https://www.influxdata.com/products/open-source/#chronograf) kan man nemt danne sig et overbliv over den historiske udvikling i ens metrikker.
 
-Vores platform team har allerede sat miljøer op med InfluxDB og Grafana, så det er nemt at komme igang. Dette blog indlæg handler om installation og opsætning af InfluxDB. Det skal understreges, at jeg ikke ved, hvordan InfluxDB er sat op på mit arbejde. 
+Vores platform team har allerede sat miljøer op med InfluxDB og Grafana, så det er nemt at komme igang. Dette blog indlæg handler om installation og opsætning af InfluxDB. Det skal understreges, at jeg ikke ved, hvordan InfluxDB er sat op på mit arbejde.
 
 Et senere indlæg kommer til at handle om dashboards i Grafana. Jeg bruger Docker til at installere både InfluxDB og Grafana. Min Docker compose fil ser således ud:
 
@@ -75,7 +75,7 @@ docker run --network=monitoring_network --rm --link=influxdb -it influxdb influx
 ```
 hvor `--network` sættes til navnet på ens Docker netværk og `--link` skal være container navnet for InfluxDB som angivet i Docker Compose filen.
 
-Man kan så oprette en database med 
+Man kan så oprette en database med
 ``` shell
 CREATE DATABASE mydb
 ```
