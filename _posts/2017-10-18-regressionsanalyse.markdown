@@ -106,7 +106,10 @@ linie. Det kan være svært ud fra en enkel vinkel at forestille sig,
 hvordan løsningen ud. Prøv at se på følgende optagelse, hvor vi kan se
 planen fra en række forskellige vinkler.
 
-[![Visualisering](/images/youtubelink.jpg)](https://youtu.be/LNJZRWjyvVU "Visualisering")
+<div style="text-align:center" markdown="1">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LNJZRWjyvVU" frameborder="0" allowfullscreen></iframe>
+</div>
+
 
 Eksempel
 --------
