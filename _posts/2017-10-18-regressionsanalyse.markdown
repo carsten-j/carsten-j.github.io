@@ -106,7 +106,7 @@ linie. Det kan være svært ud fra en enkel vinkel at forestille sig,
 hvordan løsningen ud. Prøv at se på følgende optagelse, hvor vi kan se
 planen fra en række forskellige vinkler.
 
-[![Visualisering](/images/youtubelink.JPG)](https://youtu.be/LNJZRWjyvVU "Visualisering")
+[![Visualisering](/images/youtubelink.jpg)](https://youtu.be/LNJZRWjyvVU "Visualisering")
 
 Eksempel
 --------
@@ -121,7 +121,7 @@ række faktorer såsom fx rente og byggeomkostninger. $$\label{eq:model}
 Hvordan bestemmer man regressionskoefficienterne $b_0, b_1$ og $b_2$,
 hvis vi har observationer som vist her i Excel
 
-![center](/images/data.JPG)
+![center](/images/data.jpg)
 
 Hvis du selv ønsker at arbejde med dette datasæt, så kan det downloades
 via dette
@@ -132,16 +132,16 @@ ikke er en del af menuen, så er her en
 [vejledning](https://support.office.com/en-us/article/Load-the-Analysis-ToolPak-6a63e598-cd6d-42e3-9317-6b40ba1a66b4)
 til hvordan man får den installeret i Excel.
 
-![center](/images/menu.JPG)
+![center](/images/menu.jpg)
 
 og dernæst fås en oversigt over de forskellige analyseværktøjer. Vælg
 “Regression”
 
-![center](/images/analysisTools.JPG)
+![center](/images/analysisTools.jpg)
 
 Så dukker denne regression menu op
 
-![center](/images/regression.JPG)
+![center](/images/regression.jpg)
 
 Her har vi som “Input Y Range” valgt kolonnen med prisindeks
 (inkl. overskriften). Dette er vores afhængige variable. Dernæst har vi
@@ -158,7 +158,7 @@ behov for det.
 Der er en masse output fra beregningen, men i første omgang fokuseres vi
 på regressionskoefficienterne
 
-![center](/images/regressionCoefficients.JPG)
+![center](/images/regressionCoefficients.jpg)
 
 Indsætter vi de fundne koefficienter i model \[eq:model\] får vi
 regressionsligningen
@@ -167,7 +167,7 @@ $$\textrm{prisindeks} = -90,95 + 2,35 * \textrm{byggeomkostninger} - 6,67 * \tex
 Efter at have bestemt selve modellen kigger vi på tallene under
 overskriften “Regression Statistics”:
 
-![center](/images/resultat.JPG)
+![center](/images/resultat.jpg)
 
 Her sætter vi fokus på Multiple R og R Square. På dansk kaldes disse to
 værdier for korrelations- og determinationskoefficienten.
@@ -289,9 +289,9 @@ Det sidste output fra Excel som vi kigger nærmere på er residual plots.
 Husk at vi i menu \[figure:regressionMenu\] sætte kryds ved “Residual
 Plots”. Dette giver os disse to residual plots
 
-![center](/images/residualplot1.JPG)
+![center](/images/residualplot1.jpg)
 
-![center](/images/residualplot2.JPG)
+![center](/images/residualplot2.jpg)
 
 Husk at residualerne er forskellen mellem de fittede og observerede
 værdier. Hvis residual plottene virker helt tilfældige, så giver den
@@ -376,7 +376,7 @@ identiske deskriptive statistikker (som fx middelværdi og varians), men
 når man laver en graf for hver af datasættene, så for man meget
 forskellige grafer.
 
-![center](/images/Anscombes.JPG)
+![center](/images/Anscombes.jpg)
 
 Grafen er fra “Anscombe’s quartet 3.svg. (2016, December 14). Wikimedia
 Commons, the free media repository”, hvor den original fil findes [her](https://commons.wikimedia.org/w/index.php?title=File:Anscombe%27s_quartet_3.svg&oldid=226250329).
