@@ -108,7 +108,6 @@ planen fra en række forskellige vinkler.
 
 [![Visualisering](/images/youtubelink.JPG)](https://youtu.be/LNJZRWjyvVU "Visualisering")
 
-
 Eksempel
 --------
 
@@ -422,7 +421,6 @@ mellem en række variable ikke er ensbetydende med en kausalitet eller
 [Videnskab.dk](http://videnskab.dk/kultur-samfund/korrelation-eller-kausalitet-hvornaar-er-der-en-aarsagssammenhaeng)
 kan du finde en let tilgængelig artikel om korrelation og kausalitet og
 lære mere om forskellen samt hvad man skal passe på med.
-
 
 <!-- MathJax configuration -->
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://arnabocean.com/javascripts/MathJaxLocal.js">
