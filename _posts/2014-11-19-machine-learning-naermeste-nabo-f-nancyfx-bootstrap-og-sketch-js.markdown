@@ -84,7 +84,7 @@ Hvis man ønsker at forbinde en F# backend med en webbaseret front-end vil det a
 
 En webapplikation har brug for en GUI. Hvad gør man som backend udvikler uden det store kendskab til HTML, CSS og JavaScript. Svaret kunne være Bootstrap. Læs mere i min boganmeldese [Jump Start Bootstrap]({% post_url 2014-11-06-jump-start-bootstrap %}).
 
-Som input kontrol til webapplikationer har jeg brugt [Sketch.js](http://intridea.github.io/sketch.js/) som er en HTML5 canvas kontrol samt tilhørende funktionalitet til at rette, slette og oploade det som bruger (i dette tilfælde) skriver på skærmen. Bemærk at der ikke er tale om touch-screen, men alene kontrol via mus eller touch-pad.
+Som input kontrol til webapplikationer har jeg brugt [Sketch.js](http://soulwire.github.io/sketch.js/) som er en HTML5 canvas kontrol samt tilhørende funktionalitet til at rette, slette og oploade det som bruger (i dette tilfælde) skriver på skærmen. Bemærk at der ikke er tale om touch-screen, men alene kontrol via mus eller touch-pad.
 
 ## Hvad mangler eller kunne være bedre
 

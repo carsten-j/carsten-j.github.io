@@ -12,22 +12,22 @@ categories:  AkkaNET C# Raft algoritme distribueret Elasticsearch
 
 [Gyldendal Den store danske](http://www.denstoredanske.dk/Samfund,_jura_og_politik/Sociologi/Grupper/konsensus) omtaler konsensus som:
 
-> overensstemmelse mellem medlemmerne i et socialt system 
+> overensstemmelse mellem medlemmerne i et socialt system
 
 hvilket ikke gør os meget klogere i forhold til konsensus betragtet som et fænomen i software.
 
-I modsætning til en social definition, hvor man i sidste ende kan acceptere, at vi bliver enige om regler for konsensus undervejs, så er der behov for en mere striks definition, hvis begrebet konsensus skal overføres til software. 
+I modsætning til en social definition, hvor man i sidste ende kan acceptere, at vi bliver enige om regler for konsensus undervejs, så er der behov for en mere striks definition, hvis begrebet konsensus skal overføres til software.
 
-I Introduction to Reliable and Secure Distributed Programming [1] defineres konsensus som følger: 
+I Introduction to Reliable and Secure Distributed Programming [1] defineres konsensus som følger:
 
 Konsensus består af et forslag og en beslutning. En eller flere processer stiller et forslag som resten eller flertallet af resten af processerne er enige i. Udover et forslag og en række beslutninger omfatter konsensus også følgende egenskaber:
 
-* Termination: Every correct process eventually decides some value. 
-* Validity: If a process decides v, then v was proposed by some process. 
+* Termination: Every correct process eventually decides some value.
+* Validity: If a process decides v, then v was proposed by some process.
 * Integrity: No process decides twice.
 * Agreement: No two correct processes decide differently.
 
-Egenskaberne omkring afslutning og integritet sikrer at processor tager præcis en beslutning. Gyldigheds egenskaben er med for at sikre at en proces ikke tager en beslutning som der ikke har været stillet forslag om. Alle fire egenskaber er vigtige men det må siges at være egenskaben enighed som for alvor definerer konsensus. 
+Egenskaberne omkring afslutning og integritet sikrer at processor tager præcis en beslutning. Gyldigheds egenskaben er med for at sikre at en proces ikke tager en beslutning som der ikke har været stillet forslag om. Alle fire egenskaber er vigtige men det må siges at være egenskaben enighed som for alvor definerer konsensus.
 
 Hvis det man skal være enig om kan ændres over tid, så er det nødvendigt på en eller anden måde også at blive enige om tiden. Men som bekendt: "There is No Now" [5]. Dette er i øvrigt en glimrende kortfattet introduktion til begrebet tid i et distribueret system perspektiv. I Raft er det heldigvis ikke nødvendigt at være enige om det absolutte tidspunkt. Algoritmen er beskrevet i termer af perioder, hvilket gør det hele noget lettere.
 
@@ -49,29 +49,29 @@ Her ses et meget simpelt eksempler, hvor clusteret lige er startet op. Node 5 er
 ![center](/images/raftElection.png)
 
 ## Implementering
-Du kan finde en kopi af min implementering på [GitHub](https://github.com/carsten-j/Raft). Bemærk at jeg først lige er startet med Akka.NET, så der er sikkert kode som kan skrives enten smartere eller bedre. Forslag til forbedringer er som altid meget velkomne. Koden virker på OSX med Mono 4.0.1 og Xamarin Studio. Notationen i programmet lægger sig tæt op af [6]. 
+Du kan finde en kopi af min implementering på [GitHub](https://github.com/carsten-j/Raft). Bemærk at jeg først lige er startet med Akka.NET, så der er sikkert kode som kan skrives enten smartere eller bedre. Forslag til forbedringer er som altid meget velkomne. Koden virker på OSX med Mono 4.0.1 og Xamarin Studio. Notationen i programmet lægger sig tæt op af [6].
 
 ## Test
 
 Principielt kan man kun kommunikere med at actor ved at sende en besked. Hvordan automatiserer man test i et sådan system?
 
-På nuværende tidspunkt finder man ikke meget om test i [dokumentationen](http://getakka.net/docs/) for Akka.NET. Men da Akka.NET er en portering af Akka kan man lade sig inspirere af [dokumentation](http://doc.akka.io/docs/akka/snapshot/scala/testing.html) her. Der skelnes mellem unittests og integrationstest og du kan i mit Github repository for dette indlæg se et enkelt eksemplel på en integrationstest, hvor der testes at et givent Raft cluster har valgt en leder. Hvis du ved noget om test i asynkrone systemer baseret på Akka så hører jeg meget gerne om teststrategier.
+På nuværende tidspunkt finder man ikke meget om test i [dokumentationen](http://getakka.net/articles/intro/what-is-akka.html) for Akka.NET. Men da Akka.NET er en portering af Akka kan man lade sig inspirere af [dokumentation](http://doc.akka.io/docs/akka/snapshot/scala/testing.html) her. Der skelnes mellem unittests og integrationstest og du kan i mit Github repository for dette indlæg se et enkelt eksemplel på en integrationstest, hvor der testes at et givent Raft cluster har valgt en leder. Hvis du ved noget om test i asynkrone systemer baseret på Akka så hører jeg meget gerne om teststrategier.
 
 ## Logging
 
-I et distribueret system vil mange af processerne som oftest ikke have en GUI, hvortil fejlbeskeder og lignende kan præsenteres. Evnen til at logge bliver derfor central. Akka.NET har flere muligheder på dette [område](http://getakka.net/docs/Logging), hvor man blandt andet kan bruge logging frameworket [Serilog](http://serilog.net/).
+I et distribueret system vil mange af processerne som oftest ikke have en GUI, hvortil fejlbeskeder og lignende kan præsenteres. Evnen til at logge bliver derfor central. Akka.NET har flere muligheder på dette [område](http://getakka.net/articles/utilities/logging.html), hvor man blandt andet kan bruge logging frameworket [Serilog](http://serilog.net/).
 
-Serilog passer fint ind i [ELK stakken](https://www.elastic.co/webinars/introduction-elk-stack).  I ELK står E for Elasticsearch som jeg tidligere har skrevet om her på [bloggen]({% post_url 2014-06-28-elasticsearch-the-definitive-guide %}). På OSX kan Elasticsearch installeres med 
+Serilog passer fint ind i [ELK stakken](https://www.elastic.co/webinars/introduction-elk-stack).  I ELK står E for Elasticsearch som jeg tidligere har skrevet om her på [bloggen]({% post_url 2014-06-28-elasticsearch-the-definitive-guide %}). På OSX kan Elasticsearch installeres med
 
 > brew install elasticsearch
 
-fra en kommandolinie og herefter startes med 
+fra en kommandolinie og herefter startes med
 
 > ./bin/elasticsearch
 
 Serilog kan skrive direkte til Elasticsearch, så der er i denne sammenhæng ikke behov for at bruge [Logstash](https://www.elastic.co/products/logstash) til log konsolidering.
 
-På et nyligt overstået [meetup](http://www.meetup.com/Copenhagen-Net-User-Group/events/221363633/) møde demo'ede [Thomas Ardal](https://twitter.com/thomasardal) ELK stakken med Serilog, og han viste nogle ret cool dashboards fra [Kibana](https://www.elastic.co/products/kibana). Hvis man har behov for en GUI til Elasticsearch vil jeg anbefale [elasticsearch-gui](https://github.com/jettro/elasticsearch-gui) som er et plugin til Elasticseach. 
+På et nyligt overstået [meetup](http://www.meetup.com/Copenhagen-Net-User-Group/events/221363633/) møde demo'ede [Thomas Ardal](https://twitter.com/thomasardal) ELK stakken med Serilog, og han viste nogle ret cool dashboards fra [Kibana](https://www.elastic.co/products/kibana). Hvis man har behov for en GUI til Elasticsearch vil jeg anbefale [elasticsearch-gui](https://github.com/jettro/elasticsearch-gui) som er et plugin til Elasticseach.
 
 Struktureret logning er også anbefalet af ThoughtWorks [Tech Radar](http://www.thoughtworks.com/radar/techniques/structured-logging) i begge 2015 udgaver.
 
@@ -83,7 +83,7 @@ Det er ikke utænkeligt at der kommer en opfølgning til dette indlæg, når fun
 * Cluster
 * Persistens storage
 * Dynamic membership
-* F# version 
+* F# version
 
 ## Disclaimer
 Lad være med at bruge din egen implementering af algoritmer som Raft og lignende. Det er ikke let at få dem implementeret korrekt og du bør fokusere på det som giver værdi for din forretning fremfor de bagvedliggende algoritmer. Det er til gengæld en udmærket ide at implementere Raft eller lignende, hvis du ønsker en bedre forståelse for virkemåden i algoritmen end man kan få alene ved at læse en artikel. Derfor. Koden på Github for dette blogindlæg er på ingen måde klar til produktion og afspejler heller ikke måden, jeg ville gribe implementeringen af produktionskode an på.

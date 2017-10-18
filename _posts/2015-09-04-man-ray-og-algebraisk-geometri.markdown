@@ -10,12 +10,12 @@ categories: matematik geometri kunst
 <!-- End MathJax Configuration -->
 
 Er en Kummer flade kunst? Skal det nu handle om kunst? Traditionelt ikke et område jeg har beskæftiget mig med her på bloggen. Men tilbage til spørgsmålet i overskriften. Er en Kummer flade kunst? Ikke i sig selv! Men den har tjenst som inspiration for kunstneren Man Ray.
- 
+
 <!--more-->
 
 # Udstilling på Glyptoteket
 
-Man Ray er nok mest kendt som som [surrealistisk](https://da.wikipedia.org/wiki/Surrealisme) kunstfotograf. Men lige nu kan man på [Glyptotektet](http://www.glyptoteket.dk/besoeg/kalender/man-ray-menneske-ligninger) se udstillingen Man Ray - Menneske // Ligninger med primært oliemalerier.
+Man Ray er nok mest kendt som som [surrealistisk](https://da.wikipedia.org/wiki/Surrealisme) kunstfotograf. Men lige nu kan man på [Glyptotektet](https://www.artsy.net/show/glyptoteket-man-ray-human-equations) se udstillingen Man Ray - Menneske // Ligninger med primært oliemalerier.
 
 Inspirationen til disse malerier er hentet i en række matematiske objekter, som Man Ray fandt på Institut Henri Poincaré i Paris i 1934 på opfordring af Max Ernst. Både Man Rays malerier og de originale matematiske objekter, som også er udstillet på Glyptoteket,er yderst inspirende.
 
@@ -23,7 +23,7 @@ I begyndelsen af 1900-tallet havde vi ikke computere og matematisk software til 
 
 <img src="http://teachers.phillipscollection.org/sites/default/files/Mathematical%20model%20_03.jpg" width="60%" height="60%" alt="mathematical model"/>
 
-[Modellen](http://teachers.phillipscollection.org/artwork/real-part-function-we) tilhører Brill-Schilling Collection. Institut Henri Poincaré, Paris og fotoet er taget af Elie Posner. 
+[Modellen](http://teachers.phillipscollection.org/artwork/real-part-function-we) tilhører Brill-Schilling Collection. Institut Henri Poincaré, Paris og fotoet er taget af Elie Posner.
 
 # Algebraisk geometri
 Studiet af flader som Kummer fladen hører under området [algebraisk geometri](http://www.denstoredanske.dk/It,_teknik_og_naturvidenskab/Matematik_og_statistik/Regning,_algebra_og_talteori/algebraisk_geometri).
@@ -31,7 +31,7 @@ Studiet af flader som Kummer fladen hører under området [algebraisk geometri](
 En algebraisk kurve hhv. flade er bestemt ved de punkter i planen hhv rummet, som opfylder ligningen $$f(x,y) = 0$$ for en kurve og $$g(x, y, z) = 0$$ for en flade, hvor $$f$$ og $$g$$ er polynomier. Vi kalder den højeste potens af polynomiet for graden $$d$$ af fladen, så fx beskriver ligningen $$g(x, y, z) = x^2 + y^2 - z^2= 0$$ en flade af grad 2.
 
 # SURFER
-I forbindelse med udstillingen har Glyptoteket indrettet en [matematisk tankegang](http://www.glyptoteket.dk/pressemeddelelser/man-ray-menneske-ligninger), hvor publikum selv kan eksperimentere videre med de matematiske objekter og sammenhængen mellem formler og former. Der er adgang til computer programmet [SURFER](https://imaginary.org/program/surfer), som du også kan downloade og installere på din egen computer.
+I forbindelse med udstillingen har Glyptoteket indrettet en matematisk tankegang, hvor publikum selv kan eksperimentere videre med de matematiske objekter og sammenhængen mellem formler og former. Der er adgang til computer programmet [SURFER](https://imaginary.org/program/surfer), som du også kan downloade og installere på din egen computer.
 
 Lad os starte med to simplere eksempler end Kummer fladen. Generelt er det sådan, at langt de fleste punkter på en algebraisk flade "opfører sig pænt" (lad os ikke gå dybere ind i en præcis matematisk formulering her). Det gælder fx alle punkter på en torus, hvor overfladen er "glat".
 
@@ -72,7 +72,7 @@ at besøge udstillingen og/eller mere har lyst til at eksperimentere mere med ma
 
 Jeg er ikke den eneste som er begejsret. [Information](http://www.information.dk/536073) gav også udstillingen fine ord med på vejen.
 
-Efter sigende forstod Man Ray ikke selv matematikken bag men det forhindrede ham ikke at fascineres af og 
+Efter sigende forstod Man Ray ikke selv matematikken bag men det forhindrede ham ikke at fascineres af og
 eksperimentere videre med formerne. Og det bør heller ikke forhindre dig i at nyde udstillingen.
 
 # Hvorfor er algebraisk geometri relevant?

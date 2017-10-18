@@ -16,28 +16,27 @@ Tilbage til spørgsmålet. __Er dette virkelig Data Science?__ Ja og nej. I sig 
 Data kan som nævnt tidligere komme fra mange forskellige kilder og formater. Hvordan får man så læst data ind i R? Der findes heldigvis udvidelsesbibliotekter til rigtig mange standard formater. Her er blot en kort oversigt over nogle af de mest udbredte:
 
 Data kilde | R udvidelsesbibliotek
----------- | --------------------- 
+---------- | ---------------------
 Excel      | [XLConnect](https://cran.r-project.org/web/packages/XLConnect/index.html)
 XML        | [XML2R](https://cran.r-project.org/web/packages/XML2R/index.html) og  [XMl](https://cran.r-project.org/web/packages/XML/index.html)
 JSON       | [jsonlite](https://cran.r-project.org/web/packages/jsonlite/index.html)
-SQL        | [rsqlserver](https://github.com/agstudy/rsqlserver) og [RODBC](https://cran.r-project.org/web/packages/RODBC/index.html) 
+SQL        | [rsqlserver](https://github.com/agstudy/rsqlserver) og [RODBC](https://cran.r-project.org/web/packages/RODBC/index.html)
 WEB        | [rvest](https://cran.r-project.org/web/packages/rvest/index.html) og [httr](https://cran.r-project.org/web/packages/httr/index.html)
 
 Data i Excel ark kan være ret ustrukturet af natur, og der findes mange andre muligheder end XLConnect. Denne [artikel](http://blog.datacamp.com/r-tutorial-read-excel-into-r/) giver et godt overblik.
 
 Web scraping er nærmest en kunst i sig selv. Et rigtig godt værktøj i den forbindelse er Chrome browser udvidelsen [SelectorGadget](https://chrome.google.com/webstore/detail/selectorgadget/mhjhnkcfbdhnjickkkdbjoemdmbfginb). For en hurtig gennemgang af mulighederne med SelectorGadget henvises til disse [slides](https://cpsievert.github.io/slides/web-scraping/#1).
- 
+
 ### Om web scraping
-Husk at checke robots.txt filen for websites for du går i gang med web scraping. Du bør overholde spillereglerne angivet i denne fil. Hvis man fx kigger på [O’Reillys webshop](http://shop.oreilly.com/) finder vi følgende indhold i deres [`http://shop.oreilly.com/robots.txt`](http://shop.oreilly.com/robots.txt) fil
+Husk at checke robots.txt filen for websites for du går i gang med web scraping. Du bør overholde spillereglerne angivet i denne fil. Hvis man fx kigger på [Weekendavisen](https://www.weekendavisen.dk) finder vi følgende indhold i deres [`https://www.weekendavisen.dk/robots.txt`](https://www.weekendavisen.dk/robots.txt) fil
 
 {% highlight javascript %}
-Crawl-delay: 30 
-Request-rate: 1/30 
+Crawl-delay: 10
 {% endhighlight %}
 
-som betyder at man kun må foretage et request hver 30. sekund og at man yderligere kun må hente en side per 30. sekund. Der er andre linjer som angiver hvilke URL'er man må eller ikke må webscrape.
- 
-## Der er alternativer til R 
+som betyder at man kun må foretage et request hver 10. sekund. Der er andre linjer som angiver hvilke URL'er man må eller ikke må webscrape.
+
+## Der er alternativer til R
 Funktionalitet i mange af de ovennævnte udvidelsespakker er ikke unik for R. Et godt alternativ for personer med hang til kommandolinje værktøjer findes i den fine lille bog Data Science at the Command Line[1]. Der er intet til hinder for at bruge R til selve dataanalysen og andre værktøjer til indsamling mv. af data.
 
 # Data manipulation
@@ -60,7 +59,7 @@ Hvis du er bekendt med Codds normalformer for databaser så vil du genkende tidy
 Hvis du kender Unix pipes og/eller funktionssammensætning (.) fra Haskell og forward operatoren |> i F# er kombinationen af udvidelsespakkerne [magrittr og [dplyr](https://cran.r-project.org/web/packages/dplyr/index.html) det helt rigtige valg for dig til data manipulation. Grammatikken for dplyr er bygget op omkring verber, hvoraf nogle af de meste brugte er i nedenstående tabel
 
 Verbum     | Handling
----------- | --------------------- 
+---------- | ---------------------
 select     | udvælg kolonner
 filter     | udvælg rækker
 mutate     | tilføj nye kolonner eller overskriv eksisterende
@@ -72,10 +71,10 @@ i sammensætning er tilstrækkelige til at foretage så godt som alle data manip
 
 {% highlight r %}
 library(dplyr)
-iris %>% 
-  filter(Sepal.Length > 5.0) %>% 
-  group_by(Species) %>% 
-  summarise(mean = mean(Sepal.Length)) %>% 
+iris %>%
+  filter(Sepal.Length > 5.0) %>%
+  group_by(Species) %>%
+  summarise(mean = mean(Sepal.Length)) %>%
   arrange(desc(mean))
 {% endhighlight %}
 
@@ -90,7 +89,7 @@ Det kan være svært at parse datoer, når man indlæser dato. Et givent datofor
 For nybegyndere i R programmeringsproget vil jeg anbefale bogen R Cookbook[3]. Den gennemgår en række eksempler på hvordan man udfører forskellige opgaver med R. Der er fx også et afsnit om data manipulation.
 
 # Referencer
-[1] Tidy data, Hadley  Wickham, Journal of Statistical Software, Vol 59, 2014 
+[1] Tidy data, Hadley  Wickham, Journal of Statistical Software, Vol 59, 2014
 
 [2] Data Science at the Command Line, Jeroen Janssens, O'Reilly Media, 2014
 

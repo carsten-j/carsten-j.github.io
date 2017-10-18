@@ -183,7 +183,7 @@ var a [3]int
 Since the array length is part of the type we have that `[3]int` and `[7]int` are distinct incompatible types.
 
 ### Haskell
-Haskell does not do have dependent types but a lot of work is going on in this field. The GHC website has an [overview](https://ghc.haskell.org/trac/ghc/wiki/DependentHaskell) of thoughts about adding dependent types. It is however possible with existing language features like e.g. `DataKinds` and `TypeFamilies` to implement fixed-length vector types. See [here](https://www.fpcomplete.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell?show=tutorials) and [here](http://blog.jle.im/entry/fixed-length-vector-types-in-haskell-2015) for some examples.
+Haskell does not do have dependent types but a lot of work is going on in this field. The GHC website has an [overview](https://ghc.haskell.org/trac/ghc/wiki/DependentHaskell) of thoughts about adding dependent types. It is however possible with existing language features like e.g. `DataKinds` and `TypeFamilies` to implement fixed-length vector types. See [here](hhttps://www.schoolofhaskell.com/user/konn/prove-your-haskell-for-great-safety/dependent-types-in-haskell) and [here](http://blog.jle.im/entry/fixed-length-vector-types-in-haskell-2015) for some examples.
 
 # Conclusion
 As I understand it Idris is designed to be a general purpose dependently typed programming language more than a proof assistant. But since Idris has deep knowledge about the type definition of your functions it is still possible to use the "expression search" feature to help with the implementation. It is my understandint that this goes in the direction of proof assistants and that is a completely different story that I might explore in a blog post some other day.
