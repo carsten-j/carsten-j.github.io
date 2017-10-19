@@ -80,7 +80,7 @@ iris %>%
 
 udregne gennemsnittet af `Sepal.Length` for de rækker hvor `Sepal.Length` er større end 5.0 opdelt på art og sorteret efter faldende gennemsnittet.
 
-En anden styrke ved dplyr er mulighed for at hente data direkte fra en database. Læs mere [her](https://cran.rstudio.com/web/packages/dplyr/vignettes/databases.html).
+En anden styrke ved dplyr er mulighed for at hente data direkte fra en database. Læs mere [her](https://db.rstudio.com/dplyr/).
 
 ## Dato formater
 Det kan være svært at parse datoer, når man indlæser dato. Et givent datoformat afhænger af mange faktorere som fx geografi, kultur og anvendelse. Hvis man ikke har en Unix baggrund kan R's dato type godt synes lidt underligt. R's dato type kommer fra Unix Posix time som angiver tidspunkter (og dermed datoer) i antallet af sekunder efter kl. 00:00:00 den 1. januar 1970. Heldigvis er håndtering af datotyper rimelig nemt at gå til med udvidelsepakken [lubridate](https://cran.r-project.org/web/packages/lubridate/index.html).
