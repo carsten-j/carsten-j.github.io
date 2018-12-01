@@ -49,7 +49,7 @@ In the future I might extend it to also cover topics like
 
 Here is the cluster
 
-![center](/images/akkacluster.png)
+![center](/images/akkaCluster.png)
 
 One last thing. I do not consider that code to be production ready. The repository is meant for experimenting and playing with Akka - not for creating a production ready solution. As of publication date of this blog post
 
