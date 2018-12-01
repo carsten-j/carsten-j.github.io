@@ -47,6 +47,10 @@ In the future I might extend it to also cover topics like
 * Cluster singleton
 * Persistence
 
+Here is the cluster
+
+![center](/images/akkacluster.png)
+
 One last thing. I do not consider that code to be production ready. The repository is meant for experimenting and playing with Akka - not for creating a production ready solution. As of publication date of this blog post
 
 Feel free to contact me if you have any question. I will be more than happy to try to answer any questions.
