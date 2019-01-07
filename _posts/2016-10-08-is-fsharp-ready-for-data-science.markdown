@@ -18,7 +18,7 @@ The report [Analyzing and Visualizing Data with F#](http://www.oreilly.com/progr
 
 In the end Data Science and Machine Learning boils down to algorithms and models and the ability to create visualizations.
 
-For visualization there is [XPlot](http://tahahachana.github.io/XPlot//) but it feels nowhere as mature as [Matplotlib](http://matplotlib.org/) for Python or [ggplot2](http://ggplot2.org/) for R.
+For visualization there is [XPlot](https://fslab.org/XPlot/) but it feels nowhere as mature as [Matplotlib](http://matplotlib.org/) for Python or [ggplot2](http://ggplot2.org/) for R.
 
 It is possible to access R functionality through F# using the [R type provider](http://bluemountaincapital.github.io/FSharpRProvider/) but getting this to work in a productive environment on OSX is quite a hassle.
 
