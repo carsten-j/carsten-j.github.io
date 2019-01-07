@@ -29,7 +29,7 @@ hvor min favorit er nummer seks.
 
 Søren har skrevet et lille hæfte med en [vejledning til kravspecifikation](http://www.itu.dk/~slauesen/Papers/VejledningSL-07v4-online.pdf) som jeg helt sikkert vil kigge mere på.
 
-Årets keynote blev givet af [Klaus Æ. Mogensen](http://iff.dk/foredrag/foredragsholdere/klaus-%C3%A6-mogensen/) - senior futurist ved [Institut for Fremtidsforskning](http://iff.dk/). Klaus fortalte os om singularitets begrebet og mere generelt hvad det indebærer at leve i et konstant accelererende samfund.
+Årets keynote blev givet af [Klaus Æ. Mogensen](https://www.gyldendal.dk/forfattere/klaus-%C3%A6-mogensen-f90320) - senior futurist ved [Institut for Fremtidsforskning](http://iff.dk/). Klaus fortalte os om singularitets begrebet og mere generelt hvad det indebærer at leve i et konstant accelererende samfund.
 
 Det teknologiske singularitet begreb er især blevet kendt gennem bogen [The Singularity is Near](http://www.amazon.com/The-Singularity-Is-Near-Transcend/dp/0143037889) skrevet af Ray Kurzweil.
 
