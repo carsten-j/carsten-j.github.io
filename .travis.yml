@@ -6,13 +6,7 @@ install:
   - gem install html-proofer
 script:
   - jekyll build
-  - htmlproofer \
-        --only-4xx \
-        --check-favicon \
-        --check-html \
-        --url-ignore "/.*vimeo\.com.*/" \
-        --disable-external \
-        ./_site \
+  - htmlproofer --only-4xx --check-favicon --check-html --url-ignore "/.*vimeo\.com.*/" --disable-external ./_site
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
