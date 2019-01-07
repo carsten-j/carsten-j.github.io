@@ -93,7 +93,7 @@ Please note that type-driven development is __NOT__ limited to languages with su
 
 Several people in the F# community seem to promote it. Tomas Petricek calls it [Type-First Development](http://tomasp.net/blog/type-first-development.aspx/) or TFD to avoid the acronym clashes with TDD. Another example comes from Scott Wlaschin who has an entire series about [designing with types](http://fsharpforfunandprofit.com/posts/designing-with-types-intro/) in F#.
 
-Petricek was inspired by this blog post on [type driven design](http://www.tikalk.com/incubator/type-driven-design/). Unfortunately the blog post does not state who wrote it but this quote:
+Petricek was inspired by this blog post on [type driven design](https://www.tikalk.com/posts/2011/11/29/type-driven-design/). Unfortunately the blog post does not state who wrote it but this quote:
 
 > When writing code in a statically typed language sometimes types are considered as orthogonal to the logic of the code. We write them to appease the compiler, or get performance or intellisense & navigation, but all of these has no relation to the code itself. This is wrong.
 
