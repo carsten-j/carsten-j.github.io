@@ -32,7 +32,27 @@ with the following settings:
 
 ![center](/images/terraformConfig.PNG)
 
-Please refer to Github for the Terraform config file used to set up the Azure Functions apps. I could not get the Terraform backend storage to work by specifying the storage account in the task settings. [Others](https://github.com/XpiritBV/Xpirit-Vsts-Release-Terraform/issues/12) have suggested specifying this as part of the configuration file as this works fine.
+Please refer to Github for the Terraform [config file](https://raw.githubusercontent.com/carsten-j/InvestFunctionApp/master/src/Terraform/main.tf) used to set up the Azure Functions apps. I could not get the Terraform backend storage to work by specifying the storage account in the task settings. [Others](https://github.com/XpiritBV/Xpirit-Vsts-Release-Terraform/issues/12) have suggested specifying this as part of the configuration file as this works fine.
+
+Besides adding a Terraform config file the only other change I made to Jason Roberts [Github repository](https://github.com/jason-roberts/InvestFunctionApp) was to add a couple of task to the build process to copy the Terraform config files to the Release Pipeline.
+
+```yaml
+- task: CopyFiles@2
+  displayName: 'Copy Terraform config file to: $(Build.ArtifactStagingDirectory)'
+  inputs:
+    sourceFolder: 'src/Terraform'
+    Contents: '*.tf'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Terraform'    
+
+# Publish Build Artifacts
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Terraform config file'
+  inputs:
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)/Terraform'
+    artifactName: Terraform
+```
+
+All source code is on [Github](https://github.com/carsten-j/InvestFunctionApp).
 
 ### Footnotes
 [^1]: If you are using a new version of macOS then you will by default be using a different version of OpenSSL than the open source version. You can install the open source version using homebrew, e.g. `brew install openssl@1.1`. The 1.1 is to install the latest LTS release. Please make sure that your path is set up in such a way that homebrew directories takes precedence over built-in binary directories.
