@@ -19,4 +19,7 @@ permalink: /books/
 * Langs grænser og grave
 * Sommerbogen
 * Trap Danmark - Halsnæs Kommune
-  
+* Den ensomme gourmet af Jiro Taniguchi
+* Grænsen
+* Det
+* Essays  
