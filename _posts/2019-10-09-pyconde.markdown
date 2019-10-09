@@ -1,0 +1,21 @@
+---
+layout: post
+title: Rapport fra Pycon DE og PyData Berlin 2019
+date: '2019-10-09 20:44:16'
+---
+
+Jeg er i Berlin til Pycon DE og PyData Berlin 2019. Disse noter er primært tiltænkt undertegnede som en kort gennemgang af de foredrag og øvelser, som jeg deltog i.
+
+## Onsdag 2019-10-09
+
+### Algo.Rules - How do we get the ethics into the code? Carla Hustedt
+Keynote med oplæg og diskussion af etik med fokus på brug af algoritmer som kan have en reel indflydelse på folks liv. Et nu klassisk eksempel blev opdaget af Joy Buolamwini mens nu var studerende på MIT. Her oplevede hun at ansigtsgenkendelsessoftware ikke kunne genkende hendes ansigt som et ansigt. Årsag: Buolamwini er sort amerikaner. Algoritmen er her tydeligt biased. Hvordan forholder vi os til det faktum? Oplægget præsenterede en række såkaldte "Algo.Rules", som kan være med til at forhindre eksempler som ovenstående, hvis vi kan blive enige om at følge dem.
+
+### Package and Dependency Management with Poetry. Steph Samson
+Som Python nybegynder kan det være svært at finde hoved og hale i hele øko-systemet omkring installation og isolation af Python pakker. Poetry er et bud på en package manager (som måske) vil gøre det nemmere. Jeg har mest erfaring med Pipenv, som til tider er uforklarlig langsom. Poetry er endnu ikke i version 1.0, men virker bestemt som et projekt, der er værd at holde øje med.
+
+### Write your Own Decorators. Mike Müller
+Fra første sætning fornemmer jeg straks, at Mike Müller er en særdeles erfaren foredragsholder og underviser. Materialet er gennemarbejdet, og der er struktur i gennemgangen af emnet, som demonstreres live i en Jupyter Lab notebook. Først gennemgås hvordan man skriver ens egne decorators og så vises en række eksempler på, hvordan decorators kan være nyttige til især cross-cutting concerns som fx logging. Mike Müller taler ikke om closures og higher-order functions, men decorators er helt tydeligt relateret til begge emner.
+
+### pytest - simple, rapid and fun testing with Python. Florian Bruhin
+Pytest er vist det mest udbredte test library til Python. Florian Bruhin gav en hurtig og kort oversigt over vigtige emner som fx fixtures, marking og parametrisering af tests. Pytest giver indtryk af at være et meget modent test library som er nemt at bruge. Sammenlignet med xUnit virker det som om, at Pytest har et mere simpelt API.
