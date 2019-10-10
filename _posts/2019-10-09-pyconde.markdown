@@ -6,6 +6,8 @@ date: '2019-10-09 20:44:16'
 
 Jeg er i Berlin til Pycon DE og PyData Berlin 2019. Disse noter er primært tiltænkt undertegnede som en kort gennemgang af de foredrag og øvelser, som jeg deltog i.
 
+![center](/images/pyconde.JPG)
+
 ## Onsdag 2019-10-09
 
 ### Algo.Rules - How do we get the ethics into the code? Carla Hustedt
