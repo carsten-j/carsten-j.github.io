@@ -6,7 +6,7 @@ date: '2019-10-09 20:44:16'
 
 Jeg er i Berlin til Pycon DE og PyData Berlin 2019. Disse noter er primært tiltænkt undertegnede som en kort gennemgang af de foredrag og øvelser, som jeg deltog i.
 
-![center](/images/pyconde.JPG)
+![center](/images/pyconde.jpg)
 
 ## Onsdag 2019-10-09
 
