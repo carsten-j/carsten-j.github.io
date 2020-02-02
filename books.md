@@ -23,3 +23,16 @@ permalink: /books/
 * Grænsen
 * Det
 * Essays  
+* historie om tyskland
+* asger røjle tokyo bog
+* kassedamen
+* rune lykkeberg
+* kapitalisme 
+
+
+
+2019 progrma
+digte af borges
+opfindelsen af verden
+kortlægningen af danmark
+åndens liv
