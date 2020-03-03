@@ -7,32 +7,24 @@ permalink: /books/
 * biologi bog
 * dykke med søheste
 
-# 2019
+# 2020
 
-* Mordet på kommandanten, bog 2 af Murakami
-* Videndeling der virker, Susie Lynge
-* Rejsen til tidernes morgen, Minik Rosing
-* Badeværelset, Jean-Philippe Toussaint
-* Sommerfugledalen, Inger Christensen
-* Wittgensteins nevø
-* TdF 1924
-* Langs grænser og grave
-* Sommerbogen
-* Trap Danmark - Halsnæs Kommune
-* Den ensomme gourmet af Jiro Taniguchi
-* Grænsen
-* Det
-* Essays  
-* historie om tyskland
-* asger røjle tokyo bog
-* kassedamen
-* rune lykkeberg
-* kapitalisme 
+## Læst
 
+* Den Fremmede, Albert Camus
+* Leonardo da Vinci, Walter Isaacson
+* Leonardo da Vinci - Exhibition catalogue
+* Kortlægningen af Danmark - op til midten af 1800-tallet, Peder Dam
+* The Unicorn Project, Gene Kim
+* Upraktisk håndbog i lysegrønt håb, Mickey Gjerris
+* Det Mystiske Bibliotek, Murakami
+* Ifølge Loven, Solvej Balle
+* Tractatus Philosophico-Poeticus, Signe Gjessing
+* Permanent Record, Edward Snowden
 
+## Inspiration
 
-2019 progrma
-digte af borges
-opfindelsen af verden
-kortlægningen af danmark
-åndens liv
+* Åndens liv, Hannah Arendt
+* The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
+* Opfindelsen af Verden
+* Leonardos univers, Carl Henrik Koch
