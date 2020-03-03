@@ -3,9 +3,6 @@ layout:    page
 title:     Bøger
 permalink: /books/
 ---
-# 2018
-* biologi bog
-* dykke med søheste
 
 # 2020
 
