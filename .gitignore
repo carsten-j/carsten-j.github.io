@@ -3,3 +3,4 @@ _knitr/.Rhistory
 _site/
 .sass-cache/
 .bundle/
+.DS_store
