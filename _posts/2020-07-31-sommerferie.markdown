@@ -6,7 +6,13 @@ date: '2020-07-31 08:00:00'
 
 ![center](/images/8DB38903-28E6-463C-B1E0-2DFB7D0FBD57.jpeg)
 
-Jeg læser rigtig meget faglitteratur (indenfor fx softwareudvikling, distribuerede systemer, programmeringssprog og arkitektur). Sommerferie er dog reserveret alle mulige andre emner og bøger. Her er hvad jeg læste i den for mit vedkommende netop overståede ferie. Måske kan listen inspirere dig!
+Jeg læser rigtig meget faglitteratur (indenfor fx softwareudvikling, distribuerede systemer, programmeringssprog og arkitektur). Sommerferie er dog reserveret alle mulige andre emner og bøger. Her er hvad jeg læste i den for mit vedkommende snart overståede ferie. Måske kan listen inspirere dig!
+
+## Unity of Knowledge - Scrapbook from the Niels Bohr Institute, Rikke Hagen, Anne Prytz Schaldemose og Peter Høeg
+
+Niels Bohr Instituttet skal flytte fra de legendariske bygninger på Blegdamsvej og har i den forbindelse bedt skulptør Rikke Hagen og fotograf Anne Prytz Schaldemose lave en scrapbog om instituttet. Jeg kender ikke stemningen på instituttet, men fotografier emmer af stemning om både seriøs videnskab og en legende tilgang til hverdagen. Peter Høeg har bidraget med et yderst velskrevet essay om blandt andet forholdet mellem naturvidenskab og kunst på et generelt niveau og lidt mere konkret om naturvidenskabens relation til sprog, bevidsthed, erkendelse og spiritualitet. 
+
+På side 169 i bogen er et billede af en bogreol med en række ringbind. Især et ringbind skiller sig ud med teksten “Mirakler 2014”. Det kan du så tænke lidt over!
 
 ## Billedhuggerens Datter, Tove Jansson
 
@@ -51,9 +57,3 @@ Genlæst sammen med _Madalfabet_ for at kunne sammenligne de to værker.
 I _Manden som elskede Sibirien_ nævner Dörries mange forskellige sommerfugle arter,  blandt andet sørgekåbe (side 85) som også indgår i Sommerfugledalen:
 
 > “Som blåfugl, admiral og sørgekåbe, som påfugløje flagrer de omkring og forgøgler universets tåbe, et liv der ikke dør som ingenting.”
-
-## Unity of Knowledge - Scrapbook from the Niels Bohr Institute, Rikke Hagen, Anne Prytz Schaldemose og Peter Høeg
-
-Niels Bohr Instituttet skal flytte fra de legendariske bygninger på Blegdamsvej og har i den forbindelse bedt skulptør Rikke Hagen og fotograf Anne Prytz Schaldemose lave en scrapbog om instituttet. Jeg kender ikke stemningen på instituttet, men fotografier emmer af stemning om både seriøs videnskab og en legende tilgang til hverdagen. Peter Høeg har bidraget med et yderst velskrevet essay om blandt andet forholdet mellem naturvidenskab og kunst på et generelt niveau og lidt mere konkret om naturvidenskabens relation til sprog, bevidsthed, erkendelse og spiritualitet. 
-
-På side 169 i bogen er et billede af en bogreol med en række ringbind. Især et ringbind skiller sig ud med teksten “Mirakler 2014”. Det kan du så tænke lidt over!
