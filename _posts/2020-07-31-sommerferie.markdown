@@ -56,4 +56,10 @@ Genlæst sammen med _Madalfabet_ for at kunne sammenligne de to værker.
 
 I _Manden som elskede Sibirien_ nævner Dörries mange forskellige sommerfugle arter,  blandt andet sørgekåbe (side 85) som også indgår i Sommerfugledalen:
 
-> “Som blåfugl, admiral og sørgekåbe, som påfugløje flagrer de omkring og forgøgler universets tåbe, et liv der ikke dør som ingenting.”
+> Som blåfugl, admiral og sørgekåbe, 
+>
+> som påfugløje flagrer de omkring
+>
+> og forgøgler universets tåbe
+>
+> et liv der ikke dør som ingenting.
