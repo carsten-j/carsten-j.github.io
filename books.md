@@ -85,9 +85,8 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 
 ## Inspiration
 
-* Åndens liv, Hannah Arendt
+
 * The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
-* Opfindelsen af Naturen
 * Leonardos univers, Carl Henrik Koch
 * Irans moderne historie
 * jytte fra marketing
@@ -96,8 +95,7 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * sukkerbog
 * Dansk Grammatik
 * Bibelen 2020
-* iltgæld
-
+* People From My Neighbourhood, Hiromi Kawakami
 ----
 
 Wittgenstein
