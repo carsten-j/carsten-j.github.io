@@ -84,7 +84,10 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * The Unicorn Project, Gene Kim
 
 ## Inspiration
-
+* Manden bag helten, Niels Barfod
+* Bloodlands, Snyder
+* Tid af jern og ild, Karsten Sand Iversen
+* Ikke til forhandling - livets ligning. Chris MacDonald. 
 
 * The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
 * Leonardos univers, Carl Henrik Koch
@@ -96,6 +99,12 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Dansk Grammatik
 * Bibelen 2020
 * People From My Neighbourhood, Hiromi Kawakami
+* Silkevejene, Peter Frankopan
+* Vi har aldrig været moderne, Bruno Latour
+* The monocle book of japan
+* hvorfor digtere, martin heidegger
+* Det ukontrollerbare, Hartmus Rosa
+
 ----
 
 Wittgenstein
