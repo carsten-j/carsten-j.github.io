@@ -88,7 +88,7 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Bloodlands, Snyder
 * Tid af jern og ild, Karsten Sand Iversen
 * Ikke til forhandling - livets ligning. Chris MacDonald. 
-
+* At træde på en slange & Forsvindinger, Hiromi Kawakami 
 * The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
 * Leonardos univers, Carl Henrik Koch
 * Irans moderne historie
@@ -103,7 +103,7 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Vi har aldrig været moderne, Bruno Latour
 * The monocle book of japan
 * hvorfor digtere, martin heidegger
-* Det ukontrollerbare, Hartmus Rosa
+* Det ukontrollerbare, Hartmus Rosa (https://www.information.dk/kultur/2020/04/vores-verden-udmattet-bittert-brug-taenkt-paa-ny)
 
 ----
 
