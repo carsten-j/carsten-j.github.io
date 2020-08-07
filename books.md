@@ -84,6 +84,7 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * The Unicorn Project, Gene Kim
 
 ## Inspiration
+* Breasts and Eggs, Mieko Kawakami
 * Manden bag helten, Niels Barfod
 * Bloodlands, Snyder
 * Tid af jern og ild, Karsten Sand Iversen
