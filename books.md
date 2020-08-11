@@ -84,6 +84,10 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * The Unicorn Project, Gene Kim
 
 ## Inspiration
+* People From My Neighbourhood, Hiromi Kawakami
+* Det ukontrollerbare, Hartmus Rosa (https://www.information.dk/kultur/2020/04/vores-verden-udmattet-bittert-brug-taenkt-paa-ny)
+* Vi har aldrig været moderne, Bruno Latour
+* Hvorfor digtere, martin heidegger
 * Breasts and Eggs, Mieko Kawakami
 * Manden bag helten, Niels Barfod
 * Bloodlands, Snyder
@@ -99,12 +103,9 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * sukkerbog
 * Dansk Grammatik
 * Bibelen 2020
-* People From My Neighbourhood, Hiromi Kawakami
 * Silkevejene, Peter Frankopan
-* Vi har aldrig været moderne, Bruno Latour
 * The monocle book of japan
-* hvorfor digtere, martin heidegger
-* Det ukontrollerbare, Hartmus Rosa (https://www.information.dk/kultur/2020/04/vores-verden-udmattet-bittert-brug-taenkt-paa-ny)
+* Det store Vadehav
 
 ----
 
