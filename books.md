@@ -25,6 +25,7 @@ I 2020 kom en ny roman af Balle med titlen Om Udregning Af Rumfang, hvilket fik 
 ## Krimi
 * Tørst, Jo Nesbø
 * Kniv, Jo Nesbø
+
 Jeg læser ikke særlig mange krimier og spændingsromaner, men som alle andre har jeg naturligvis læst Da Vinci Mysteriet ad Dan Brown og  Mænd Der Hader Kvinder af Stieg Larsson. På krimisiden har jeg læst to serier. Den legendariske serie i 10 bind, Roman om en Forbrydelse af Maj Sjowahl og Per Wahloo med Martin Beck i hovedrollen. I samme genre holder jeg også af Jo Nesbøs serie om Harry Hole. Oprindeligt var der vist også her planlagt 10 bind, men nu er 12. bind lige udkommet og så fik jeg også lige læst bind 11.
 
 ## Samfund m.v.
@@ -41,7 +42,7 @@ https://m.signalvnoise.com/the-books-i-read-in-2019/
 
 Snowden’s memoir is at once both gratifying and slightly frustrating. His stories of growing up with technology, “hacking” bedtime, and discovering the early internet overlaps almost entirely with my own timeline. But there’s also a little too much “just so” justification for the anecdotes and Snowden’s later heroic acts. Either way, the description of how the NSA/CIA inner world actually works, the role and freedom given to contractors, the implosion of accountability, and just what you can do with nation-state level surveillance systems is stunning, almost required reading. May a future president see the courage, wisdom, and self-sacrifice Snowden committed to and give him the pardon and the parade that he so rightly deserves.
 
-## Digte
+## Poesi
 
 * Tractatus Philosophico-Poeticus, Signe Gjessing
 
@@ -79,6 +80,7 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Små historier 3, Peter Adolphsen
 * Sebastian mernild, Professor, dr. scient. i klimaforandringer og glaciologi, Rosenkjærprisen 2018
 * Den kriblende have, Dave Goulson
+* Som Gjaldt det Livet, Jørgen Steen Nielsen
 
 ## Faglitteratur	
 * The Unicorn Project, Gene Kim
