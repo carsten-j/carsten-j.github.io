@@ -82,30 +82,8 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 
 ## Faglitteratur	
 * The Unicorn Project, Gene Kim
-
-## Inspiration
-* People From My Neighbourhood, Hiromi Kawakami
-* Det ukontrollerbare, Hartmus Rosa (https://www.information.dk/kultur/2020/04/vores-verden-udmattet-bittert-brug-taenkt-paa-ny)
-* Vi har aldrig været moderne, Bruno Latour
-* Hvorfor digtere, martin heidegger
-* Breasts and Eggs, Mieko Kawakami
-* Manden bag helten, Niels Barfod
-* Bloodlands, Snyder
-* Tid af jern og ild, Karsten Sand Iversen
-* Ikke til forhandling - livets ligning. Chris MacDonald. 
-* At træde på en slange & Forsvindinger, Hiromi Kawakami 
-* The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
-* Leonardos univers, Carl Henrik Koch
-* Irans moderne historie
-* jytte fra marketing
-* kattegæsten
-* beton
-* sukkerbog
-* Dansk Grammatik
-* Bibelen 2020
-* Silkevejene, Peter Frankopan
-* The monocle book of japan
-* Det store Vadehav
+* Accelerate
+* Team topologies
 
 ----
 
