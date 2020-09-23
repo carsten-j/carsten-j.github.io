@@ -21,6 +21,7 @@ I 2020 kom en ny roman af Balle med titlen Om Udregning Af Rumfang, hvilket fik 
 
 * Brudgommen var en hund, Yoko Tawada
 * Et eksotisk ægteskab, Yukiko Motoya
+* People From My Neighbourhood, Hiromi Kawakami
 
 ## Krimi
 * Tørst, Jo Nesbø
@@ -73,7 +74,7 @@ På Louvre købte jeg udstillingens katalog
 
 mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 
-## Klimaet
+## Klima, natur og økologi
 * Upraktisk håndbog i lysegrønt håb, Mickey Gjerris
 * Vi er vejret, Jonathan Safran Foer
 "Fordi ingen har lyst til at udvise bevidst adfærd før andre gør det."
@@ -81,6 +82,7 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Sebastian mernild, Professor, dr. scient. i klimaforandringer og glaciologi, Rosenkjærprisen 2018
 * Den kriblende have, Dave Goulson
 * Som Gjaldt det Livet, Jørgen Steen Nielsen
+* Jorden rundt i 80 træer, Jonathan Drori 
 
 ## Faglitteratur	
 * The Unicorn Project, Gene Kim
