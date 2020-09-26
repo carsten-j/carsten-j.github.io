@@ -59,6 +59,9 @@ stammer fra. Svaret finder du nederst på siden.
 
 Hvis du har behov for lidt baggrundsviden om Wittgensten, så kan jeg anbefale afsnit 33 af Den europæiske filosofis historie som er tilgængelig på DR Bonanza. Her taler DR journalist Birgitte Rahbek med professor Hans-Jørgen Schanz om filosoffen Ludwig Wittgenstein.
 
+* Til rette vedkommende,  Einar Már Guðmundsson
+* Thread Ripper, Amalie Smith
+
 ## Kunst
 I anledningen af Leonardo da Vinci 500 hundrede års fødselsdag udstilliede Louvre i Paris  i perioden oktober 2019 til februar 2020 hovedparten af hans værker. Det havde taget over 10 år at skabe udstillingen, da mange af værkerne pga deres alder er meget skrøbelige.Derfor var det formodentligt også sidste chance for på en gang at se alle værkerne samlet. Som forberedelse læste jeg 
 
@@ -89,6 +92,10 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Accelerate
 * Team topologies
 
+
+ Galileo Galilei
+Samtale om de to hovedsystemer for verden, det ptolemæiske og det kopernikanske 
+med forord af anja C. Andersen (f. 1965), astronom og professor i offentlighedens forståelse for naturvidenskaberne og teknologi ved Københavns Universitet.
 ----
 
 Wittgenstein
