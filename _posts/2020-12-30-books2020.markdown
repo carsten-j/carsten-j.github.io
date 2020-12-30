@@ -1,0 +1,77 @@
+---
+layout: post
+title: 2020 i bøger
+date: '2020-12-30 08:54:23'
+---
+
+# 2020
+
+Ved indgangen til 2018 besluttede jeg, at jeg ville prøve at få læst nogle flere bøger. Eller rettere - få læst nogle flere bøger end "bare" IT bøger. Det lykkedes ganske godt i både [2018]({% post_url 2018-12-30-books2018 %}) og [2019]({% post_url 2020-03-02-books20019 %}) og er gået over al forventning i 2020. I det forgange år har jeg fået læst 44 bøger godt hjulpet på vej af Corana nedlukningen i foråret og 4 ugers sommerferie.
+
+Derfor vil jeg i år ikke skrive nogle linjer om hver eneste læste bog. De fleste var rigtig gode, nogle stykker virkelig gode og naturligvis var der også et nogle som ikke lige faldt i min smag. 
+
+Jeg vil dog fremhæve Tractatus Philosophico-Poeticus af Signe Gjessing.  Digtsamlingens titel er naturligvis et ordspil på Wittgenstens værk. Og det meget fine og underfundige ved Gjessings værk er, at det er bygget op efter præcis samme skabelon som Wittgenstens bog. Dvs der er  afsnit nummereret 1 til 6. Hos Wittgenstein følger 1.1 af 1.0, mens fx 1.0.1 er en kommentar til 1.0. Jeg er ikke sikker på at man hos Gjessing i samme stringente forstand kan tage om "følger af", men det er sjovt at tænke sig det. Det ene værk er en digtsamling og det andet et filosofisk værk, men man kan sagtens finde tekster i den ene bog som kunne stå i den anden og omvendt. Kan du fx gætte om denne sætningen 
+
+> Det mystiske er ikke, __hvorledes__ verden er, men __at__ den er.
+
+er fra Gjessing eller Wittgenstein. Og tilsvarende hvor denne her 
+
+> Verden er alt, hvad der er oplagt.
+
+stammer fra. Svaret finder du nederst på siden.
+
+Hvis du har behov for lidt baggrundsviden om Wittgensten, så kan jeg anbefale afsnit 33 af Den europæiske filosofis historie som er tilgængelig på DR Bonanza. Her taler DR journalist Birgitte Rahbek med professor Hans-Jørgen Schanz om filosoffen Ludwig Wittgenstein.
+
+## Her er listen over bøger læst i 2020:
+
+* Lejlighedssange, Stine Pilgaard
+* Hegel for et større publikum, redigeret af Rune Lykkeberg
+* Sommerfugledalen, Inger Christensen (genlæst)
+* Tove Jansson work and love, Tuula Karjalainen
+* Connectedness. An Incomplete Encyclopedia of the Anthropocene, Marianne Krogh (red.) og 100 bidragsydere
+* Det ukontrollerbare, Hartmut Rosa,
+* Meter i sekundet, Stine Pilgaard
+* Håndens skælven i november, Henrik Nordbrandt (genlæst)
+* Genbesøgt. Inger Christensens efterladte papirer, redigeret af Dan Ringgaard og Jonas Ross Kjærgård
+* Den Fremmede, Albert Camus (genlæst)
+* Ifølge Loven, Solvej Balle (genlæst)
+* Gennem den kulsorte sky, Dy Plambeck, Bjarne Reuter, Pia Juul, Anne Lise Marstrand-Jørgensen, Harald Voetmann, Lars Husum og Jens Smærup Sørensen (genlæst)
+* Gå, Tomas Espedal
+* Mitt privatliv, Tomas Espedal
+* Det Mystiske Bibliotek, Murakami
+* Brudgommen var en hund, Yoko Tawada
+* Et eksotisk ægteskab, Yukiko Motoya
+* People From My Neighbourhood, Hiromi Kawakami
+* Tørst, Jo Nesbø
+* Kniv, Jo Nesbø
+* Kortlægningen af Danmark - op til midten af 1800-tallet, Peder Dam
+* Permanent Record, Edward Snowden
+* Tractatus Philosophico-Poeticus, Signe Gjessing
+* Til rette vedkommende, Einar Már Guðmundsson
+* Thread Ripper, Amalie Smith
+* Leonardo da Vinci, Walter Isaacson
+* Leonardo da Vinci - Exhibition catalogue fra Louvre, Paris
+* Upraktisk håndbog i lysegrønt håb, Mickey Gjerris
+* Vi er vejret, Jonathan Safran Foer
+* Små historier 3, Peter Adolphsen
+* Den kriblende have, Dave Goulson
+* Som Gjaldt det Livet, Jørgen Steen Nielsen
+* Jorden rundt i 80 træer, Jonathan Drori 
+* Samtale om de to hovedsystemer for verden, det ptolemæiske og det kopernikanske, Galileo Galilei - kun forordet af astronom og professor Anja C. Andersen
+* Unity of Knowledge, Scrapbook from the Niels Bohr Institute
+* Billedhuggerens datter, Tove Jansson
+* Manden som elskede Sibirien, Roy Jacobsen
+* Åndens liv, Hannah Arendt
+* The Fearless Organization, Amy Edmondson
+* Opfindelsen af Naturen, Andrea Wulf
+* Iltgæld, Brian Nygaard og Erik A. Frandsen
+* Concept of Modern Mathematics, Ian Stewart
+* Madalfabet, Kristina Nya Glaffey og Maja Lee Langvad
+* Alfabet, Inger Christensen (genlæst)
+
+
+Wittgenstein
+6.44 Det mystiske er ikke, __hvorledes__ verden er, men __at__ den er.
+
+Gjessing
+1.1 Verden er alt, hvad der er oplagt.

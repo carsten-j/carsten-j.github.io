@@ -6,8 +6,14 @@ permalink: /books/
 
 # 2020
 
+
+* Hegel for et større publikum, redigeret af Rune Lykkeberg     250 år
+* Håndens skælven i november, Henrik Nordbrandt
+* Genbesøgt. Inger Christensens efterladte papirer, redigeret af Dan Ringgaard og Jonas Ross Kjærgård
+
 ## Skønlitteratur
-* Det Mystiske Bibliotek, Murakami
+
+* Lejlighedssange, Stine Pilgaard
 
 * Den Fremmede, Albert Camus (genlæst)
 
@@ -18,7 +24,16 @@ I 2020 kom en ny roman af Balle med titlen Om Udregning Af Rumfang, hvilket fik 
 
 * Gå, Tomas Espedal
 * Mitt privatliv, Tomas Espedal
+Mange gange har jeg stået i Politikens Boghandel og kigget på bøger af Tomas Espedal. Nu har jeg endeligt fået læst to. Espedal er både en fremragende forfatter og ditto fotograf. Når han som i Gå, er på vandretur sker det helst i jakkesæt og hvid skjorte. Og det er ikke liggeunderlag, men vin og cigaretter som er i rygsækken.
 
+I Mitt privatliv virker Espedal som dokumentarist over eget liv. Under hvert billede er der fine så tekster og refleksioner. Som fx denne
+
+>    ... jeg savner ikke det som har vært, jeg savner det som ikke lenger er muligt.
+
+under billede af en hytte, der i mange år har været hans opholdssted om sommeren.
+
+## Japan
+* Det Mystiske Bibliotek, Murakami
 * Brudgommen var en hund, Yoko Tawada
 * Et eksotisk ægteskab, Yukiko Motoya
 * People From My Neighbourhood, Hiromi Kawakami
@@ -93,9 +108,43 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Team topologies
 
 
+<<<<<<< Updated upstream
  Galileo Galilei
 Samtale om de to hovedsystemer for verden, det ptolemæiske og det kopernikanske 
 med forord af anja C. Andersen (f. 1965), astronom og professor i offentlighedens forståelse for naturvidenskaberne og teknologi ved Københavns Universitet.
+=======
+* Samtale om de to hovedsystemer for verden. den ptolemæiske og det kopernikanske
+med forord af Anja C. Andersen, astronom og professor i offentlighedens forståelse for naturvidenskaberne og teknologi ved Niels Bohr Institutet, KU
+Udstilling om månen på Louisiana 
+MÅNEN
+FRA DEN INDRE VERDEN TIL DET YDRE RUM
+13.9.2018 - 20.1.2019
+Galileos månekort og notesbog
+Supernovaer
+Tycho Brahe, 1572
+Johannes Kepler, 1604
+ikke observeret supernovaer i mælkevejen siden
+
+
+
+## Inspiration
+* hvorfor verden ikke findes, marcus gabriel
+* __Unity of Knowledge – Scrapbook from the Niels Bohr Institute__ 
+* Åndens liv, Hannah Arendt
+* The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
+* Opfindelsen af Naturen
+* Leonardos univers, Carl Henrik Koch
+* Irans moderne historie
+* jytte fra marketing
+* kattegæsten
+* beton
+* sukkerbog
+* Dansk Grammatik
+* Bibelen 2020
+* __iltgæld__
+* Ja, Thomas Bernhard
+  
+>>>>>>> Stashed changes
 ----
 
 Wittgenstein
