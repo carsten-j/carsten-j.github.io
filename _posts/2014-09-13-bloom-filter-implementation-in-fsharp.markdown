@@ -5,6 +5,14 @@ date: '2014-09-13 17:38:10'
 categories: [bloomfilters, fsharp]
 ---
 <!-- MathJax configuration -->
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script> 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 
