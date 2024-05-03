@@ -5,7 +5,8 @@ date: 2015-09-04 16:10:20 +0200
 categories: matematik geometri kunst
 ---
 <!-- MathJax configuration -->
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://arnabocean.com/javascripts/MathJaxLocal.js">
+<!-- MathJax configuration -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <!-- End MathJax Configuration -->
 

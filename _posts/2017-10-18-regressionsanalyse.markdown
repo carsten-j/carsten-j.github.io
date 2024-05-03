@@ -426,7 +426,7 @@ kan du finde en let tilgængelig artikel om korrelation og kausalitet og
 lære mere om forskellen samt hvad man skal passe på med.
 
 <!-- MathJax configuration -->
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML,http://arnabocean.com/javascripts/MathJaxLocal.js">
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 <!-- End MathJax Configuration -->
 

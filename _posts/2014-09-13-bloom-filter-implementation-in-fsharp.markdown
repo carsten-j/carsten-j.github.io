@@ -4,7 +4,9 @@ title: Bloom Filter implementation in F&#35;
 date: '2014-09-13 17:38:10'
 categories: [bloomfilters, fsharp]
 ---
-<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+<!-- MathJax configuration -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 A Bloom Filter is a probabilistic data structure with a build in method allowing for efficient testing for the presence of an element in some given set. Please refer to [Wikipedia](http://en.wikipedia.org/wiki/Bloom_filter) for further details.
 
