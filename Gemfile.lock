@@ -283,6 +283,7 @@ DEPENDENCIES
   bigdecimal
   csv
   github-pages
+  jekyll-include-cache
   webrick
 
 BUNDLED WITH
