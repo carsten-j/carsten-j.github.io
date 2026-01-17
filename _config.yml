@@ -1,10 +1,10 @@
 title: carstenj
 subtitle: software, matematik og data
 baseurl: ""
+url: "https://carsten-j.github.io"
+repository: "carsten-j/carsten-j.github.io"
 
 date_format: "%Y-%m-%d"
-
-google_analytics: UA-46905545-1
 
 encoding:     "utf-8"
 
@@ -16,8 +16,13 @@ show_drafts: false
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
 
 # Be sure to exclude vendor from your _config.yml
 # Travis bundles all gems in the vendor directory on its build servers,
 # which Jekyll will mistakenly read and explode on.
-exclude: [vendor]
+exclude: [vendor, Gemfile, Gemfile.lock]

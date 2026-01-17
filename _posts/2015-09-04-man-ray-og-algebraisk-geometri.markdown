@@ -4,18 +4,6 @@ title: "MAN RAY og algebraisk geometri"
 date: 2015-09-04 16:10:20 +0200
 categories: matematik geometri kunst
 ---
-<!-- MathJax configuration -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End MathJax Configuration -->
 
 Er en Kummer flade kunst? Skal det nu handle om kunst? Traditionelt ikke et område jeg har beskæftiget mig med her på bloggen. Men tilbage til spørgsmålet i overskriften. Er en Kummer flade kunst? Ikke i sig selv! Men den har tjenst som inspiration for kunstneren Man Ray.
 

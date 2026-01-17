@@ -135,16 +135,3 @@ $$\Bigg[ 0,68 - 1,96 \sqrt{\frac{0,68\big(1-0,68\big)}{n}} ;
   \Big[0,58  ; 0,78  \Big]$$ Altså vil tilfredsheden med introforløbet
 med 95% sikkerhed være mellem 58% og 78%.
 
-<!-- MathJax configuration -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End MathJax Configuration -->
-

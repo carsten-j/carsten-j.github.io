@@ -425,16 +425,3 @@ mellem en række variable ikke er ensbetydende med en kausalitet eller
 kan du finde en let tilgængelig artikel om korrelation og kausalitet og
 lære mere om forskellen samt hvad man skal passe på med.
 
-<!-- MathJax configuration -->
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-<!-- End MathJax Configuration -->
-
