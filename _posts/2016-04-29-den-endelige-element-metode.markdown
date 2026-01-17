@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Den Endelige Element Metode
 date: '2016-04-29 06:14:59'
 ---

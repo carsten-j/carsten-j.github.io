@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Elasticsearch The Definitive Guide
 date: '2014-06-28 10:31:09'
 categories: [bookReview, elasticsearch]

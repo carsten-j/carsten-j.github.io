@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Manglende figurer i noterne til Liv1
 date: '2014-05-21 18:41:13'
 categories: [livsforsikringsMatematik, liv1]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Vind en bog
 date: '2017-05-19 16:42:37'
 ---

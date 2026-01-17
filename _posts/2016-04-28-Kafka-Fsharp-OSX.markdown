@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Using Kafka on OSX with a F# producer and consumer
 date: 2016-04-28 07:13:51
 ---

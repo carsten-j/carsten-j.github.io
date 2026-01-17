@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Mandelbrots mængde og MANDELZOOM"
 date: 2015-08-22 08:34:01 +0200
 categories: F# mandelbrot fraktaler mandelzoom

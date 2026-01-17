@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: MongoDB The Definitive Guide
 date: '2014-03-27 19:24:12'
 categories: [bookReview, mongodb]

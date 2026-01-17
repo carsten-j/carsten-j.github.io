@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Moderne web udvikling - del 3
 date: '2013-10-11 19:00:33'
 categories: [webDevelopment,node.js,javascript]

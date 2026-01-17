@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Hvilke virksomheder i København bruger funktionelle sprog?
 date: '2013-11-20 18:29:00'
 ---

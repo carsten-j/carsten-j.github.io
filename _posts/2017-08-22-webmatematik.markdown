@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Frivilligt arbejde hos WebMatematik"
 date: '2017-08-22 17:24:12'
 ---

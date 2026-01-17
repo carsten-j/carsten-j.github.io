@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Nyt job som Lead Software Engineer i Danske Bank
 date: 2015-11-30 20:13:51 +0200
 ---

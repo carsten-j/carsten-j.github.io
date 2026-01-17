@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Reproducerbar forskning
 date: 2015-12-03 21:13:51 +0200
 ---

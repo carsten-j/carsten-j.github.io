@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Monitorering af applikations metrikker
 date: '2017-05-21 07:42:37'
 ---

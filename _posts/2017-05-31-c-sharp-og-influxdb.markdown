@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: C# og InfluxDB
 date: '2017-05-31 19:33:00'
 ---

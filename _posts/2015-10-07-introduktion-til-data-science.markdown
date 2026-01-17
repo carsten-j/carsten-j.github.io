@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Introduktion til Data Science"
 date: 2015-10-07 15:25:51 +0200
 categories: data science markdown git github packrat r rstudio docker rocker

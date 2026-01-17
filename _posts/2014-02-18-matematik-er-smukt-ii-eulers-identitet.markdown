@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Matematik er smukt II - Eulers identitet
 date: '2014-02-18 20:14:20'
 categories: [matematik]

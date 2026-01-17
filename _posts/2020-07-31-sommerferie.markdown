@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Sommerferielæsning 2020
 date: '2020-07-31 08:00:00'
 ---

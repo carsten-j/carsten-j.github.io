@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: A F# Akka.NET actor example for pub-sub pattern with NATS server
 date: '2016-07-01 18:02:39'
 ---

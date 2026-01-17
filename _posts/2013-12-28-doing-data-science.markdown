@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Doing Data Science
 date: '2013-12-28 20:54:17'
 categories: [bookReview, datascience,R]

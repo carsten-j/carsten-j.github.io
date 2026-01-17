@@ -1,28 +1,91 @@
+# Theme Settings
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
+
+# Site Settings
 title: carstenj
 subtitle: software, matematik og data
+name: "Carsten Jørgensen"
+description: "Software udvikling, matematik og data science blog"
 baseurl: ""
 url: "https://carsten-j.github.io"
 repository: "carsten-j/carsten-j.github.io"
 
+# Minimal Mistakes Settings
+minimal_mistakes_skin: "default"
+locale: "da-DK"
 date_format: "%Y-%m-%d"
 
-encoding:     "utf-8"
+# Site Author
+author:
+  name: "Carsten Jørgensen"
+  bio: "Software udvikler, matematik entusiast"
+  location: "København, Danmark"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://dk.linkedin.com/in/carstenjoergensen"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/carsten-j"
 
-# Other
+# MathJax Support
+head_scripts:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Build Settings
+encoding: "utf-8"
 permalink: /:year/:month/:day/:title.html
 timezone: Europe/Copenhagen
-
 show_drafts: false
-
-# Build settings
 markdown: kramdown
 highlighter: rouge
+
+# Reading Files
+include:
+  - _pages
 
 # Plugins
 plugins:
   - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
-# Be sure to exclude vendor from your _config.yml
-# Travis bundles all gems in the vendor directory on its build servers,
-# which Jekyll will mistakenly read and explode on.
-exclude: [vendor, Gemfile, Gemfile.lock]
+# Front Matter Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: false
+      share: true
+      related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: false
+
+# Category and Tag settings
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+# Exclude from processing
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .bundle
+  - .jekyll-cache

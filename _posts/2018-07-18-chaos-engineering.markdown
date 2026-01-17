@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Review of the Fast Track to Chaos Engineering course
 date: '2018-07-18 17:33:41'
 ---

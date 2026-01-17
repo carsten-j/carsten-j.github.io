@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Regressionsanalyse
 date: '2017-10-18 18:12:15'
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Seven More Languages in Seven Weeks
 date: '2014-06-26 14:33:37'
 categories: [bookReview, programmingLanguages,lua,factor,elixir,elm,julia,minikadren,ldris]

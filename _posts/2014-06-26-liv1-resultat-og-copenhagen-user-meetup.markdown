@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Liv1 resultat og Copenhagen useR meetup
 date: '2014-06-26 18:25:48'
 ---

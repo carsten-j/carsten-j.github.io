@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Matematik er smukt
 date: '2013-11-17 15:48:30'
 categories: [matematik]

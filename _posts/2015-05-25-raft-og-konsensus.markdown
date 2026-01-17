@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Raft og konsensus"
 date: 2015-05-25 21:57:38 +0200
 categories:  AkkaNET C# Raft algoritme distribueret Elasticsearch

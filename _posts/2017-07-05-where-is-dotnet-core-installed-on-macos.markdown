@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Where is .NET Core installed on macOS?
 date: '2017-07-05 6:33:00'
 ---

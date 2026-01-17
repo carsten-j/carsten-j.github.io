@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Installing RabbitMQ on Windows
 date: '2018-05-17 20:33:14'
 ---

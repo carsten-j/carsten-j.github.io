@@ -1,0 +1,16 @@
+# Main navigation links
+main:
+  - title: "Om"
+    url: /om/
+  - title: "Kontakt"
+    url: /kontakt/
+  - title: "CV"
+    url: /resume.pdf
+  - title: "LinkedIn"
+    url: https://dk.linkedin.com/in/carstenjoergensen
+  - title: "Kolofon"
+    url: /kolofon/
+  - title: "Blog"
+    url: /
+  - title: "Kategorier"
+    url: /categories/

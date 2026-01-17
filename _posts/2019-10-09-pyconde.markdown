@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Rapport fra Pycon DE og PyData Berlin 2019
 date: '2019-10-09 20:44:16'
 ---

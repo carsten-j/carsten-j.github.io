@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Indlæsning, vask og manipulation af data"
 date: 2015-10-30 17:13:51 +0200
 ---

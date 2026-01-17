@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Why you should care about Dependent Types
 date: 2015-11-09 20:13:51 +0200
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "MAN RAY og algebraisk geometri"
 date: 2015-09-04 16:10:20 +0200
 categories: matematik geometri kunst

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Mining the Social Web
 date: '2014-01-22 20:20:41'
 categories: [bookReview, datascience, dataAnalysis, python,nosql,mongodb]

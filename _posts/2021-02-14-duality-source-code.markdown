@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: On the duality of the value of source code
 date: '2021-02-14 22:25:17'
 ---

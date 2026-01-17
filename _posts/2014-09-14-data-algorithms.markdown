@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Data Algorithms
 date: '2014-09-14 10:15:49'
 categories: [bookReview, algorithms, bloomfilters, hadoop]

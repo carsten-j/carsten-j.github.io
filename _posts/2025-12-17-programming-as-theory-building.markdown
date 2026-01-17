@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Programming as Theory Building (and What 2026 Might Demand)
 date: '2025-12-17 07:15:21'
 ---

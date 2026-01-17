@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Agile Data Science
 date: '2014-02-05 19:58:04'
 categories: [bookReview, hadoop, datascience,elasticsearch,mapreduce,bootstrap,d3, dataAnalysis]

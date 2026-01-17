@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Machine learning, nærmeste nabo, F#, NancyFX, Bootstrap og Sketch.js
 date: '2014-11-19 19:28:59'
 categories: [machineLearning, FSharp, NancyFX, Bootstrap, JavaScript, kNN]

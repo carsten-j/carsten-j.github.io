@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Bliver psykologisk tryghed det nye sort?
 date: '2020-02-24 16:11:17'
 ---

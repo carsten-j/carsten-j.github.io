@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Training course on Akka.NET with Aaron Stannard
 date: '2018-11-30 19:32:14'
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Permutationer
 date: '2021-04-12 22:35:37'
 ---

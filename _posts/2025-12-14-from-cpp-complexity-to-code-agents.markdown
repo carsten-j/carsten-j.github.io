@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: From C++ Complexity to Code Agents
 date: '2025-12-14 22:35:37'
 ---

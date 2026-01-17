@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Grundlæggende livsforsikringsmatematik
 date: '2014-04-27 20:28:59'
 categories: [livsforsikringsMatematik, liv1]

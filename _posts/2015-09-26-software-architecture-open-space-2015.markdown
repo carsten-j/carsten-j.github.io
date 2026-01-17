@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Software Architecture Open Space 2015"
 date: 2015-09-26 09:19:58 +0200
 categories: Software Architecture OpenSpace kravspecifikation singularitet

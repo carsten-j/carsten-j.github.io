@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Reactive Extensions in Action"
 date: 2015-08-29 09:47:36 +0200
 categories: dotnet reactive rx csharp

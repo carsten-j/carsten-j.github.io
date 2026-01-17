@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Lær Noget Nyt
 date: '2013-09-27 16:45:33'
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Software developers — welcome to 2026
 date: '2026-01-01 15:14:43'
 ---

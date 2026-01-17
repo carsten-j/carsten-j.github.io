@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Principles of Reactive Programming
 date: '2014-01-06 12:00:00'
 categories: [mooc, coursera, reactiveProgramming, Rx, Scala]

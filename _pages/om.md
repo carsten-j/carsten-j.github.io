@@ -1,7 +1,8 @@
 ---
-layout:    page
-title:     Om
+layout: single
+title: Om
 permalink: /om/
+author_profile: true
 ---
 
 Mit navn er Carsten Jørgensen, og jeg har arbejdet professionelt med softwareudvikling siden 1995. Jeg købte min første computer efter min konfirmation. 

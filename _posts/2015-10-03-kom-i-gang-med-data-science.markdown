@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Kom i gang med Data Science"
 date: 2015-10-03 17:44:00 +0200
 categories: [data science]

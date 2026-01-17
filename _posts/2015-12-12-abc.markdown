@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: A + B = C
 date: 2015-12-12 08:13:51
 ---

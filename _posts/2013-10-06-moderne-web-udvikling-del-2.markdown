@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Moderne web udvikling - del 2
 date: '2013-10-06 18:03:33'
 categories: [redis,webDevelopment,angularjs,javascript,node.js,mongodb,nosql]

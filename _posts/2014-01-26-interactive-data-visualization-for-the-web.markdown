@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Interactive Data Visualization for the Web
 date: '2014-01-26 15:40:53'
 categories: [bookReview, d3, dataVisualization]

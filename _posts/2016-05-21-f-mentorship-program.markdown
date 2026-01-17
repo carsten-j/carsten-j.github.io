@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: F# Mentorship program
 date: '2016-05-21 16:14:59'
 ---

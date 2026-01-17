@@ -1,7 +1,10 @@
 ---
-layout:    page
-title:     Bøger
+layout: single
+title: Bøger
 permalink: /books/
+author_profile: false
+toc: true
+toc_label: "Indhold"
 ---
 
 # 2020
@@ -102,49 +105,21 @@ mest for illustrationerne skyld, da kataloget kun er udgivet på fransk.
 * Som Gjaldt det Livet, Jørgen Steen Nielsen
 * Jorden rundt i 80 træer, Jonathan Drori 
 
-## Faglitteratur	
+## Faglitteratur
 * The Unicorn Project, Gene Kim
 * Accelerate
 * Team topologies
-
-
-<<<<<<< Updated upstream
- Galileo Galilei
-Samtale om de to hovedsystemer for verden, det ptolemæiske og det kopernikanske 
-med forord af anja C. Andersen (f. 1965), astronom og professor i offentlighedens forståelse for naturvidenskaberne og teknologi ved Københavns Universitet.
-=======
-* Samtale om de to hovedsystemer for verden. den ptolemæiske og det kopernikanske
-med forord af Anja C. Andersen, astronom og professor i offentlighedens forståelse for naturvidenskaberne og teknologi ved Niels Bohr Institutet, KU
-Udstilling om månen på Louisiana 
-MÅNEN
-FRA DEN INDRE VERDEN TIL DET YDRE RUM
-13.9.2018 - 20.1.2019
-Galileos månekort og notesbog
-Supernovaer
-Tycho Brahe, 1572
-Johannes Kepler, 1604
-ikke observeret supernovaer i mælkevejen siden
-
-
+* Samtale om de to hovedsystemer for verden, det ptolemæiske og det kopernikanske, Galileo Galilei, med forord af Anja C. Andersen
 
 ## Inspiration
-* hvorfor verden ikke findes, marcus gabriel
-* __Unity of Knowledge – Scrapbook from the Niels Bohr Institute__ 
+* hvorfor verden ikke findes, Marcus Gabriel
+* Unity of Knowledge – Scrapbook from the Niels Bohr Institute
 * Åndens liv, Hannah Arendt
 * The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
 * Opfindelsen af Naturen
 * Leonardos univers, Carl Henrik Koch
 * Irans moderne historie
-* jytte fra marketing
-* kattegæsten
-* beton
-* sukkerbog
-* Dansk Grammatik
-* Bibelen 2020
-* __iltgæld__
 * Ja, Thomas Bernhard
-  
->>>>>>> Stashed changes
 ----
 
 Wittgenstein

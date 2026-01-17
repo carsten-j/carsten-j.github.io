@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "ADSD course - Traditional layered architecture"
 date: 2015-09-20 11:49:57 +0200
 categories: Distributed Systems Design architecture

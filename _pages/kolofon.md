@@ -1,7 +1,8 @@
 ---
-layout:    page
-title:     Kolofon
+layout: single
+title: Kolofon
 permalink: /kolofon/
+author_profile: false
 ---
 Dette er min 4. blog. Den første var en ikke teknisk blog baseret på WordPress. Og hvis jeg skal være ærlig, så fik jeg vist kun skrevet et eneste indlæg på denne blog.
 

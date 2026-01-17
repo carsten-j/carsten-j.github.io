@@ -1,7 +1,8 @@
 ---
-layout:    page
-title:     Kontakt
+layout: single
+title: Kontakt
 permalink: /kontakt/
+author_profile: false
 ---
 
 ## Carsten Jørgensen

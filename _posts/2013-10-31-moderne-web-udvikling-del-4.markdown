@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Moderne web udvikling - del 4
 date: '2013-10-31 20:45:48'
 categories: [webDevelopment,angular.js,yo.bower,grunt,javascript]

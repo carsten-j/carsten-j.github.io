@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Nytårsforsæt
 date: '2018-01-04 21:11:45'
 ---

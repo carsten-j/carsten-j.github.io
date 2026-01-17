@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Don't shoot yourself in the foot
 date: '2025-12-29 11:41:52'
 ---

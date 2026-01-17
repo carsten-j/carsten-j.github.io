@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Rapport fra Pycon DE - dag 2
 date: '2019-10-10 15:32:25'
 ---

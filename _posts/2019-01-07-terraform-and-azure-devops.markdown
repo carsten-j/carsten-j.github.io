@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Using Terraform as part of the Azure Devops Pipelines
 date: '2019-01-07 21:14:16'
 ---

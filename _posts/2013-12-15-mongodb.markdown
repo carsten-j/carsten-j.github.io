@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: MongoDB
 date: '2013-12-15 13:20:51'
 categories: [mooc,nosql,mongodb]

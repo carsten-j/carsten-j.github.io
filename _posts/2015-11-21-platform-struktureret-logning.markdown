@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Arkitektur ideer til en skalerbar platform for struktureret logging
 date: 2015-11-21 20:13:51 +0200
 ---

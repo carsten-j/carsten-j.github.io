@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: WCDC 2014 - dag 1
 date: '2014-01-15 20:26:03'
 categories: [wcdc2014, csharp, fsharp,azure,javascript,cloud]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Konfidensintervaller
 date: '2017-08-22 17:41:57'
 ---

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: The Developer as Guide, Editor, and Owner
 date: '2025-12-15 16:51:37'
 ---

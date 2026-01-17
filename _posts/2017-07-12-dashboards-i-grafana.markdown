@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Dashboards i Grafana"
 date: '2017-07-12 19:53:42'
 ---

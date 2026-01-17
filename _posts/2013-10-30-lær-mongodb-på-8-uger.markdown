@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Lær MongoDB på 8 uger
 date: '2013-10-30 21:29:37'
 categories: [mooc,nosql,mongodb]

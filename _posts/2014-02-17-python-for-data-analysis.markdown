@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Python for Data Analysis
 date: '2014-02-17 18:15:59'
 categories: [bookReview, python, iPython, dataAnalysis]

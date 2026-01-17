@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "R programmering"
 date: 2015-10-16 17:15:51
 output:

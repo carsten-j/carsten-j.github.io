@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Is F# ready for Machine Learning and Data Science?
 date: '2016-10-08 19:22:39'
 ---

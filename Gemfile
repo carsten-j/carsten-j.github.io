@@ -3,6 +3,11 @@ source "https://rubygems.org"
 # GitHub Pages gem - locks to versions compatible with GitHub Pages
 gem "github-pages", group: :jekyll_plugins
 
+# Required for Minimal Mistakes theme
+group :jekyll_plugins do
+  gem "jekyll-include-cache"
+end
+
 # Required for Ruby 3.0+
 gem "webrick"
 

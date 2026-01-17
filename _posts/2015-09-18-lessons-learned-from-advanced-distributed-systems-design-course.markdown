@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "Lessons learned from Advanced Distributed Systems Design course"
 date: 2015-09-18 20:14:29 +0200
 categories: Distributed Systems Design

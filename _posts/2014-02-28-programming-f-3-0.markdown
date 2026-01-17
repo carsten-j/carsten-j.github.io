@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Programming F# 3.0
 date: '2014-02-28 14:44:59'
 categories: [bookReview, fsharp, functionalProgramming]

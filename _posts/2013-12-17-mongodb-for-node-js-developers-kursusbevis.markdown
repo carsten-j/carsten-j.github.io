@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: MongoDB for Node.js developers kursusbevis
 date: '2013-12-17 21:33:03'
 categories: [noSql, mongodb, javascript, node.js]

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Docker Swarm mode
 date: '2017-10-18 19:37:42'
 ---

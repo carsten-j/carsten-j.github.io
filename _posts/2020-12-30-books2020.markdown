@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 2020 i bøger
 date: '2020-12-30 08:54:23'
 ---

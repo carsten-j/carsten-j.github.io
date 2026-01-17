@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Præ Warm Crocodile Developer Conference 2014
 date: '2014-01-14 21:08:28'
 categories: [wcdc2014, visualStudio, fsharp]

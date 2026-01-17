@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Jump Start Bootstrap
 date: '2014-11-06 20:28:26'
 categories: [bookReview, Bootstrap, JavaScript]

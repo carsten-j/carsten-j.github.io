@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Om undertegnede
 date: '2013-09-26 20:23:33'
 filename: "_posts/2013-09-26-om-undertegnede.markdown"
